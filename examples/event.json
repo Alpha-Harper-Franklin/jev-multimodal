@@ -1,0 +1,19 @@
+{
+  "contract_version": "0.1-design",
+  "provenance": "authored illustrative fixture; not a camera recording",
+  "event_id": "application_needs_attention",
+  "semantic_question": "Does the observed application show an error that requires user action?",
+  "observation": {
+    "id": "illustrative-0001",
+    "source": "external_ocr_or_vision_adapter",
+    "screen_text": "Upload failed. Select a file and try again.",
+    "freshness": "must be computed by the eventual runtime"
+  },
+  "temporal_policy": {
+    "require_consecutive_positive_observations": 2,
+    "deduplicate_until_condition_clears": true,
+    "missing_evidence": "unknown"
+  },
+  "decision_threshold": null,
+  "threshold_note": "Select using held-out calibration data; no production threshold has been established."
+}
