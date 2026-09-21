@@ -24,7 +24,7 @@ def main():
     plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 11,
                          'axes.spines.top': False, 'axes.spines.right': False,
                          'svg.fonttype': 'none'})
-    fig, axes = plt.subplots(1, 2, figsize=(12, 4.7), gridspec_kw={'width_ratios': [1, 1.3]})
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5.2), gridspec_kw={'width_ratios': [1, 1.3]})
     latency = [rows[m]['latency_p50_ms'] for m in modes]
     axes[0].barh(names, latency, color=colors, height=.58)
     axes[0].invert_yaxis()
@@ -44,10 +44,10 @@ def main():
     axes[1].set_yticks([0, 25, 50, 75, 100])
     axes[1].set_ylabel('F1 (%)')
     axes[1].set_title('All 3,000 questions per COCO variant', loc='left', fontweight='bold', pad=14)
-    axes[1].legend(loc='lower center', ncol=1, frameon=False)
+    axes[1].legend(loc='lower center', ncol=3, bbox_to_anchor=(.5, -.28), frameon=False, fontsize=9)
     fig.suptitle('POPE COCO · 500 images · 9,000 questions', x=.08, ha='left', fontweight='bold', fontsize=16)
     fig.text(.08, .025, 'Qwen2.5-VL-7B · one RTX 4090 · batch size 8 · same prompts and FP32 readout · no training', fontsize=9, color='#475569')
-    fig.tight_layout(rect=[.02, .07, 1, .93])
+    fig.tight_layout(rect=[.02, .13, 1, .93])
     target = Path(a.output)
     target.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(target.with_suffix('.png'), dpi=180)

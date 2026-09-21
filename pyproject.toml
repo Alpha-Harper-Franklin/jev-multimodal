@@ -15,6 +15,7 @@ dependencies = []
 vision = ["torch>=2.5", "transformers>=5.15,<6", "accelerate>=1", "Pillow>=10"]
 documents = ["pypdf>=5", "Pillow>=10", "pytesseract>=0.3"]
 audio = ["faster-whisper>=1"]
+analysis = ["matplotlib>=3.8"]
 
 [project.scripts]
 jev-multimodal = "jev_multimodal.__main__:main"

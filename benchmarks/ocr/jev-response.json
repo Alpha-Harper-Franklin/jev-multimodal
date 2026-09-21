@@ -1,0 +1,64 @@
+{
+  "model": "jev-1.13.0",
+  "answers": [
+    {
+      "id": "screen_deadline",
+      "type": "choice",
+      "choice": "ninety",
+      "probabilities": {
+        "unknown": 0.0,
+        "ninety": 1.0,
+        "thirty": 0.0,
+        "seven": 0.0
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "document_deadline",
+      "type": "choice",
+      "choice": "thirty",
+      "probabilities": {
+        "unknown": 0.0,
+        "seven": 0.0,
+        "thirty": 1.0,
+        "ninety": 0.0
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "disagree",
+      "type": "noul",
+      "noul": 0.98,
+      "choice": "yes",
+      "probabilities": {
+        "yes": 0.98,
+        "no": 0.020000000000000018
+      }
+    },
+    {
+      "id": "screen_fields",
+      "type": "score",
+      "score": 2.0,
+      "legend": {
+        "0": "Neither field is present",
+        "1": "Exactly one field is present",
+        "2": "Both fields are present"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 1.0
+      },
+      "confidence": 1.0
+    }
+  ],
+  "input_tokens": 1701,
+  "probability_semantics": "Jev judgments over supplied evidence; does not calibrate perception errors",
+  "snapshot_sha256": "47ad116e9085c81ae7d48aa50cce2e77f9e7729c68583964f09189240aa0f412",
+  "backend": "typesafe_evidence",
+  "metrics": {
+    "elapsed_ms": 1019.9629999988247,
+    "api_requests": 1,
+    "questions": 4
+  }
+}

@@ -1,0 +1,1355 @@
+{
+  "scope": "Candidate-order sensitivity on development images; no accuracy labels, no calibrated certainty claim",
+  "images": 32,
+  "questions": 192,
+  "choice_flips": 1,
+  "max_yes_probability_delta": 0.21899296782663807,
+  "mean_yes_probability_delta": 0.009131970964182487,
+  "flips_with_original_confidence_at_least_095": 0,
+  "comparisons": [
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "607",
+      "flip": false,
+      "probability_delta": 3.1562473050583684e-05,
+      "first_order_confidence": 0.9997506124941868
+    },
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "608",
+      "flip": false,
+      "probability_delta": 6.0002715215482385e-05,
+      "first_order_confidence": 0.9999856411089257
+    },
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "609",
+      "flip": false,
+      "probability_delta": 5.216934532448203e-05,
+      "first_order_confidence": 0.9999496626693172
+    },
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "610",
+      "flip": false,
+      "probability_delta": 0.0031010255075522345,
+      "first_order_confidence": 0.9992807978033513
+    },
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "611",
+      "flip": false,
+      "probability_delta": 0.007200906290975667,
+      "first_order_confidence": 0.8450941434082938
+    },
+    {
+      "image_id": "COCO_val2014_000000520524.jpg",
+      "id": "612",
+      "flip": false,
+      "probability_delta": 0.007347914579410767,
+      "first_order_confidence": 0.9971046704776122
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "211",
+      "flip": false,
+      "probability_delta": 1.1261743467438912e-05,
+      "first_order_confidence": 0.999979024986129
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "212",
+      "flip": false,
+      "probability_delta": 2.1745260022270807e-05,
+      "first_order_confidence": 0.9999932640104273
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "213",
+      "flip": false,
+      "probability_delta": 2.2558280636242323e-05,
+      "first_order_confidence": 0.9999424484309858
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "214",
+      "flip": false,
+      "probability_delta": 0.0009227100423274887,
+      "first_order_confidence": 0.9997760585715287
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "215",
+      "flip": false,
+      "probability_delta": 0.006265240755303325,
+      "first_order_confidence": 0.9742937160420218
+    },
+    {
+      "image_id": "COCO_val2014_000000170517.jpg",
+      "id": "216",
+      "flip": false,
+      "probability_delta": 5.055593138851848e-05,
+      "first_order_confidence": 0.9999911515350808
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "397",
+      "flip": false,
+      "probability_delta": 0.00630676512410544,
+      "first_order_confidence": 0.5434738178654274
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "398",
+      "flip": false,
+      "probability_delta": 3.393746613153295e-05,
+      "first_order_confidence": 0.999991667202269
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "399",
+      "flip": false,
+      "probability_delta": 0.005717455646974363,
+      "first_order_confidence": 0.9922104396626028
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "400",
+      "flip": false,
+      "probability_delta": 0.0007083572016503433,
+      "first_order_confidence": 0.9997819401523458
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "401",
+      "flip": false,
+      "probability_delta": 0.0009176491329991876,
+      "first_order_confidence": 0.9961501885729734
+    },
+    {
+      "image_id": "COCO_val2014_000000021645.jpg",
+      "id": "402",
+      "flip": false,
+      "probability_delta": 0.006116461322436545,
+      "first_order_confidence": 0.9958504709232799
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "463",
+      "flip": false,
+      "probability_delta": 9.22665516800425e-06,
+      "first_order_confidence": 0.9998773210895222
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "464",
+      "flip": false,
+      "probability_delta": 0.0013563539343366114,
+      "first_order_confidence": 0.9998249731888451
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "465",
+      "flip": false,
+      "probability_delta": 0.005584946199671648,
+      "first_order_confidence": 0.9948231956071933
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "466",
+      "flip": false,
+      "probability_delta": 1.3278846738219844e-05,
+      "first_order_confidence": 0.9999973078112757
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "467",
+      "flip": false,
+      "probability_delta": 0.0006425833449300589,
+      "first_order_confidence": 0.9994452261689302
+    },
+    {
+      "image_id": "COCO_val2014_000000131018.jpg",
+      "id": "468",
+      "flip": false,
+      "probability_delta": 8.67779769365888e-06,
+      "first_order_confidence": 0.9999975028076847
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2737",
+      "flip": false,
+      "probability_delta": 0.005177230828615431,
+      "first_order_confidence": 0.9848149449830993
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2738",
+      "flip": false,
+      "probability_delta": 0.0003434492641703143,
+      "first_order_confidence": 0.9998046677348886
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2739",
+      "flip": false,
+      "probability_delta": 6.908454127452224e-05,
+      "first_order_confidence": 0.9998399301786273
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2740",
+      "flip": false,
+      "probability_delta": 0.000293611973481352,
+      "first_order_confidence": 0.9999441608898174
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2741",
+      "flip": false,
+      "probability_delta": 0.01703367089785051,
+      "first_order_confidence": 0.9941382417168618
+    },
+    {
+      "image_id": "COCO_val2014_000000050627.jpg",
+      "id": "2742",
+      "flip": false,
+      "probability_delta": 4.624069313445976e-06,
+      "first_order_confidence": 0.9999958795252089
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "235",
+      "flip": false,
+      "probability_delta": 2.936660892682852e-05,
+      "first_order_confidence": 0.9991315483050854
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "236",
+      "flip": false,
+      "probability_delta": 0.0001923496707844717,
+      "first_order_confidence": 0.9999698329904
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "237",
+      "flip": false,
+      "probability_delta": 0.012627557743926765,
+      "first_order_confidence": 0.7111269501041855
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "238",
+      "flip": false,
+      "probability_delta": 0.0006291455557457504,
+      "first_order_confidence": 0.9999241868926197
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "239",
+      "flip": false,
+      "probability_delta": 0.0002809409249092676,
+      "first_order_confidence": 0.9991445412783189
+    },
+    {
+      "image_id": "COCO_val2014_000000500257.jpg",
+      "id": "240",
+      "flip": false,
+      "probability_delta": 4.642875785750382e-05,
+      "first_order_confidence": 0.9999797694056396
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1897",
+      "flip": false,
+      "probability_delta": 0.016213542079578536,
+      "first_order_confidence": 0.7915124680519801
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1898",
+      "flip": false,
+      "probability_delta": 0.006763020183074735,
+      "first_order_confidence": 0.9976964358787241
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1899",
+      "flip": false,
+      "probability_delta": 2.5103121146563545e-05,
+      "first_order_confidence": 0.9999299903035895
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1900",
+      "flip": false,
+      "probability_delta": 1.9506259988736695e-05,
+      "first_order_confidence": 0.9999952614344073
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1901",
+      "flip": false,
+      "probability_delta": 0.02866666275964258,
+      "first_order_confidence": 0.8957127569677487
+    },
+    {
+      "image_id": "COCO_val2014_000000031971.jpg",
+      "id": "1902",
+      "flip": false,
+      "probability_delta": 1.1627510249729994e-05,
+      "first_order_confidence": 0.9999935069566848
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "763",
+      "flip": false,
+      "probability_delta": 0.025128941699312346,
+      "first_order_confidence": 0.6157839463746969
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "764",
+      "flip": false,
+      "probability_delta": 2.4810689427870297e-05,
+      "first_order_confidence": 0.9999964662193933
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "765",
+      "flip": false,
+      "probability_delta": 0.00023796391155972744,
+      "first_order_confidence": 0.9999809116471051
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "766",
+      "flip": false,
+      "probability_delta": 0.006357922296157914,
+      "first_order_confidence": 0.9967894893196757
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "767",
+      "flip": false,
+      "probability_delta": 0.009103627089704136,
+      "first_order_confidence": 0.9408319155217393
+    },
+    {
+      "image_id": "COCO_val2014_000000518177.jpg",
+      "id": "768",
+      "flip": false,
+      "probability_delta": 5.742254435220791e-05,
+      "first_order_confidence": 0.9999821933490599
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1735",
+      "flip": false,
+      "probability_delta": 0.0001048740465453557,
+      "first_order_confidence": 0.9993214154733464
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1736",
+      "flip": false,
+      "probability_delta": 0.00016558962531285667,
+      "first_order_confidence": 0.999969001013239
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1737",
+      "flip": false,
+      "probability_delta": 0.00044217137878088675,
+      "first_order_confidence": 0.9991593626271897
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1738",
+      "flip": false,
+      "probability_delta": 0.0001426262106554693,
+      "first_order_confidence": 0.9999531898724346
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1739",
+      "flip": false,
+      "probability_delta": 1.8549302370329812e-05,
+      "first_order_confidence": 0.9999238742221578
+    },
+    {
+      "image_id": "COCO_val2014_000000431615.jpg",
+      "id": "1740",
+      "flip": false,
+      "probability_delta": 0.004792718299995157,
+      "first_order_confidence": 0.9980223934168451
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1213",
+      "flip": false,
+      "probability_delta": 0.018787474840814222,
+      "first_order_confidence": 0.9744759019844603
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1214",
+      "flip": false,
+      "probability_delta": 1.5971629532126962e-05,
+      "first_order_confidence": 0.9999938112022092
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1215",
+      "flip": false,
+      "probability_delta": 0.05067642849554432,
+      "first_order_confidence": 0.7860312434132555
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1216",
+      "flip": false,
+      "probability_delta": 0.0015959989741305017,
+      "first_order_confidence": 0.9998168200573665
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1217",
+      "flip": false,
+      "probability_delta": 0.02182733623761457,
+      "first_order_confidence": 0.618468135505654
+    },
+    {
+      "image_id": "COCO_val2014_000000112664.jpg",
+      "id": "1218",
+      "flip": false,
+      "probability_delta": 0.0001801279217710972,
+      "first_order_confidence": 0.9999525405477189
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1135",
+      "flip": false,
+      "probability_delta": 0.0052331632290208985,
+      "first_order_confidence": 0.9861626121285166
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1136",
+      "flip": false,
+      "probability_delta": 1.6510417896678392e-05,
+      "first_order_confidence": 0.9999963494669066
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1137",
+      "flip": false,
+      "probability_delta": 2.1897178928198535e-05,
+      "first_order_confidence": 0.9997640894470717
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1138",
+      "flip": false,
+      "probability_delta": 5.731770009253699e-06,
+      "first_order_confidence": 0.9999915503366129
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1139",
+      "flip": false,
+      "probability_delta": 0.0014232109732108026,
+      "first_order_confidence": 0.9996945118834474
+    },
+    {
+      "image_id": "COCO_val2014_000000246145.jpg",
+      "id": "1140",
+      "flip": false,
+      "probability_delta": 1.1573896304742983e-05,
+      "first_order_confidence": 0.9999946751554764
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2263",
+      "flip": false,
+      "probability_delta": 7.477014126726437e-05,
+      "first_order_confidence": 0.9999655408496252
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2264",
+      "flip": false,
+      "probability_delta": 7.35450809675508e-05,
+      "first_order_confidence": 0.9999867855467872
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2265",
+      "flip": false,
+      "probability_delta": 9.177244158686815e-05,
+      "first_order_confidence": 0.9996623503603442
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2266",
+      "flip": false,
+      "probability_delta": 0.0018198955712530206,
+      "first_order_confidence": 0.9995583984585872
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2267",
+      "flip": false,
+      "probability_delta": 0.0008430528239977697,
+      "first_order_confidence": 0.9978634199893056
+    },
+    {
+      "image_id": "COCO_val2014_000000235541.jpg",
+      "id": "2268",
+      "flip": false,
+      "probability_delta": 5.057468894202615e-05,
+      "first_order_confidence": 0.999990826689137
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2851",
+      "flip": false,
+      "probability_delta": 0.004275875937844509,
+      "first_order_confidence": 0.9870930449197306
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2852",
+      "flip": false,
+      "probability_delta": 1.3335507634567792e-05,
+      "first_order_confidence": 0.9999957474140543
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2853",
+      "flip": false,
+      "probability_delta": 0.0007857373984890836,
+      "first_order_confidence": 0.9992076564474397
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2854",
+      "flip": false,
+      "probability_delta": 3.2076834189471835e-05,
+      "first_order_confidence": 0.9999885067290488
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2855",
+      "flip": false,
+      "probability_delta": 2.2625370562745495e-05,
+      "first_order_confidence": 0.9977932749129359
+    },
+    {
+      "image_id": "COCO_val2014_000000125572.jpg",
+      "id": "2856",
+      "flip": false,
+      "probability_delta": 7.389540634540253e-05,
+      "first_order_confidence": 0.9999792181593725
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2083",
+      "flip": false,
+      "probability_delta": 1.0884113994857891e-05,
+      "first_order_confidence": 0.9999599674718901
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2084",
+      "flip": false,
+      "probability_delta": 0.07421783309243402,
+      "first_order_confidence": 0.7945615482506112
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2085",
+      "flip": false,
+      "probability_delta": 0.00015544601799566404,
+      "first_order_confidence": 0.9993394439524241
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2086",
+      "flip": false,
+      "probability_delta": 0.00010219385700893886,
+      "first_order_confidence": 0.9999796767419785
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2087",
+      "flip": false,
+      "probability_delta": 0.03582555033715598,
+      "first_order_confidence": 0.9653554630139136
+    },
+    {
+      "image_id": "COCO_val2014_000000433574.jpg",
+      "id": "2088",
+      "flip": false,
+      "probability_delta": 0.0014500080584741047,
+      "first_order_confidence": 0.9998655190858315
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2677",
+      "flip": false,
+      "probability_delta": 6.477670641658051e-06,
+      "first_order_confidence": 0.9999565775616414
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2678",
+      "flip": false,
+      "probability_delta": 4.4989347386478706e-05,
+      "first_order_confidence": 0.9999930066539618
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2679",
+      "flip": false,
+      "probability_delta": 0.012982874140537426,
+      "first_order_confidence": 0.9896374977413854
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2680",
+      "flip": false,
+      "probability_delta": 9.784304623523604e-05,
+      "first_order_confidence": 0.9999553557681188
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2681",
+      "flip": false,
+      "probability_delta": 0.04065835324822731,
+      "first_order_confidence": 0.8413957045257712
+    },
+    {
+      "image_id": "COCO_val2014_000000224155.jpg",
+      "id": "2682",
+      "flip": false,
+      "probability_delta": 0.0003048425886807577,
+      "first_order_confidence": 0.9999684691151562
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "85",
+      "flip": false,
+      "probability_delta": 1.5357388290282437e-05,
+      "first_order_confidence": 0.9999302454018073
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "86",
+      "flip": false,
+      "probability_delta": 0.0008643899645223111,
+      "first_order_confidence": 0.999825105648857
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "87",
+      "flip": false,
+      "probability_delta": 0.0002648150984817521,
+      "first_order_confidence": 0.9992314269456222
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "88",
+      "flip": false,
+      "probability_delta": 0.012928445919018643,
+      "first_order_confidence": 0.9919611905053206
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "89",
+      "flip": false,
+      "probability_delta": 3.106481650627657e-05,
+      "first_order_confidence": 0.9997302895117465
+    },
+    {
+      "image_id": "COCO_val2014_000000219622.jpg",
+      "id": "90",
+      "flip": false,
+      "probability_delta": 0.009700725897210605,
+      "first_order_confidence": 0.9093826213183385
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2353",
+      "flip": false,
+      "probability_delta": 0.00016969680763223582,
+      "first_order_confidence": 0.9996167873037566
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2354",
+      "flip": false,
+      "probability_delta": 2.2183705090255942e-06,
+      "first_order_confidence": 0.9999988616659703
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2355",
+      "flip": false,
+      "probability_delta": 0.09046740526874175,
+      "first_order_confidence": 0.7700736081361709
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2356",
+      "flip": false,
+      "probability_delta": 1.3382873442162657e-05,
+      "first_order_confidence": 0.999996352765789
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2357",
+      "flip": false,
+      "probability_delta": 0.0004604013819343722,
+      "first_order_confidence": 0.9978081921293374
+    },
+    {
+      "image_id": "COCO_val2014_000000044993.jpg",
+      "id": "2358",
+      "flip": false,
+      "probability_delta": 3.1197053242903356e-06,
+      "first_order_confidence": 0.9999970268437443
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2443",
+      "flip": false,
+      "probability_delta": 0.0002891924316028214,
+      "first_order_confidence": 0.9999774409200921
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2444",
+      "flip": false,
+      "probability_delta": 2.5705513928657323e-05,
+      "first_order_confidence": 0.9999852421146749
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2445",
+      "flip": false,
+      "probability_delta": 0.00031739835072353006,
+      "first_order_confidence": 0.999604217348586
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2446",
+      "flip": false,
+      "probability_delta": 0.037680045738208566,
+      "first_order_confidence": 0.9438951089431904
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2447",
+      "flip": false,
+      "probability_delta": 0.002400060002825777,
+      "first_order_confidence": 0.9954226955507913
+    },
+    {
+      "image_id": "COCO_val2014_000000238029.jpg",
+      "id": "2448",
+      "flip": false,
+      "probability_delta": 0.1351417415463429,
+      "first_order_confidence": 0.5183199851234745
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "139",
+      "flip": false,
+      "probability_delta": 0.0007146240955313576,
+      "first_order_confidence": 0.9947969912348078
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "140",
+      "flip": false,
+      "probability_delta": 1.476393523330363e-06,
+      "first_order_confidence": 0.9999991312944004
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "141",
+      "flip": false,
+      "probability_delta": 0.0069371195136644775,
+      "first_order_confidence": 0.9982779731244162
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "142",
+      "flip": false,
+      "probability_delta": 2.540129494231577e-05,
+      "first_order_confidence": 0.9999959366234449
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "143",
+      "flip": false,
+      "probability_delta": 0.0022916866787946466,
+      "first_order_confidence": 0.992794903471781
+    },
+    {
+      "image_id": "COCO_val2014_000000542145.jpg",
+      "id": "144",
+      "flip": false,
+      "probability_delta": 4.1628979736638486e-05,
+      "first_order_confidence": 0.9999906471015105
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2251",
+      "flip": false,
+      "probability_delta": 0.0077206657350797625,
+      "first_order_confidence": 0.7567913876374907
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2252",
+      "flip": false,
+      "probability_delta": 7.911490458493033e-05,
+      "first_order_confidence": 0.9999914468700423
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2253",
+      "flip": false,
+      "probability_delta": 0.0018740884381290845,
+      "first_order_confidence": 0.9803434894397941
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2254",
+      "flip": false,
+      "probability_delta": 3.468329355398058e-05,
+      "first_order_confidence": 0.9999909870268812
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2255",
+      "flip": false,
+      "probability_delta": 3.868017416264191e-05,
+      "first_order_confidence": 0.9999594375417468
+    },
+    {
+      "image_id": "COCO_val2014_000000199940.jpg",
+      "id": "2256",
+      "flip": false,
+      "probability_delta": 0.0007527879517867197,
+      "first_order_confidence": 0.9998657753089594
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "277",
+      "flip": false,
+      "probability_delta": 0.03130710825698124,
+      "first_order_confidence": 0.8831092486047311
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "278",
+      "flip": false,
+      "probability_delta": 0.0001391382809963186,
+      "first_order_confidence": 0.999980052936599
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "279",
+      "flip": false,
+      "probability_delta": 0.04585000584085608,
+      "first_order_confidence": 0.79041058943778
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "280",
+      "flip": false,
+      "probability_delta": 0.0021472451773030684,
+      "first_order_confidence": 0.9998901378946191
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "281",
+      "flip": false,
+      "probability_delta": 0.0012982444939910742,
+      "first_order_confidence": 0.9879056547977945
+    },
+    {
+      "image_id": "COCO_val2014_000000424792.jpg",
+      "id": "282",
+      "flip": false,
+      "probability_delta": 0.006716813345387207,
+      "first_order_confidence": 0.5966112643653663
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1969",
+      "flip": false,
+      "probability_delta": 0.0008911647139948631,
+      "first_order_confidence": 0.996484075646497
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1970",
+      "flip": false,
+      "probability_delta": 0.0016371254010690778,
+      "first_order_confidence": 0.9995380157862936
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1971",
+      "flip": false,
+      "probability_delta": 0.001388974706069357,
+      "first_order_confidence": 0.9978834749635969
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1972",
+      "flip": false,
+      "probability_delta": 4.528613063886115e-06,
+      "first_order_confidence": 0.9999972279042395
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1973",
+      "flip": false,
+      "probability_delta": 0.05402829097077477,
+      "first_order_confidence": 0.9305549516207127
+    },
+    {
+      "image_id": "COCO_val2014_000000044801.jpg",
+      "id": "1974",
+      "flip": false,
+      "probability_delta": 4.200914708140336e-05,
+      "first_order_confidence": 0.9999824706812905
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2845",
+      "flip": false,
+      "probability_delta": 0.00022904920432831322,
+      "first_order_confidence": 0.9989865868464689
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2846",
+      "flip": false,
+      "probability_delta": 8.326503003976658e-06,
+      "first_order_confidence": 0.9999954966057636
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2847",
+      "flip": false,
+      "probability_delta": 0.0001934716957123772,
+      "first_order_confidence": 0.9995121577579456
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2848",
+      "flip": false,
+      "probability_delta": 0.0005360040209959655,
+      "first_order_confidence": 0.9997743516322822
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2849",
+      "flip": false,
+      "probability_delta": 0.012098845755066479,
+      "first_order_confidence": 0.9701725874890044
+    },
+    {
+      "image_id": "COCO_val2014_000000264155.jpg",
+      "id": "2850",
+      "flip": false,
+      "probability_delta": 0.0003961711259610442,
+      "first_order_confidence": 0.999820807231123
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "67",
+      "flip": false,
+      "probability_delta": 0.040939077933466295,
+      "first_order_confidence": 0.8541144052205903
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "68",
+      "flip": false,
+      "probability_delta": 0.0008709197898789868,
+      "first_order_confidence": 0.9996401325113657
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "69",
+      "flip": false,
+      "probability_delta": 0.004083047606505907,
+      "first_order_confidence": 0.9925393706599294
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "70",
+      "flip": false,
+      "probability_delta": 0.00012297527260495366,
+      "first_order_confidence": 0.9999699341435666
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "71",
+      "flip": false,
+      "probability_delta": 8.902516070385946e-05,
+      "first_order_confidence": 0.9999012164596115
+    },
+    {
+      "image_id": "COCO_val2014_000000353180.jpg",
+      "id": "72",
+      "flip": false,
+      "probability_delta": 0.032785926646147004,
+      "first_order_confidence": 0.9830459353127147
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "751",
+      "flip": false,
+      "probability_delta": 0.001392431656020876,
+      "first_order_confidence": 0.9897007004917973
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "752",
+      "flip": false,
+      "probability_delta": 0.00369567267376811,
+      "first_order_confidence": 0.9993896290599524
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "753",
+      "flip": false,
+      "probability_delta": 0.00039574842406719934,
+      "first_order_confidence": 0.9935200488820066
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "754",
+      "flip": false,
+      "probability_delta": 0.06007068030718232,
+      "first_order_confidence": 0.6048881582577491
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "755",
+      "flip": false,
+      "probability_delta": 2.973800598993215e-06,
+      "first_order_confidence": 0.9999437253241907
+    },
+    {
+      "image_id": "COCO_val2014_000000140983.jpg",
+      "id": "756",
+      "flip": false,
+      "probability_delta": 0.0001301641589601206,
+      "first_order_confidence": 0.9999504169448626
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "631",
+      "flip": false,
+      "probability_delta": 0.04177315910733426,
+      "first_order_confidence": 0.5940053821450418
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "632",
+      "flip": false,
+      "probability_delta": 1.0389519100416897e-05,
+      "first_order_confidence": 0.9999963135864128
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "633",
+      "flip": false,
+      "probability_delta": 5.090266304075275e-05,
+      "first_order_confidence": 0.9994092084954551
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "634",
+      "flip": false,
+      "probability_delta": 7.337878760311605e-06,
+      "first_order_confidence": 0.9999981699377631
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "635",
+      "flip": false,
+      "probability_delta": 2.6383477429337e-05,
+      "first_order_confidence": 0.9999336758179239
+    },
+    {
+      "image_id": "COCO_val2014_000000572075.jpg",
+      "id": "636",
+      "flip": false,
+      "probability_delta": 0.0047138364485327855,
+      "first_order_confidence": 0.9995634569750667
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "55",
+      "flip": false,
+      "probability_delta": 3.971250092016376e-05,
+      "first_order_confidence": 0.9999292779612244
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "56",
+      "flip": false,
+      "probability_delta": 1.7979880033714184e-05,
+      "first_order_confidence": 0.9999959586208819
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "57",
+      "flip": false,
+      "probability_delta": 0.02468483074088368,
+      "first_order_confidence": 0.9695673035369401
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "58",
+      "flip": false,
+      "probability_delta": 3.479572126082184e-05,
+      "first_order_confidence": 0.9999887501172492
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "59",
+      "flip": false,
+      "probability_delta": 7.392585398313667e-05,
+      "first_order_confidence": 0.9999560372348719
+    },
+    {
+      "image_id": "COCO_val2014_000000017708.jpg",
+      "id": "60",
+      "flip": false,
+      "probability_delta": 0.00012337850679454204,
+      "first_order_confidence": 0.9999627417316995
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1681",
+      "flip": false,
+      "probability_delta": 9.68355681701949e-05,
+      "first_order_confidence": 0.9992275250817927
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1682",
+      "flip": false,
+      "probability_delta": 5.9235664556878444e-05,
+      "first_order_confidence": 0.9999875847157003
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1683",
+      "flip": false,
+      "probability_delta": 0.0015829170307233298,
+      "first_order_confidence": 0.5908783417523125
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1684",
+      "flip": false,
+      "probability_delta": 9.517917086075986e-05,
+      "first_order_confidence": 0.9999899583063929
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1685",
+      "flip": false,
+      "probability_delta": 4.289763093967558e-05,
+      "first_order_confidence": 0.9998342958826055
+    },
+    {
+      "image_id": "COCO_val2014_000000338291.jpg",
+      "id": "1686",
+      "flip": true,
+      "probability_delta": 0.21899296782663807,
+      "first_order_confidence": 0.6854977149577346
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1033",
+      "flip": false,
+      "probability_delta": 0.0001760300451114638,
+      "first_order_confidence": 0.9994558749127871
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1034",
+      "flip": false,
+      "probability_delta": 0.0008349151339293042,
+      "first_order_confidence": 0.9998661291167157
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1035",
+      "flip": false,
+      "probability_delta": 0.08438618205277071,
+      "first_order_confidence": 0.8122721051991718
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1036",
+      "flip": false,
+      "probability_delta": 2.9842751044710164e-05,
+      "first_order_confidence": 0.9999936073287227
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1037",
+      "flip": false,
+      "probability_delta": 0.07383381262830091,
+      "first_order_confidence": 0.7642461524629455
+    },
+    {
+      "image_id": "COCO_val2014_000000506178.jpg",
+      "id": "1038",
+      "flip": false,
+      "probability_delta": 0.06891610310586038,
+      "first_order_confidence": 0.6438376860672329
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2293",
+      "flip": false,
+      "probability_delta": 0.0005577145492077218,
+      "first_order_confidence": 0.9986493886393317
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2294",
+      "flip": false,
+      "probability_delta": 7.83908377217873e-05,
+      "first_order_confidence": 0.999986640410903
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2295",
+      "flip": false,
+      "probability_delta": 7.259609591003802e-05,
+      "first_order_confidence": 0.9998196636138651
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2296",
+      "flip": false,
+      "probability_delta": 0.05717922703753476,
+      "first_order_confidence": 0.9770301221961205
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2297",
+      "flip": false,
+      "probability_delta": 1.9565785272401826e-05,
+      "first_order_confidence": 0.9999076752355673
+    },
+    {
+      "image_id": "COCO_val2014_000000390157.jpg",
+      "id": "2298",
+      "flip": false,
+      "probability_delta": 0.00013154017955369546,
+      "first_order_confidence": 0.9999793590660944
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1297",
+      "flip": false,
+      "probability_delta": 0.015784795384048644,
+      "first_order_confidence": 0.8961244961047767
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1298",
+      "flip": false,
+      "probability_delta": 0.0008069972481312234,
+      "first_order_confidence": 0.9999601774244572
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1299",
+      "flip": false,
+      "probability_delta": 0.00022207502478466257,
+      "first_order_confidence": 0.9996265771109544
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1300",
+      "flip": false,
+      "probability_delta": 0.00011096327447927897,
+      "first_order_confidence": 0.9999796836018274
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1301",
+      "flip": false,
+      "probability_delta": 0.003089302573224373,
+      "first_order_confidence": 0.9528642681542346
+    },
+    {
+      "image_id": "COCO_val2014_000000313034.jpg",
+      "id": "1302",
+      "flip": false,
+      "probability_delta": 4.007181917460507e-06,
+      "first_order_confidence": 0.9999980838518646
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1501",
+      "flip": false,
+      "probability_delta": 0.05497668735173672,
+      "first_order_confidence": 0.9482093558333106
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1502",
+      "flip": false,
+      "probability_delta": 2.4104701922215117e-06,
+      "first_order_confidence": 0.9999985023038598
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1503",
+      "flip": false,
+      "probability_delta": 8.632093161786702e-05,
+      "first_order_confidence": 0.9993814737829636
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1504",
+      "flip": false,
+      "probability_delta": 1.4048754087847716e-05,
+      "first_order_confidence": 0.9999963698525957
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1505",
+      "flip": false,
+      "probability_delta": 0.022991618141778192,
+      "first_order_confidence": 0.8346507823682101
+    },
+    {
+      "image_id": "COCO_val2014_000000384040.jpg",
+      "id": "1506",
+      "flip": false,
+      "probability_delta": 0.000510964454729753,
+      "first_order_confidence": 0.9997927964553004
+    }
+  ]
+}

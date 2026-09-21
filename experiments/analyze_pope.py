@@ -48,11 +48,17 @@ def paired_accuracy(reference, candidate, truth, split):
             'choice_flips': flips, 'improved': improved, 'regressed': regressed}
 
 
-def analyze(predictions, labels):
+def analyze(predictions, labels, development_images=None):
     truth = {r['question_id']: r for r in labels}
     if len(truth) != len(labels):
         raise ValueError('Duplicate ground truth ID')
     result = {'scope': 'Recorded POPE COCO images; sample size and variants specified by input artifacts', 'modes': {}}
+    development_images = set(development_images or ())
+    if development_images:
+        result['development_overlap'] = {
+            'previously_used_images': len(development_images),
+            'calibration_image_overlap': len({r['image_id'] for r in labels if r['split'] == 'calibration'} & development_images),
+            'test_image_overlap': len({r['image_id'] for r in labels if r['split'] == 'test'} & development_images)}
     modes = sorted({r['mode'] for r in predictions})
     if not {'independent','shared'} <= set(modes):
         raise ValueError('Both independent and shared records are required')
@@ -78,6 +84,26 @@ def analyze(predictions, labels):
             'images': len(records), 'latency_p50_ms': statistics.median(latency),
             'latency_p95_ms': percentile(latency, .95), 'total_ms': sum(latency),
             'vision_forward_calls': sum(r['metrics']['vision_forward_calls'] for r in records)}
+        if development_images:
+            held = [a for a in test if truth[a['id']]['image_id'] not in development_images]
+            result['modes'][mode]['test_excluding_development_images'] = {
+                'images': len({truth[a['id']]['image_id'] for a in held}),
+                'raw': binary_metrics([a['noul'] for a in held], ys(held)),
+                'temperature_scaled': binary_metrics([normalized(a['candidate_logits'], temp)[0] for a in held], ys(held))}
+        unique_prompts, duplicate_groups, inconsistent_choices, max_delta = 0, 0, 0, 0.0
+        for row in records:
+            groups = {}
+            for answer in row['answers']:
+                groups.setdefault(answer['prompt_sha256'], []).append(answer)
+            unique_prompts += len(groups)
+            for group in groups.values():
+                if len(group) > 1:
+                    duplicate_groups += 1
+                    inconsistent_choices += len({a['choice'] for a in group}) > 1
+                    max_delta = max(max_delta, max(a['noul'] for a in group)-min(a['noul'] for a in group))
+        result['modes'][mode]['within_image_repeated_prompts'] = {
+            'distinct_image_prompt_pairs': unique_prompts, 'repeated_prompt_groups': duplicate_groups,
+            'groups_with_choice_disagreement': inconsistent_choices, 'max_probability_range': max_delta}
         variants=sorted({truth[a['id']].get('variant','random') for a in answers})
         result['modes'][mode]['variants']={}
         for variant in variants:
@@ -115,8 +141,10 @@ def analyze(predictions, labels):
 if __name__ == '__main__':
     p = argparse.ArgumentParser()
     p.add_argument('--predictions', required=True); p.add_argument('--labels', required=True); p.add_argument('--output', required=True)
+    p.add_argument('--development-labels', help='Earlier pilot labels; additionally report test images outside this development set')
     args = p.parse_args()
     load = lambda path: [json.loads(s) for s in Path(path).read_text().splitlines()]
-    summary = analyze(load(args.predictions), load(args.labels))
+    development_images = {r['image_id'] for r in load(args.development_labels)} if args.development_labels else None
+    summary = analyze(load(args.predictions), load(args.labels), development_images)
     Path(args.output).write_text(json.dumps(summary, indent=2)+'\n')
     print(json.dumps(summary, indent=2))

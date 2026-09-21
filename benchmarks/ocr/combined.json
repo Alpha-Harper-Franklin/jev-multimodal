@@ -1,0 +1,163 @@
+{
+  "context": {},
+  "evidence": [
+    {
+      "source_id": "screen",
+      "revision": "3",
+      "modality": "image",
+      "extractor": "tesseract:4.1.1",
+      "content_sha256": "455df24d1e34aec3ec82aece9434b7913f4f212091df8504deba6b911a167777",
+      "data": {
+        "words": [
+          {
+            "text": "SERVICE",
+            "bbox_xywh": [
+              32,
+              44,
+              124,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "HOURS",
+            "bbox_xywh": [
+              166,
+              44,
+              104,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "09:00",
+            "bbox_xywh": [
+              279,
+              44,
+              80,
+              23
+            ],
+            "ocr_score": 93.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "-",
+            "bbox_xywh": [
+              369,
+              57,
+              7,
+              2
+            ],
+            "ocr_score": 93.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "17:00",
+            "bbox_xywh": [
+              388,
+              44,
+              77,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "UTC",
+            "bbox_xywh": [
+              477,
+              44,
+              58,
+              23
+            ],
+            "ocr_score": 95.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "REFUND",
+            "bbox_xywh": [
+              33,
+              109,
+              119,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "DEADLINE",
+            "bbox_xywh": [
+              163,
+              109,
+              147,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "90",
+            "bbox_xywh": [
+              319,
+              109,
+              34,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          },
+          {
+            "text": "DAYS",
+            "bbox_xywh": [
+              365,
+              109,
+              75,
+              23
+            ],
+            "ocr_score": 96.0,
+            "score_semantics": "OCR engine score, not calibrated correctness"
+          }
+        ],
+        "width": 900,
+        "height": 210,
+        "text": "SERVICE HOURS 09:00 - 17:00 UTC REFUND DEADLINE 90 DAYS"
+      },
+      "locator": {
+        "frame": 0
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "Service window: 09:00 to 17:00 UTC.\nRefund deadline: 30 days after purchase.",
+        "needs_ocr": false
+      },
+      "locator": {
+        "page": 1
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "",
+        "needs_ocr": true
+      },
+      "locator": {
+        "page": 2
+      },
+      "observed_at": null
+    }
+  ]
+}

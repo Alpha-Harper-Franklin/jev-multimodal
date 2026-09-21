@@ -1,0 +1,6 @@
+[
+  {"id":"screen_deadline","type":"choice","instructions":"According only to OCR evidence from source_id screen, what refund deadline is written?","criteria":{"seven":"7 days","thirty":"30 days","ninety":"90 days","unknown":"Not specified"}},
+  {"id":"document_deadline","type":"choice","instructions":"According only to PDF evidence from source_id document, what refund deadline is written?","criteria":{"seven":"7 days","thirty":"30 days","ninety":"90 days","unknown":"Not specified"}},
+  {"id":"disagree","type":"noul","instructions":"Do the screen and document sources state different refund deadlines?"},
+  {"id":"screen_fields","type":"score","instructions":"How many of these two fields are explicitly present in the screen OCR evidence: service hours; refund deadline?","criteria":["Neither field is present","Exactly one field is present","Both fields are present"]}
+]

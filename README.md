@@ -3,9 +3,25 @@
 **Make typed decisions over images, documents and speech. Share visual computation across questions, then combine evidence in Jev.**
 
 [![Tests](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml/badge.svg)](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml)
-[Source review 中文](research/SOURCE_REVIEW.zh-CN.md) · [Measurements](benchmarks/README.md) · [Credits](THIRD_PARTY.md)
+[Source review 中文](research/SOURCE_REVIEW.zh-CN.md) · [Measurements](benchmarks/pope500-all/README.md) · [Research protocol](research/RESEARCH_PROTOCOL.md) · [Credits](THIRD_PARTY.md)
 
 CUDA inference with **Choice, Noul and Score**, ordered image inputs, a hosted TypeSafe Jev adapter, PDF/ASR extraction, provenance and freshness handling. **Hosted Jev remains text-only.** Local visual decisions use Qwen2.5-VL; the optional Jev stage receives extracted evidence.
+
+## Measured on 500 images
+
+Complete COCO random, popular and adversarial POPE variants: **9,000 question IDs, 27,000 recorded answers** across three modes. One RTX 4090, Qwen2.5-VL-7B, 18 questions per image. The test split has 250 images / 4,500 questions.
+
+| Local visual backend | Test accuracy | Median request time |
+|---|---:|---:|
+| Independent full forwards | 87.89% | 1,827 ms |
+| Ordinary full-prompt batching | 87.93% | 1,580 ms |
+| Shared visual prefix + question branches | 87.91% | **271 ms** |
+
+**5.95× paired median speedup over ordinary batching**; 6.83× over independent forwards. Shared mode makes one additional test error versus ordinary batching. These are computation-reuse results, not evidence of a general accuracy gain or a comparison against every community implementation.
+
+![Measured latency and F1](benchmarks/pope500-all/comparison.png)
+
+Question text repeats across variants; there are 5,127 distinct image/prompt pairs. Two test images overlap the earlier development pilot. The [complete report](benchmarks/pope500-all/README.md) includes the 248-image slice excluding that overlap, image-cluster confidence intervals, per-variant F1, calibration, abstention, numerical differences and all raw predictions.
 
 ## Multiple images and typed outputs
 
@@ -17,22 +33,11 @@ python -m jev_multimodal vision --model /path/to/model --image first.jpg second.
 
 Questions can explicitly refer to image 1 or image 2. The backend accepts 1–8 ordered images; the recorded integration and grounding experiments cover one and two. Independent photographs do not establish video or motion understanding.
 
-## Measured on real images
+## When to add Jev
 
-One RTX 4090, Qwen2.5-VL-7B, 64 COCO images from a deterministic POPE random subset, six questions per image. The last 32 images / 192 questions form the isolated test split. This is a development experiment, not the full POPE benchmark.
+Use the hosted stage for further semantic decisions over combined evidence. In the earlier [64-image caption/evidence comparison](benchmarks/README.md), the compact bridge preserved direct-vision test accuracy, added latency and used 1.73× the input tokens of generic captions. The generic caption baseline did not see the task questions; the visual scorer did. This does not establish superiority over question-conditioned captioning.
 
-| Pipeline | Test accuracy | Median time per image, six questions |
-|---|---:|---:|
-| Qwen independent visual forwards | 91.15% | 611 ms |
-| Qwen shared visual prefix + batched question branches | 91.15% | **160 ms** |
-| Qwen generic caption → Jev | 84.90% | 3,134 ms¹ |
-| Qwen compact visual evidence → Jev | **91.15%** | **1,104 ms¹** |
-
-Shared computation gave **3.81× paired median speedup** over independent visual forwards. A single-image scaling diagnostic with 64 repeated questions gave 6,780 → 594 ms; repeated questions are not extra accuracy samples. At one question, cache setup was slower than an independent forward.
-
-¹ Hosted pipeline timing sums separately measured frontend and API components, not single-process wall time. API phases ran separately with two workers. Both final hosted pipelines returned 64/64 validated responses; earlier failures are retained. See [the full report](benchmarks/README.md).
-
-Direct visual inference remains fastest and has the same test accuracy as the Jev bridge. Compact evidence uses **1.73× the input tokens of captions** here. Jev is useful when an application needs further semantic decisions over combined evidence; adding it is not automatically an improvement.
+The [OCR + PDF example](benchmarks/ocr/README.md) gives Jev two sources with different refund deadlines. A single request correctly distinguishes their values, detects disagreement and returns a typed Score. It is a controlled integration example, not a cross-modal reasoning benchmark.
 
 ## Quick start
 
@@ -90,7 +95,7 @@ python -m jev_multimodal judge --evidence runs/speech.json --questions examples/
 
 Optional local audio recognition uses `pip install '.[audio]'` and `extract audio recording.wav --asr-model /path/to/faster-whisper ...`. PDF extraction preserves page numbers and marks textless pages `needs_ocr`; OCR preserves word boxes and engine scores; transcript/audio adapters preserve segment times. Raw image/audio bytes are never sent to hosted Jev.
 
-PDF and real-audio extraction have been run through a combined Jev request: page numbers, blank-page flags and ASR segment times were preserved. [Reproducible integration fixture](benchmarks/adapters/README.md). OCR is implemented but the Tesseract runtime has not been validated here. There is no live camera loop, native video backbone, robot controller, or trained model released here.
+PDF and real-audio extraction have been run through a combined Jev request: page numbers, blank-page flags and ASR segment times were preserved. [Reproducible integration fixture](benchmarks/adapters/README.md). Real Tesseract OCR, word boxes, content-cache invalidation and an OCR/PDF conflict request also passed their [integration checks](benchmarks/ocr/README.md). There is no live camera loop, native video backbone, robot controller, or trained model released here.
 
 ## Combine modalities
 
@@ -130,7 +135,7 @@ python experiments/run_pope.py --model /path/to/model --manifest runs/pope64/man
 python experiments/analyze_pope.py --predictions runs/paired/predictions.jsonl --labels runs/pope64/labels.jsonl --output runs/summary.json
 ```
 
-See [benchmark reproduction](benchmarks/README.md) for caption and hosted API experiments. Use new output paths. Ground truth never enters inference. Temperature fits use calibration image groups only; they do not change argmax accuracy or guarantee calibration elsewhere. BF16 transformer branching is numerically approximate: 383/384 choices agreed with independent forwards in this run.
+See the [full COCO protocol](benchmarks/pope500-all/README.md) for the three-mode experiment and [hosted reproduction](benchmarks/README.md) for caption/API comparisons. Use new output paths. Ground truth never enters inference. Temperature fits use calibration image groups only; they do not change argmax accuracy or guarantee calibration elsewhere. BF16 computation is approximate, and [candidate-order sensitivity](benchmarks/candidate-order32/README.md) is measured separately.
 
 ## What was borrowed
 
@@ -140,6 +145,6 @@ Shared visual prefixes, batched branches, candidate readout and temperature scal
 
 ## 中文
 
-可运行的 Jev 多模态接口与实验基线：图片先在本地共享视觉计算，再按需把紧凑证据交给 Jev。目前实测重点是多问题吞吐、证据形式、概率校准和输入新鲜度。不是新训练的多模态基础模型，也没有驾驶或机器人闭环成绩。后续需要补齐真实时序、多模态冲突、分布变化与训练决策头比较，不能由这批小样本结果推出顶会或通用性能结论。
+已完成 500 张图、三种 POPE 难度、9,000 个题目编号的三基线评测；支持多图、Choice/Noul/Score，以及真实 PDF、OCR、音频转录与 Jev 证据合并。相对普通批量推理的逐图加速中位数为 5.95 倍，测试准确率基本相当。研究下一步是带独立真值的时序证据与观测选择，详见研究协议；目前没有新训练模型或驾驶、机器人闭环成绩。
 
 Independent community project, not affiliated with TypeSafe. MIT code; external models, libraries and datasets retain their own licenses. See [THIRD_PARTY.md](THIRD_PARTY.md).

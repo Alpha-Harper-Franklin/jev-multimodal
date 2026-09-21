@@ -1,4 +1,6 @@
-# Recorded public-image experiments
+# Historical 64-image pilot and hosted Jev comparison
+
+For the current 500-image, three-mode COCO evaluation, see [the complete report](pope500-all/README.md). This page retains the earlier pilot, API experiments and their failures.
 
 Run date: 2026-09-21. These results support an engineering comparison on a small development subset. They do not establish a new model, state-of-the-art accuracy, temporal competence or driving performance.
 

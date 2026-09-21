@@ -18,4 +18,4 @@ python -m jev_multimodal merge --evidence runs/adapters/document.json runs/adapt
 python -m jev_multimodal judge --evidence runs/combined.json --questions examples/mixed_evidence_questions.json --output runs/decisions.json
 ```
 
-Recorded extraction took 10 ms for the PDF and 3,233 ms for audio including CPU model loading. The separate API call took 771 ms. These are single integration runs and not latency distributions. OCR remains an optional implemented adapter without a validated Tesseract runtime in this release environment.
+Recorded extraction took 10 ms for the PDF and 3,233 ms for audio including CPU model loading. The separate API call took 771 ms. These are single integration runs and not latency distributions. The separate [OCR integration](../ocr/README.md) validates Tesseract extraction, boxes, cache invalidation and a real hosted source-conflict request.

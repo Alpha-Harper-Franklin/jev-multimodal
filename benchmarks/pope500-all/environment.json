@@ -1,0 +1,27 @@
+{
+  "python": "3.10.12",
+  "torch": "2.13.0+cu130",
+  "transformers": "5.15.0",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "model": "Qwen2.5-VL-7B-Instruct",
+  "model_config_sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+  "source_sha256": {
+    "jev_multimodal/__init__.py": "8758074efb632a1b6e3f26428688ca3d50fa634da8909d9b0d0c4e54ec2c13bd",
+    "jev_multimodal/__main__.py": "736a87bb8f455af6155bebb3721901931ca6254e455a5da82c24355e4a6d2cdf",
+    "jev_multimodal/evidence.py": "afa8246766149d356f0602eb8c1fe77bc7aaa2ac9974f2c2db442830add17359",
+    "jev_multimodal/cuda_qwen.py": "e44f72dfd2f32d358ab61505d3941f3339c47de563c95863975569789db5c002",
+    "jev_multimodal/schema.py": "ae61dff13069d8a6ff49ccbdc1e5a8adc657d7fa230cc41931971fe4453fc93e",
+    "jev_multimodal/typesafe.py": "b725bbbe6403517597fb372fdc4d153c3fdfb04931986b11e27adfd87d8b5efb",
+    "jev_multimodal/adapters.py": "584ea4e7feabeb45530651c34f1e506371a21ffa8803c928cef2811560a64a65",
+    "jev_multimodal/metrics.py": "84bb99e494a855edb46daec1d705cbc8e1c79fd86e996de4be715a935df967c4"
+  },
+  "batch_size": 8,
+  "manifest_sha256": "6a86d9606464102e8d390acd547de7d150ee66a3412a7ae3d3ba143fad1b777e",
+  "warmup": "first image, all selected modes, excluded from latency",
+  "modes": [
+    "independent",
+    "batched",
+    "shared"
+  ],
+  "order": "rotate mode order by image index"
+}

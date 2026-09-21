@@ -1,0 +1,432 @@
+{
+  "scope": "Shared backend, calibration and test image groups disjoint within this development dataset; thresholds give no guaranteed risk bound",
+  "threshold_grid": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.85,
+    0.9,
+    0.925,
+    0.95,
+    0.975,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "minimum_calibration_acceptances": 50,
+  "protocols": {
+    "all_variants": {
+      "temperature": 2.651167210982607,
+      "calibration_questions": 4500,
+      "targets": {
+        "0.1": {
+          "threshold": 0.6,
+          "calibration": {
+            "total": 4500,
+            "accepted": 4215,
+            "errors": 378,
+            "coverage": 0.9366666666666666,
+            "accepted_error_rate": 0.08967971530249111
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 4182,
+            "errors": 409,
+            "coverage": 0.9293333333333333,
+            "accepted_error_rate": 0.0978000956480153
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 1420,
+              "errors": 123,
+              "coverage": 0.9466666666666667,
+              "accepted_error_rate": 0.08661971830985915
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 1384,
+              "errors": 137,
+              "coverage": 0.9226666666666666,
+              "accepted_error_rate": 0.09898843930635838
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 1378,
+              "errors": 149,
+              "coverage": 0.9186666666666666,
+              "accepted_error_rate": 0.1081277213352685
+            }
+          }
+        },
+        "0.05": {
+          "threshold": 0.85,
+          "calibration": {
+            "total": 4500,
+            "accepted": 3206,
+            "errors": 140,
+            "coverage": 0.7124444444444444,
+            "accepted_error_rate": 0.043668122270742356
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 3221,
+            "errors": 150,
+            "coverage": 0.7157777777777777,
+            "accepted_error_rate": 0.04656938838869916
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 1160,
+              "errors": 48,
+              "coverage": 0.7733333333333333,
+              "accepted_error_rate": 0.041379310344827586
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 1055,
+              "errors": 51,
+              "coverage": 0.7033333333333334,
+              "accepted_error_rate": 0.04834123222748815
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 1006,
+              "errors": 51,
+              "coverage": 0.6706666666666666,
+              "accepted_error_rate": 0.05069582504970179
+            }
+          }
+        },
+        "0.02": {
+          "threshold": null,
+          "calibration": {
+            "total": 4500,
+            "accepted": 0,
+            "errors": 0,
+            "coverage": 0.0,
+            "accepted_error_rate": null
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 0,
+            "errors": 0,
+            "coverage": 0.0,
+            "accepted_error_rate": null
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 0,
+              "errors": 0,
+              "coverage": 0.0,
+              "accepted_error_rate": null
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 0,
+              "errors": 0,
+              "coverage": 0.0,
+              "accepted_error_rate": null
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 0,
+              "errors": 0,
+              "coverage": 0.0,
+              "accepted_error_rate": null
+            }
+          }
+        }
+      },
+      "test_variants": {
+        "random": {
+          "raw": {
+            "n": 1500,
+            "correct": 1344,
+            "accuracy": 0.896,
+            "precision": 0.9837133550488599,
+            "recall": 0.8053333333333333,
+            "f1": 0.8856304985337243,
+            "yes_rate": 0.4093333333333333,
+            "brier": 0.08724332370317935,
+            "nll": 0.422293350117966,
+            "ece_10_top_label": 0.0722259041616555
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1344,
+            "accuracy": 0.896,
+            "precision": 0.9837133550488599,
+            "recall": 0.8053333333333333,
+            "f1": 0.8856304985337243,
+            "yes_rate": 0.4093333333333333,
+            "brier": 0.07703033390115754,
+            "nll": 0.26075602223573024,
+            "ece_10_top_label": 0.01189279418957064
+          }
+        },
+        "popular": {
+          "raw": {
+            "n": 1500,
+            "correct": 1313,
+            "accuracy": 0.8753333333333333,
+            "precision": 0.9364341085271318,
+            "recall": 0.8053333333333333,
+            "f1": 0.8659498207885304,
+            "yes_rate": 0.43,
+            "brier": 0.10200468456799963,
+            "nll": 0.47344952967523773,
+            "ece_10_top_label": 0.0787113493198892
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1313,
+            "accuracy": 0.8753333333333333,
+            "precision": 0.9364341085271318,
+            "recall": 0.8053333333333333,
+            "f1": 0.8659498207885304,
+            "yes_rate": 0.43,
+            "brier": 0.09132067075826093,
+            "nll": 0.3043874674582113,
+            "ece_10_top_label": 0.008328532330677976
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 1500,
+            "correct": 1299,
+            "accuracy": 0.866,
+            "precision": 0.9165402124430956,
+            "recall": 0.8053333333333333,
+            "f1": 0.857345635202271,
+            "yes_rate": 0.43933333333333335,
+            "brier": 0.10794024898674118,
+            "nll": 0.4891308103758626,
+            "ece_10_top_label": 0.08311895560977145
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1299,
+            "accuracy": 0.866,
+            "precision": 0.9165402124430956,
+            "recall": 0.8053333333333333,
+            "f1": 0.857345635202271,
+            "yes_rate": 0.43933333333333335,
+            "brier": 0.09697872665680866,
+            "nll": 0.32210793891792966,
+            "ece_10_top_label": 0.0190415263519681
+          }
+        }
+      }
+    },
+    "random_only": {
+      "temperature": 2.651167210982607,
+      "calibration_questions": 1500,
+      "targets": {
+        "0.1": {
+          "threshold": 0.5,
+          "calibration": {
+            "total": 1500,
+            "accepted": 1500,
+            "errors": 143,
+            "coverage": 1.0,
+            "accepted_error_rate": 0.09533333333333334
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 4500,
+            "errors": 544,
+            "coverage": 1.0,
+            "accepted_error_rate": 0.12088888888888889
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 1500,
+              "errors": 156,
+              "coverage": 1.0,
+              "accepted_error_rate": 0.104
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 1500,
+              "errors": 187,
+              "coverage": 1.0,
+              "accepted_error_rate": 0.12466666666666666
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 1500,
+              "errors": 201,
+              "coverage": 1.0,
+              "accepted_error_rate": 0.134
+            }
+          }
+        },
+        "0.05": {
+          "threshold": 0.8,
+          "calibration": {
+            "total": 1500,
+            "accepted": 1220,
+            "errors": 61,
+            "coverage": 0.8133333333333334,
+            "accepted_error_rate": 0.05
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 3444,
+            "errors": 186,
+            "coverage": 0.7653333333333333,
+            "accepted_error_rate": 0.05400696864111498
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 1222,
+              "errors": 59,
+              "coverage": 0.8146666666666667,
+              "accepted_error_rate": 0.04828150572831424
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 1134,
+              "errors": 63,
+              "coverage": 0.756,
+              "accepted_error_rate": 0.05555555555555555
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 1088,
+              "errors": 64,
+              "coverage": 0.7253333333333334,
+              "accepted_error_rate": 0.058823529411764705
+            }
+          }
+        },
+        "0.02": {
+          "threshold": 0.99,
+          "calibration": {
+            "total": 1500,
+            "accepted": 186,
+            "errors": 2,
+            "coverage": 0.124,
+            "accepted_error_rate": 0.010752688172043012
+          },
+          "test": {
+            "total": 4500,
+            "accepted": 269,
+            "errors": 3,
+            "coverage": 0.05977777777777778,
+            "accepted_error_rate": 0.011152416356877323
+          },
+          "test_variants": {
+            "random": {
+              "total": 1500,
+              "accepted": 185,
+              "errors": 1,
+              "coverage": 0.12333333333333334,
+              "accepted_error_rate": 0.005405405405405406
+            },
+            "popular": {
+              "total": 1500,
+              "accepted": 47,
+              "errors": 1,
+              "coverage": 0.03133333333333333,
+              "accepted_error_rate": 0.02127659574468085
+            },
+            "adversarial": {
+              "total": 1500,
+              "accepted": 37,
+              "errors": 1,
+              "coverage": 0.024666666666666667,
+              "accepted_error_rate": 0.02702702702702703
+            }
+          }
+        }
+      },
+      "test_variants": {
+        "random": {
+          "raw": {
+            "n": 1500,
+            "correct": 1344,
+            "accuracy": 0.896,
+            "precision": 0.9837133550488599,
+            "recall": 0.8053333333333333,
+            "f1": 0.8856304985337243,
+            "yes_rate": 0.4093333333333333,
+            "brier": 0.08724332370317935,
+            "nll": 0.422293350117966,
+            "ece_10_top_label": 0.0722259041616555
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1344,
+            "accuracy": 0.896,
+            "precision": 0.9837133550488599,
+            "recall": 0.8053333333333333,
+            "f1": 0.8856304985337243,
+            "yes_rate": 0.4093333333333333,
+            "brier": 0.07703033390115754,
+            "nll": 0.26075602223573024,
+            "ece_10_top_label": 0.01189279418957064
+          }
+        },
+        "popular": {
+          "raw": {
+            "n": 1500,
+            "correct": 1313,
+            "accuracy": 0.8753333333333333,
+            "precision": 0.9364341085271318,
+            "recall": 0.8053333333333333,
+            "f1": 0.8659498207885304,
+            "yes_rate": 0.43,
+            "brier": 0.10200468456799963,
+            "nll": 0.47344952967523773,
+            "ece_10_top_label": 0.0787113493198892
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1313,
+            "accuracy": 0.8753333333333333,
+            "precision": 0.9364341085271318,
+            "recall": 0.8053333333333333,
+            "f1": 0.8659498207885304,
+            "yes_rate": 0.43,
+            "brier": 0.09132067075826093,
+            "nll": 0.3043874674582113,
+            "ece_10_top_label": 0.008328532330677976
+          }
+        },
+        "adversarial": {
+          "raw": {
+            "n": 1500,
+            "correct": 1299,
+            "accuracy": 0.866,
+            "precision": 0.9165402124430956,
+            "recall": 0.8053333333333333,
+            "f1": 0.857345635202271,
+            "yes_rate": 0.43933333333333335,
+            "brier": 0.10794024898674118,
+            "nll": 0.4891308103758626,
+            "ece_10_top_label": 0.08311895560977145
+          },
+          "temperature_scaled": {
+            "n": 1500,
+            "correct": 1299,
+            "accuracy": 0.866,
+            "precision": 0.9165402124430956,
+            "recall": 0.8053333333333333,
+            "f1": 0.857345635202271,
+            "yes_rate": 0.43933333333333335,
+            "brier": 0.09697872665680866,
+            "nll": 0.32210793891792966,
+            "ece_10_top_label": 0.0190415263519681
+          }
+        }
+      }
+    }
+  }
+}

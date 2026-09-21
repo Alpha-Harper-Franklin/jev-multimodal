@@ -1,0 +1,26 @@
+{
+  "scope": "Two authored high-contrast images; extraction/cache integration, not an OCR dataset benchmark",
+  "engine": "tesseract:4.1.1",
+  "cache_hits": [
+    false,
+    true,
+    false
+  ],
+  "elapsed_ms": [
+    689.6884674206376,
+    4.313552752137184,
+    150.53912717849016
+  ],
+  "transcripts": [
+    "SERVICE HOURS 09:00 - 17:00 UTC REFUND DEADLINE 30 DAYS",
+    "SERVICE HOURS 09:00 - 17:00 UTC REFUND DEADLINE 30 DAYS",
+    "SERVICE HOURS 09:00 - 17:00 UTC REFUND DEADLINE 90 DAYS"
+  ],
+  "word_counts": [
+    10,
+    10,
+    10
+  ],
+  "boxes_within_image": true,
+  "changed_image_recomputed": true
+}
