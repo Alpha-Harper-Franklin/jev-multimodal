@@ -1,11 +1,21 @@
 # Jev + Multimodal
 
-**Answer many questions about an image without generating a caption. Feed compact visual, document, and transcript evidence into Jev.**
+**Make typed decisions over images, documents and speech. Share visual computation across questions, then combine evidence in Jev.**
 
 [![Tests](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml/badge.svg)](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml)
 [Source review 中文](research/SOURCE_REVIEW.zh-CN.md) · [Measurements](benchmarks/README.md) · [Credits](THIRD_PARTY.md)
 
-Working CUDA visual decisions, a hosted TypeSafe Jev adapter, provenance and freshness handling, a CLI, and recorded experiments on public images. **Hosted Jev remains text-only.** Local visual decisions use Qwen2.5-VL; the optional Jev stage receives extracted evidence.
+CUDA inference with **Choice, Noul and Score**, ordered image inputs, a hosted TypeSafe Jev adapter, PDF/ASR extraction, provenance and freshness handling. **Hosted Jev remains text-only.** Local visual decisions use Qwen2.5-VL; the optional Jev stage receives extracted evidence.
+
+## Multiple images and typed outputs
+
+On 32 pairs of real images, each with 12 binary and six ordinal questions, shared visual computation took **422 ms** per request versus **3,139 ms** for ordinary full-prompt batching. Binary accuracy was 87.76% versus 87.50%; ordinal accuracy was 73.96% versus 74.48%. The result supports faster computation, with no demonstrated ordinal accuracy gain. [Protocol and raw results](benchmarks/paired-images64/README.md).
+
+```bash
+python -m jev_multimodal vision --model /path/to/model --image first.jpg second.jpg --questions examples/visual_score_questions.json --mode shared --output runs/pair.json
+```
+
+Questions can explicitly refer to image 1 or image 2. The backend accepts 1–8 ordered images; the recorded integration and grounding experiments cover one and two. Independent photographs do not establish video or motion understanding.
 
 ## Measured on real images
 
@@ -53,7 +63,18 @@ evidence = visual_evidence(result, source_id="frame-1", revision="1", questions=
 decision = JevClient().judge(Snapshot(evidence), questions)
 ```
 
-Choice supports 2–26 candidates, Noul uses yes/no, and a request holds 1–64 questions. **Score is not implemented.** Local probabilities are conditional candidate scores, not calibrated correctness. Include an explicit `unknown` Choice candidate when the task permits it.
+Choice supports 2–26 candidates, Noul uses yes/no, and Score uses 2–10 ordered levels. A request holds 1–64 questions. Local Score is the expected level index with its full distribution and legend. Local probabilities are conditional candidate scores, not calibrated correctness. Include an explicit `unknown` Choice candidate when the task permits it.
+
+```python
+questions = [
+    Question.yes_no("person", "Is a person visible in image 1?"),
+    Question("setting", "What setting does image 2 show?",
+             {"indoor": "Indoors", "outdoor": "Outdoors", "unknown": "Unclear"}),
+    Question.ordinal("text", "How much readable text is in image 2?",
+                     ["None", "A few words", "Many words"]),
+]
+result = vision.judge(["first.jpg", "second.jpg"], questions)
+```
 
 ## Documents and speech
 
@@ -69,7 +90,17 @@ python -m jev_multimodal judge --evidence runs/speech.json --questions examples/
 
 Optional local audio recognition uses `pip install '.[audio]'` and `extract audio recording.wav --asr-model /path/to/faster-whisper ...`. PDF extraction preserves page numbers and marks textless pages `needs_ocr`; OCR preserves word boxes and engine scores; transcript/audio adapters preserve segment times. Raw image/audio bytes are never sent to hosted Jev.
 
-OCR/PDF/ASR adapters are implemented but **have not received end-to-end extraction validation in the release environment**. Validated paths are real-image Qwen inference, visual-evidence→Jev, caption→Jev, and the transcript import/API fixture. There is no live camera loop, native video backbone, robot controller, or trained model released here.
+PDF and real-audio extraction have been run through a combined Jev request: page numbers, blank-page flags and ASR segment times were preserved. [Reproducible integration fixture](benchmarks/adapters/README.md). OCR is implemented but the Tesseract runtime has not been validated here. There is no live camera loop, native video backbone, robot controller, or trained model released here.
+
+## Combine modalities
+
+```bash
+python -m jev_multimodal visual-evidence --predictions runs/visual.json --questions examples/questions.json --source-id camera --revision 1 --output runs/visual-evidence.json
+python -m jev_multimodal merge --evidence runs/visual-evidence.json runs/document.json runs/speech.json --output runs/combined.json
+python -m jev_multimodal judge --evidence runs/combined.json --questions examples/transcript_questions.json --output runs/combined-decisions.json
+```
+
+Use questions relevant to your application. Merging rejects conflicting source revisions, duplicate locations and inconsistent context values. It preserves every modality's source, acquisition time and locator. Score legends and Choice descriptions survive the visual bridge. Combining evidence does not itself establish better reasoning; measure your task against the individual modalities.
 
 ## Evidence stays tied to its source
 

@@ -9,7 +9,7 @@ from jev_multimodal.adapters import transcript
 from jev_multimodal.cuda_qwen import stable_prefix, suffix_layout
 from jev_multimodal.evidence import Evidence, Snapshot, ExtractionCache, RevisionGate, visual_evidence
 from jev_multimodal.metrics import binary_metrics, fit_temperature
-from jev_multimodal.schema import Question, normalized
+from jev_multimodal.schema import Question, normalized, make_answer
 from jev_multimodal.typesafe import JevClient, JevError
 
 
@@ -80,6 +80,33 @@ class EvidenceTests(unittest.TestCase):
         cache.get_or_compute('a', {'engine': 1}, compute)
         self.assertEqual(len(calls), 4)
 
+    def test_multimage_score_bridge_keeps_order_and_level_meaning(self):
+        q = Question.ordinal('count', 'How many kinds are present in image 2?', ['None', 'One', 'Both'])
+        answer = make_answer(q, [0, 1, 2], .9)
+        prediction = {'model': 'vision', 'backend': 'local', 'image_sha256': '1'*64,
+                      'image_sha256s': ['2'*64, '3'*64], 'answers': [answer]}
+        item = visual_evidence(prediction, 'pair', 'r1', questions=[q])[0]
+        self.assertEqual(item.data['ordered_image_sha256s'], ['2'*64, '3'*64])
+        self.assertEqual(item.locator, {'ordered_frames': [0, 1]})
+        got = item.data['visual_judgments'][0]
+        self.assertEqual(got['legend']['2'], 'Both')
+        self.assertEqual(got['criteria']['1'], 'One')
+        self.assertEqual(got['score'], answer['score'])
+
+    def test_merge_modalities_rejects_conflicts_without_losing_context(self):
+        a = Snapshot((evidence(locator={'frame': 1}),), {'task': 'inspect'})
+        b = Snapshot((Evidence('mic', '1', 'audio', 'asr:1', '4'*64,
+                              {'text': 'Stop'}, {'segment': 0}),), {'task': 'inspect', 'language': 'en'})
+        merged = Snapshot.combine([a, b])
+        self.assertEqual([e.modality for e in merged.evidence], ['image', 'audio'])
+        self.assertEqual(merged.context, {'task': 'inspect', 'language': 'en'})
+        with self.assertRaises(ValueError):
+            Snapshot.combine([a, Snapshot(b.evidence, {'task': 'execute'})])
+        with self.assertRaises(ValueError):
+            Snapshot.combine([a, a])
+        with self.assertRaises(ValueError):
+            Snapshot.combine([a, Snapshot((evidence('2', locator={'frame': 2}),))])
+
     def test_transcript_preserves_times_and_rejects_bad_span(self):
         with tempfile.TemporaryDirectory() as d:
             path = Path(d)/'words.json'
@@ -149,6 +176,22 @@ class ClientTests(unittest.TestCase):
 
 
 class NumericalTests(unittest.TestCase):
+    def test_ordinal_expectation_and_limits(self):
+        q=Question.ordinal('level','How much?', ['None','Some','Many'])
+        answer=make_answer(q,[0,0,0],.8)
+        self.assertAlmostEqual(answer['score'],1)
+        self.assertEqual(list(answer['legend']),['0','1','2'])
+        with self.assertRaises(ValueError):
+            Question.ordinal('level','How much?',['a']*11)
+
+    def test_hosted_score_contract(self):
+        q=Question.ordinal('level','How much?', ['None','Some','Many'])
+        response={'model':'test','answers':{'level':{'type':'score','score':1.05,'probabilities':{'0':0.,'1':.95,'2':.05},'confidence':.92}}}
+        client=JevClient('unit-test-placeholder',transport=lambda p:response)
+        self.assertEqual(client.judge(Snapshot((evidence(),)),[q])['answers'][0]['score'],1.05)
+        response['answers']['level']['score']=2.5
+        with self.assertRaises(JevError):client.judge(Snapshot((evidence(),)),[q])
+
     def test_prefix_catches_tokenizer_boundary_merge(self):
         self.assertEqual(stable_prefix([1, 2, 3], [[1, 2, 4, 5], [1, 2, 3, 6]]), 2)
         with self.assertRaises(ValueError):

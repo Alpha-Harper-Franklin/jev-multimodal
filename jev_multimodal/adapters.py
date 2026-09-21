@@ -80,11 +80,12 @@ def audio_asr(path, source_id, revision, model_path, observed_at=None):
     """Local faster-whisper checkpoint only; no automatic model download."""
     from faster_whisper import WhisperModel
     import faster_whisper
-    _, digest = _file(path)
+    import io
+    data, digest = _file(path)
     if not Path(model_path).is_dir():
         raise ValueError('Provide an existing local faster-whisper model directory')
     model = WhisperModel(str(model_path), device='cpu', compute_type='int8', local_files_only=True)
-    segments, info = model.transcribe(str(path), beam_size=1, vad_filter=True)
+    segments, info = model.transcribe(io.BytesIO(data), beam_size=1, vad_filter=True)
     return tuple(Evidence(source_id, revision, 'audio', 'faster-whisper:'+faster_whisper.__version__+':'+Path(model_path).name,
                           digest, {'text': s.text, 'language': info.language, 'avg_logprob': s.avg_logprob},
                           {'segment': i, 'start_s': s.start, 'end_s': s.end}, observed_at)

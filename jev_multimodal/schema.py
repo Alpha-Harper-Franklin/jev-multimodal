@@ -15,14 +15,16 @@ class Question:
     def __post_init__(self):
         if not isinstance(self.id,str) or not self.id or not isinstance(self.instructions,str) or not self.instructions.strip():
             raise ValueError('Question ID and instructions are required')
-        if self.kind not in ('choice','noul'):
-            raise ValueError('Only choice and noul are implemented')
+        if self.kind not in ('choice','noul','score'):
+            raise ValueError('Question type must be choice, noul or score')
         if not isinstance(self.criteria,dict) or not 2 <= len(self.criteria) <= 26:
             raise ValueError('Provide 2 to 26 named candidates')
         if any(not isinstance(k,str) or not k or not isinstance(v,str) or not v for k,v in self.criteria.items()):
             raise ValueError('Candidate IDs and descriptions must be nonempty strings')
         if self.kind == 'noul' and list(self.criteria) != ['yes','no']:
             raise ValueError('Noul uses ordered yes/no candidates')
+        if self.kind == 'score' and (len(self.criteria) > 10 or list(self.criteria) != [str(i) for i in range(len(self.criteria))]):
+            raise ValueError('Score requires 2..10 ordered levels numbered from zero')
         for text in [self.instructions,*self.criteria.keys(),*self.criteria.values()]:
             if '<|' in text or '|>' in text:
                 raise ValueError('Reserved model control tokens are not evidence')
@@ -32,9 +34,17 @@ class Question:
         return cls(id,instructions,{'yes':'Yes','no':'No'},'noul')
 
     @classmethod
+    def ordinal(cls, id, instructions, levels):
+        if not isinstance(levels, (list, tuple)):
+            raise ValueError('Score levels must be an ordered list')
+        return cls(id, instructions, {str(i): level for i, level in enumerate(levels)}, 'score')
+
+    @classmethod
     def from_dict(cls, value):
         if value.get('type') == 'noul':
             return cls.yes_no(value['id'],value['instructions'])
+        if value.get('type') == 'score':
+            return cls.ordinal(value['id'],value['instructions'],value['criteria'])
         return cls(value['id'],value['instructions'],value['criteria'],value.get('type','choice'))
 
 
@@ -58,6 +68,9 @@ def make_answer(question, logits, candidate_mass, temperature=1.0):
               'temperature':temperature}
     if question.kind == 'noul':
         result['noul'] = probs['yes']
+    elif question.kind == 'score':
+        result['score'] = sum(int(k)*p for k,p in probs.items())
+        result['legend'] = dict(question.criteria)
     return result
 
 

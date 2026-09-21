@@ -17,6 +17,7 @@ def main():
     parser.add_argument('--manifest', required=True)
     parser.add_argument('--output', required=True)
     parser.add_argument('--batch-size', type=int, default=8)
+    parser.add_argument('--modes',nargs='+',choices=['independent','batched','shared'],default=['independent','batched','shared'])
     args = parser.parse_args()
     target = Path(args.output)
     target.mkdir(parents=True, exist_ok=False)
@@ -31,11 +32,11 @@ def main():
                 'model': Path(args.model).name, 'model_config_sha256': hashlib.sha256((Path(args.model)/'config.json').read_bytes()).hexdigest(),
                 'source_sha256': fingerprint, 'batch_size': args.batch_size,
                 'manifest_sha256': hashlib.sha256(Path(args.manifest).read_bytes()).hexdigest(),
-                'warmup': 'first image, both modes, excluded from latency',
-                'order': 'independent/shared on even index; shared/independent on odd index'}
+                'warmup': 'first image, all selected modes, excluded from latency',
+                'modes':args.modes,'order': 'rotate mode order by image index'}
     (target/'environment.json').write_text(json.dumps(metadata, indent=2))
     first = rows[0]
-    for mode in ('independent', 'shared'):
+    for mode in args.modes:
         engine.judge(first['image_path'], [Question.from_dict(q) for q in first['questions']], mode=mode)
     torch.cuda.reset_peak_memory_stats()
     with (target/'predictions.jsonl').open('x') as stream:
@@ -43,7 +44,8 @@ def main():
             if hashlib.sha256(Path(row['image_path']).read_bytes()).hexdigest() != row['image_sha256']:
                 raise ValueError('Image hash mismatch')
             questions = [Question.from_dict(q) for q in row['questions']]
-            for mode in (('independent', 'shared') if i % 2 == 0 else ('shared', 'independent')):
+            offset=i%len(args.modes)
+            for mode in args.modes[offset:]+args.modes[:offset]:
                 result = engine.judge(row['image_path'], questions, mode=mode)
                 result.update(image_id=row['image_id'])
                 stream.write(json.dumps(result)+'\n'); stream.flush()
@@ -52,7 +54,7 @@ def main():
     scaling = []
     for count in (1, 4, 16, 64):
         questions = [Question.yes_no(f'scale_{j}', first['questions'][j % 6]['instructions']) for j in range(count)]
-        for mode in ('independent', 'shared'):
+        for mode in args.modes:
             result = engine.judge(first['image_path'], questions, mode=mode)
             scaling.append({'count': count, 'mode': mode, 'metrics': result['metrics']})
     (target/'scaling.json').write_text(json.dumps(scaling, indent=2))

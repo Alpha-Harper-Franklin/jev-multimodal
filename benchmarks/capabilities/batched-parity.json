@@ -1,0 +1,452 @@
+{
+  "passed": true,
+  "max_probability_delta": 0.0009818305718921616,
+  "batched_probability_delta": 0.0003037432776941129,
+  "restore_delta": 0.0,
+  "shared": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "backend": "local_qwen_vision",
+    "mode": "shared",
+    "image_sha256": "7f68d49cd6d91f04d65fc29de446c63c8f61d8e336b2632a4a37feb244559477",
+    "image_sha256s": [
+      "10d0f9a17fe58609ee2fe1dabadb78bc7a567a1c581af4905f49a17fd266e59f",
+      "ee2871db5ae337322672a287246b168c2475e8f2b77a8c5a1abea7ea8e4213a3"
+    ],
+    "answers": [
+      {
+        "id": "person",
+        "type": "noul",
+        "choice": "no",
+        "probabilities": {
+          "yes": 0.0004958648092105703,
+          "no": 0.9995041351907894
+        },
+        "candidate_logits": [
+          21.48332977294922,
+          29.092041015625
+        ],
+        "candidate_probability_mass": 0.9999446868896484,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "noul": 0.0004958648092105703,
+        "prompt_sha256": "b3bfd31e276bca554e01018798cd0bf3b199b89e8107f066b951776063f5f99d"
+      },
+      {
+        "id": "setting",
+        "type": "choice",
+        "choice": "outdoor",
+        "probabilities": {
+          "indoor": 9.095041735980195e-06,
+          "outdoor": 0.9995378278963755,
+          "uncertain": 0.0004530770618885279
+        },
+        "candidate_logits": [
+          18.95789337158203,
+          30.56521224975586,
+          22.866226196289062
+        ],
+        "candidate_probability_mass": 0.9999904632568359,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "prompt_sha256": "6796dfeb73779010567eca45add7f0f4599fbf0373975d8d90f8fa9084321a2f"
+      },
+      {
+        "id": "text",
+        "type": "score",
+        "choice": "0",
+        "probabilities": {
+          "0": 0.9780218120819593,
+          "1": 0.020456537444880556,
+          "2": 0.001521650473160076
+        },
+        "candidate_logits": [
+          30.07122039794922,
+          26.203990936279297,
+          23.605484008789062
+        ],
+        "candidate_probability_mass": 0.9995309114456177,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "score": 0.02349983839120071,
+        "legend": {
+          "0": "No readable text",
+          "1": "A few readable words",
+          "2": "Many readable words"
+        },
+        "prompt_sha256": "1b3da26be0535d59e3e692e2c032f279962a74fd20847d26bd2b73680919dd0a"
+      }
+    ],
+    "metrics": {
+      "preparation_ms": 69.74381394684315,
+      "prefill_ms": 1104.118388146162,
+      "cache_fork_ms": 8.031274192035198,
+      "suffix_ms": 124.02748689055443,
+      "elapsed_ms": 1306.2632866203785,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 2,
+      "questions": 3,
+      "images": 2,
+      "prefix_tokens": 697,
+      "generated_tokens": 0,
+      "batch_size": 3,
+      "readout_dtype": "float32"
+    }
+  },
+  "independent": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "backend": "local_qwen_vision",
+    "mode": "independent",
+    "image_sha256": "7f68d49cd6d91f04d65fc29de446c63c8f61d8e336b2632a4a37feb244559477",
+    "image_sha256s": [
+      "10d0f9a17fe58609ee2fe1dabadb78bc7a567a1c581af4905f49a17fd266e59f",
+      "ee2871db5ae337322672a287246b168c2475e8f2b77a8c5a1abea7ea8e4213a3"
+    ],
+    "answers": [
+      {
+        "id": "person",
+        "type": "noul",
+        "choice": "no",
+        "probabilities": {
+          "yes": 0.0004966311080662635,
+          "no": 0.9995033688919337
+        },
+        "candidate_logits": [
+          21.706464767456055,
+          29.313631057739258
+        ],
+        "candidate_probability_mass": 0.9999446868896484,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "noul": 0.0004966311080662635,
+        "prompt_sha256": "b3bfd31e276bca554e01018798cd0bf3b199b89e8107f066b951776063f5f99d"
+      },
+      {
+        "id": "setting",
+        "type": "choice",
+        "choice": "outdoor",
+        "probabilities": {
+          "indoor": 9.731068626555213e-06,
+          "outdoor": 0.9995280848342546,
+          "uncertain": 0.0004621840971189444
+        },
+        "candidate_logits": [
+          18.945343017578125,
+          30.485057830810547,
+          22.80598258972168
+        ],
+        "candidate_probability_mass": 0.9999923706054688,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "prompt_sha256": "6796dfeb73779010567eca45add7f0f4599fbf0373975d8d90f8fa9084321a2f"
+      },
+      {
+        "id": "text",
+        "type": "score",
+        "choice": "0",
+        "probabilities": {
+          "0": 0.9790036426538514,
+          "1": 0.019578904609773407,
+          "2": 0.0014174527363752427
+        },
+        "candidate_logits": [
+          30.231163024902344,
+          26.319080352783203,
+          23.69348907470703
+        ],
+        "candidate_probability_mass": 0.9995575547218323,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "score": 0.022413810082523893,
+        "legend": {
+          "0": "No readable text",
+          "1": "A few readable words",
+          "2": "Many readable words"
+        },
+        "prompt_sha256": "1b3da26be0535d59e3e692e2c032f279962a74fd20847d26bd2b73680919dd0a"
+      }
+    ],
+    "metrics": {
+      "preparation_ms": 30.343069694936275,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 469.4616813212633,
+      "elapsed_ms": 499.87061880528927,
+      "vision_forward_calls": 3,
+      "language_forward_calls": 3,
+      "questions": 3,
+      "images": 2,
+      "prefix_tokens": 697,
+      "generated_tokens": 0,
+      "batch_size": 3,
+      "readout_dtype": "float32"
+    }
+  },
+  "batched": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "backend": "local_qwen_vision",
+    "mode": "batched",
+    "image_sha256": "7f68d49cd6d91f04d65fc29de446c63c8f61d8e336b2632a4a37feb244559477",
+    "image_sha256s": [
+      "10d0f9a17fe58609ee2fe1dabadb78bc7a567a1c581af4905f49a17fd266e59f",
+      "ee2871db5ae337322672a287246b168c2475e8f2b77a8c5a1abea7ea8e4213a3"
+    ],
+    "answers": [
+      {
+        "id": "person",
+        "type": "noul",
+        "choice": "no",
+        "probabilities": {
+          "yes": 0.0005315980763934345,
+          "no": 0.9994684019236065
+        },
+        "candidate_logits": [
+          21.65074920654297,
+          29.18984031677246
+        ],
+        "candidate_probability_mass": 0.9999446868896484,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "noul": 0.0005315980763934345,
+        "prompt_sha256": "b3bfd31e276bca554e01018798cd0bf3b199b89e8107f066b951776063f5f99d"
+      },
+      {
+        "id": "setting",
+        "type": "choice",
+        "choice": "outdoor",
+        "probabilities": {
+          "indoor": 9.24838196890678e-06,
+          "outdoor": 0.9996001385084254,
+          "uncertain": 0.00039061310960575237
+        },
+        "candidate_logits": [
+          19.046117782592773,
+          30.63677978515625,
+          22.789386749267578
+        ],
+        "candidate_probability_mass": 0.9999923706054688,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "prompt_sha256": "6796dfeb73779010567eca45add7f0f4599fbf0373975d8d90f8fa9084321a2f"
+      },
+      {
+        "id": "text",
+        "type": "score",
+        "choice": "0",
+        "probabilities": {
+          "0": 0.9793073859315455,
+          "1": 0.019308575789001404,
+          "2": 0.0013840382794529863
+        },
+        "candidate_logits": [
+          30.254016876220703,
+          26.327720642089844,
+          23.692176818847656
+        ],
+        "candidate_probability_mass": 0.9995633363723755,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "score": 0.022076652347907375,
+        "legend": {
+          "0": "No readable text",
+          "1": "A few readable words",
+          "2": "Many readable words"
+        },
+        "prompt_sha256": "1b3da26be0535d59e3e692e2c032f279962a74fd20847d26bd2b73680919dd0a"
+      }
+    ],
+    "metrics": {
+      "preparation_ms": 28.106444515287876,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 463.92544358968735,
+      "elapsed_ms": 492.1266296878457,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 1,
+      "questions": 3,
+      "images": 2,
+      "prefix_tokens": 697,
+      "generated_tokens": 0,
+      "batch_size": 3,
+      "readout_dtype": "float32"
+    }
+  },
+  "reverse": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "backend": "local_qwen_vision",
+    "mode": "shared",
+    "image_sha256": "299d2b15174a8403e670518a6d342739cb9f650f210c208142c4929a4ce90064",
+    "image_sha256s": [
+      "ee2871db5ae337322672a287246b168c2475e8f2b77a8c5a1abea7ea8e4213a3",
+      "10d0f9a17fe58609ee2fe1dabadb78bc7a567a1c581af4905f49a17fd266e59f"
+    ],
+    "answers": [
+      {
+        "id": "person",
+        "type": "noul",
+        "choice": "yes",
+        "probabilities": {
+          "yes": 0.9996965120020684,
+          "no": 0.00030348799793168614
+        },
+        "candidate_logits": [
+          31.678123474121094,
+          23.578258514404297
+        ],
+        "candidate_probability_mass": 0.999977171421051,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "noul": 0.9996965120020684,
+        "prompt_sha256": "b3bfd31e276bca554e01018798cd0bf3b199b89e8107f066b951776063f5f99d"
+      },
+      {
+        "id": "setting",
+        "type": "choice",
+        "choice": "outdoor",
+        "probabilities": {
+          "indoor": 4.602108592240006e-05,
+          "outdoor": 0.9987183478423116,
+          "uncertain": 0.0012356310717661885
+        },
+        "candidate_logits": [
+          19.351154327392578,
+          29.33628273010254,
+          22.64139175415039
+        ],
+        "candidate_probability_mass": 0.9999809265136719,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "prompt_sha256": "6796dfeb73779010567eca45add7f0f4599fbf0373975d8d90f8fa9084321a2f"
+      },
+      {
+        "id": "text",
+        "type": "score",
+        "choice": "0",
+        "probabilities": {
+          "0": 0.987535916526831,
+          "1": 0.011520156183130546,
+          "2": 0.0009439272900384983
+        },
+        "candidate_logits": [
+          30.2633056640625,
+          25.812191009521484,
+          23.310386657714844
+        ],
+        "candidate_probability_mass": 0.9997634887695312,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "score": 0.013408010763207542,
+        "legend": {
+          "0": "No readable text",
+          "1": "A few readable words",
+          "2": "Many readable words"
+        },
+        "prompt_sha256": "1b3da26be0535d59e3e692e2c032f279962a74fd20847d26bd2b73680919dd0a"
+      }
+    ],
+    "metrics": {
+      "preparation_ms": 29.540621675550938,
+      "prefill_ms": 149.12839606404305,
+      "cache_fork_ms": 4.025147296488285,
+      "suffix_ms": 34.87203735858202,
+      "elapsed_ms": 217.87191554903984,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 2,
+      "questions": 3,
+      "images": 2,
+      "prefix_tokens": 697,
+      "generated_tokens": 0,
+      "batch_size": 3,
+      "readout_dtype": "float32"
+    }
+  },
+  "restored": {
+    "model": "Qwen2.5-VL-7B-Instruct",
+    "backend": "local_qwen_vision",
+    "mode": "shared",
+    "image_sha256": "7f68d49cd6d91f04d65fc29de446c63c8f61d8e336b2632a4a37feb244559477",
+    "image_sha256s": [
+      "10d0f9a17fe58609ee2fe1dabadb78bc7a567a1c581af4905f49a17fd266e59f",
+      "ee2871db5ae337322672a287246b168c2475e8f2b77a8c5a1abea7ea8e4213a3"
+    ],
+    "answers": [
+      {
+        "id": "person",
+        "type": "noul",
+        "choice": "no",
+        "probabilities": {
+          "yes": 0.0004958648092105703,
+          "no": 0.9995041351907894
+        },
+        "candidate_logits": [
+          21.48332977294922,
+          29.092041015625
+        ],
+        "candidate_probability_mass": 0.9999446868896484,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "noul": 0.0004958648092105703,
+        "prompt_sha256": "b3bfd31e276bca554e01018798cd0bf3b199b89e8107f066b951776063f5f99d"
+      },
+      {
+        "id": "setting",
+        "type": "choice",
+        "choice": "outdoor",
+        "probabilities": {
+          "indoor": 9.095041735980195e-06,
+          "outdoor": 0.9995378278963755,
+          "uncertain": 0.0004530770618885279
+        },
+        "candidate_logits": [
+          18.95789337158203,
+          30.56521224975586,
+          22.866226196289062
+        ],
+        "candidate_probability_mass": 0.9999904632568359,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "prompt_sha256": "6796dfeb73779010567eca45add7f0f4599fbf0373975d8d90f8fa9084321a2f"
+      },
+      {
+        "id": "text",
+        "type": "score",
+        "choice": "0",
+        "probabilities": {
+          "0": 0.9780218120819593,
+          "1": 0.020456537444880556,
+          "2": 0.001521650473160076
+        },
+        "candidate_logits": [
+          30.07122039794922,
+          26.203990936279297,
+          23.605484008789062
+        ],
+        "candidate_probability_mass": 0.9995309114456177,
+        "probability_semantics": "conditional candidate scores; not calibrated correctness",
+        "temperature": 1.0,
+        "score": 0.02349983839120071,
+        "legend": {
+          "0": "No readable text",
+          "1": "A few readable words",
+          "2": "Many readable words"
+        },
+        "prompt_sha256": "1b3da26be0535d59e3e692e2c032f279962a74fd20847d26bd2b73680919dd0a"
+      }
+    ],
+    "metrics": {
+      "preparation_ms": 30.711812898516655,
+      "prefill_ms": 149.1148928180337,
+      "cache_fork_ms": 4.110319539904594,
+      "suffix_ms": 35.07250174880028,
+      "elapsed_ms": 219.34596356004477,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 2,
+      "questions": 3,
+      "images": 2,
+      "prefix_tokens": 697,
+      "generated_tokens": 0,
+      "batch_size": 3,
+      "readout_dtype": "float32"
+    }
+  },
+  "scope": "Integration and numerical checks only; no accuracy labels or temporal benchmark"
+}

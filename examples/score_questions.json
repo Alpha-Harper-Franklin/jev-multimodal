@@ -1,0 +1,3 @@
+[
+  {"id":"specificity","type":"score","instructions":"How specific is the requested light change?","criteria":["No light change requested","A light change is requested without details","A named light and desired color are specified"]}
+]

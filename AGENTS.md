@@ -11,3 +11,5 @@
 - Optional extractors need real runtime validation before being advertised as validated.
 - Do not execute downloaded third-party repositories or copy incompatible licensed code.
 - Run `python -m unittest discover -s tests -v` and the installed CLI before publishing.
+- Fresh virtual environments may lack setuptools. Keep build isolation enabled
+  unless the declared build backend has been explicitly installed and checked.

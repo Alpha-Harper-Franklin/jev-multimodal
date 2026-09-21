@@ -1,0 +1,67 @@
+{
+  "model": "jev-1.13.0",
+  "answers": [
+    {
+      "id": "refund",
+      "type": "choice",
+      "choice": "thirty",
+      "probabilities": {
+        "thirty": 1.0,
+        "ninety": 0.0,
+        "seven": 0.0,
+        "unknown": 0.0
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "service",
+      "type": "noul",
+      "noul": 0.93,
+      "choice": "yes",
+      "probabilities": {
+        "yes": 0.93,
+        "no": 0.06999999999999995
+      }
+    },
+    {
+      "id": "weekend",
+      "type": "choice",
+      "choice": "unknown",
+      "probabilities": {
+        "available": 0.0,
+        "unavailable": 0.0,
+        "unknown": 1.0
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "country",
+      "type": "noul",
+      "noul": 0.97,
+      "choice": "yes",
+      "probabilities": {
+        "yes": 0.97,
+        "no": 0.030000000000000027
+      }
+    },
+    {
+      "id": "moon",
+      "type": "noul",
+      "noul": 0.02,
+      "choice": "no",
+      "probabilities": {
+        "yes": 0.02,
+        "no": 0.98
+      }
+    }
+  ],
+  "input_tokens": 1332,
+  "probability_semantics": "Jev judgments over supplied evidence; does not calibrate perception errors",
+  "snapshot_sha256": "ffb00756369f0899ca6b28dfa28a7c09179963679e8dcba03b84080c94c0a2b6",
+  "backend": "typesafe_evidence",
+  "metrics": {
+    "elapsed_ms": 771.4980999880936,
+    "api_requests": 1,
+    "questions": 5
+  }
+}

@@ -24,5 +24,6 @@ Some GitHub metadata labels permissive LICENSE notices `NOASSERTION`; actual tex
 - TypeSafe Jev is a separately hosted service. Local Qwen outputs are not TypeSafe Jev outputs.
 - POPE annotations are referenced at commit `08d957b917e5a378a2f99d35b6293c536a66298b`. COCO images are downloaded from the official bucket for local experiments and not redistributed. Original image licenses still apply.
 - PyTorch, Transformers, Pillow, pypdf, pytesseract/Tesseract and faster-whisper retain their own licenses. Optional packages are not bundled.
+- The PDF/ASR integration uses the public `openai/whisper` JFK test clip and a `Systran/faster-whisper-tiny.en` checkpoint. Immutable revisions are recorded in `benchmarks/adapters/README.md`; neither audio nor weights are redistributed. The two-page PDF is an original synthetic extraction fixture.
 
 Third-party benchmark numbers were not reproduced. Our numerical claims come only from the committed `benchmarks/` artifacts.

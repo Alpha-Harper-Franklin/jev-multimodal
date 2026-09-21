@@ -1,0 +1,35 @@
+{
+  "context": {},
+  "evidence": [
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "Service window: 09:00 to 17:00 UTC.\nRefund deadline: 30 days after purchase.",
+        "needs_ocr": false
+      },
+      "locator": {
+        "page": 1
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "",
+        "needs_ocr": true
+      },
+      "locator": {
+        "page": 2
+      },
+      "observed_at": null
+    }
+  ]
+}

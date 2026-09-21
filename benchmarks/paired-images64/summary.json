@@ -1,0 +1,65 @@
+{
+  "scope": "64 source images paired into 32 independent-photo pairs, not video; ordinal labels derived from two original POPE presence labels",
+  "modes": {
+    "independent": {
+      "binary_grounding": {
+        "n": 384,
+        "correct": 336,
+        "accuracy": 0.875,
+        "precision": 0.98,
+        "recall": 0.765625,
+        "f1": 0.8596491228070174,
+        "yes_rate": 0.390625,
+        "brier": 0.10228139330668805,
+        "nll": 0.4444313577347146,
+        "ece_10_top_label": 0.08311832475477998
+      },
+      "ordinal": {
+        "n": 192,
+        "expected_score_mae": 0.2643663851893954,
+        "argmax_level_accuracy": 0.7395833333333334
+      },
+      "latency_p50_ms_excluding_first_pair": 3130.484323017299
+    },
+    "batched": {
+      "binary_grounding": {
+        "n": 384,
+        "correct": 336,
+        "accuracy": 0.875,
+        "precision": 0.98,
+        "recall": 0.765625,
+        "f1": 0.8596491228070174,
+        "yes_rate": 0.390625,
+        "brier": 0.10208594771920948,
+        "nll": 0.444879431913168,
+        "ece_10_top_label": 0.08405559275700814
+      },
+      "ordinal": {
+        "n": 192,
+        "expected_score_mae": 0.26287697947182936,
+        "argmax_level_accuracy": 0.7447916666666666
+      },
+      "latency_p50_ms_excluding_first_pair": 3139.325113967061
+    },
+    "shared": {
+      "binary_grounding": {
+        "n": 384,
+        "correct": 337,
+        "accuracy": 0.8776041666666666,
+        "precision": 0.9801324503311258,
+        "recall": 0.7708333333333334,
+        "f1": 0.8629737609329446,
+        "yes_rate": 0.3932291666666667,
+        "brier": 0.10206381454983747,
+        "nll": 0.44435638904180097,
+        "ece_10_top_label": 0.08561605487027925
+      },
+      "ordinal": {
+        "n": 192,
+        "expected_score_mae": 0.2628524666591862,
+        "argmax_level_accuracy": 0.7395833333333334
+      },
+      "latency_p50_ms_excluding_first_pair": 422.41752333939075
+    }
+  }
+}

@@ -10,17 +10,25 @@ def main():
     parser = argparse.ArgumentParser(description='Image decisions and multimodal evidence for Jev')
     commands = parser.add_subparsers(dest='command', required=True)
     vision = commands.add_parser('vision', help='Local Qwen2.5-VL finite-candidate scoring')
-    vision.add_argument('--image', required=True)
+    vision.add_argument('--image', nargs='+', required=True, help='One or more ordered image paths')
     vision.add_argument('--model', required=True, help='Local Qwen2.5-VL checkpoint directory')
     vision.add_argument('--questions', required=True)
     vision.add_argument('--state')
-    vision.add_argument('--mode', choices=['shared', 'independent'], default='shared')
+    vision.add_argument('--mode', choices=['shared', 'batched', 'independent'], default='shared')
     vision.add_argument('--batch-size', type=int, default=8)
     vision.add_argument('--device', default='cuda:0')
     judge = commands.add_parser('judge', help='Send extracted evidence to hosted Jev')
     judge.add_argument('--evidence', required=True, help='Snapshot JSON, never raw media')
     judge.add_argument('--questions', required=True)
     judge.add_argument('--max-age', type=float)
+    merge = commands.add_parser('merge', help='Combine extracted snapshots; reject conflicting sources or context')
+    merge.add_argument('--evidence', nargs='+', required=True)
+    bridge = commands.add_parser('visual-evidence', help='Convert local visual predictions into a snapshot')
+    bridge.add_argument('--predictions', required=True)
+    bridge.add_argument('--questions', required=True)
+    bridge.add_argument('--source-id', required=True)
+    bridge.add_argument('--revision', required=True)
+    bridge.add_argument('--observed-at', type=float)
     extract = commands.add_parser('extract', help='Produce provenance-preserving evidence JSON')
     extract.add_argument('kind', choices=['transcript', 'pdf', 'ocr', 'audio'])
     extract.add_argument('path')
@@ -29,13 +37,13 @@ def main():
     extract.add_argument('--observed-at', type=float)
     extract.add_argument('--asr-model')
     extract.add_argument('--language', default='eng')
-    for command in (vision, judge, extract):
+    for command in (vision, judge, extract, merge, bridge):
         command.add_argument('--output', required=True)
     args = parser.parse_args()
     target = Path(args.output)
     if target.exists():
         parser.error('Output already exists; choose a new path')
-    if args.command in ('vision', 'judge'):
+    if args.command in ('vision', 'judge', 'visual-evidence'):
         questions = [Question.from_dict(q) for q in json.loads(Path(args.questions).read_text(encoding='utf-8'))]
     if args.command == 'vision':
         from .cuda_qwen import QwenVision
@@ -45,6 +53,14 @@ def main():
         from .typesafe import JevClient
         snapshot = Snapshot.from_dict(json.loads(Path(args.evidence).read_text(encoding='utf-8')))
         result = JevClient().judge(snapshot, questions, max_age_s=args.max_age)
+    elif args.command == 'merge':
+        snapshots = [Snapshot.from_dict(json.loads(Path(p).read_text(encoding='utf-8'))) for p in args.evidence]
+        result = Snapshot.combine(snapshots).state()
+    elif args.command == 'visual-evidence':
+        from .evidence import visual_evidence
+        predictions = json.loads(Path(args.predictions).read_text(encoding='utf-8'))
+        result = Snapshot(visual_evidence(predictions, args.source_id, args.revision,
+                                         args.observed_at, questions)).state()
     else:
         from . import adapters
         options = {'source_id': args.source_id, 'revision': args.revision, 'observed_at': args.observed_at}

@@ -1,0 +1,30 @@
+{
+  "model": "jev-1.13.0",
+  "answers": [
+    {
+      "id": "specificity",
+      "type": "score",
+      "score": 1.99,
+      "legend": {
+        "0": "No light change requested",
+        "1": "A light change is requested without details",
+        "2": "A named light and desired color are specified"
+      },
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.01,
+        "2": 0.99
+      },
+      "confidence": 0.98
+    }
+  ],
+  "input_tokens": 674,
+  "probability_semantics": "Jev judgments over supplied evidence; does not calibrate perception errors",
+  "snapshot_sha256": "f52011ccd8d9878f792f4119bee42e4130fbcf0a6413876850350299c5d5d05c",
+  "backend": "typesafe_evidence",
+  "metrics": {
+    "elapsed_ms": 1204.1124999814201,
+    "api_requests": 1,
+    "questions": 1
+  }
+}

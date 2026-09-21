@@ -14,13 +14,54 @@ def percentile(values, fraction):
     return sorted(values)[round((len(values)-1)*fraction)]
 
 
+def paired_accuracy(reference, candidate, truth, split):
+    """Bootstrap image clusters, keeping the three variants of a photo together."""
+    groups = {}
+    reference_by_id = {a['id']: a for r in reference for a in r['answers']}
+    flips, improved, regressed = 0, 0, 0
+    for row in candidate:
+        differences = []
+        for answer in row['answers']:
+            label = truth[answer['id']]
+            if split is not None and label['split'] != split:
+                continue
+            base = reference_by_id[answer['id']]['choice']
+            ours = answer['choice']
+            delta = int(ours == label['label']) - int(base == label['label'])
+            differences.append(delta)
+            flips += base != ours
+            improved += delta == 1
+            regressed += delta == -1
+        if differences:
+            groups[row['image_id']] = (sum(differences), len(differences))
+    values = list(groups.values())
+    if not values:
+        raise ValueError('Empty paired comparison')
+    rng = random.Random(20260921)
+    bootstrap = []
+    for _ in range(2000):
+        sample = rng.choices(values, k=len(values))
+        bootstrap.append(sum(v[0] for v in sample)/sum(v[1] for v in sample))
+    return {'image_clusters': len(values), 'questions': sum(v[1] for v in values),
+            'accuracy_delta': sum(v[0] for v in values)/sum(v[1] for v in values),
+            'image_bootstrap_95_ci': [percentile(bootstrap, .025), percentile(bootstrap, .975)],
+            'choice_flips': flips, 'improved': improved, 'regressed': regressed}
+
+
 def analyze(predictions, labels):
     truth = {r['question_id']: r for r in labels}
     if len(truth) != len(labels):
         raise ValueError('Duplicate ground truth ID')
-    result = {'scope': '64-image development subset; no accuracy novelty claim', 'modes': {}}
-    mode_records = {m: [r for r in predictions if r['mode'] == m] for m in ('independent', 'shared')}
+    result = {'scope': 'Recorded POPE COCO images; sample size and variants specified by input artifacts', 'modes': {}}
+    modes = sorted({r['mode'] for r in predictions})
+    if not {'independent','shared'} <= set(modes):
+        raise ValueError('Both independent and shared records are required')
+    mode_records = {m: [r for r in predictions if r['mode'] == m] for m in modes}
     for mode, records in mode_records.items():
+        if len({r['image_id'] for r in records}) != len(records):
+            raise ValueError('Duplicate image record')
+        if any(truth.get(a['id'], {}).get('image_id') != r['image_id'] for r in records for a in r['answers']):
+            raise ValueError('Prediction assigned to the wrong image')
         answers = [a for r in records for a in r['answers']]
         if len(answers) != len(truth) or {a['id'] for a in answers} != set(truth):
             raise ValueError('Missing or repeated predictions')
@@ -37,6 +78,13 @@ def analyze(predictions, labels):
             'images': len(records), 'latency_p50_ms': statistics.median(latency),
             'latency_p95_ms': percentile(latency, .95), 'total_ms': sum(latency),
             'vision_forward_calls': sum(r['metrics']['vision_forward_calls'] for r in records)}
+        variants=sorted({truth[a['id']].get('variant','random') for a in answers})
+        result['modes'][mode]['variants']={}
+        for variant in variants:
+            batch=[a for a in answers if truth[a['id']].get('variant','random')==variant]
+            held=[a for a in batch if truth[a['id']]['split']=='test']
+            result['modes'][mode]['variants'][variant]={'all':binary_metrics([a['noul'] for a in batch],ys(batch)),
+                                                        'test':binary_metrics([a['noul'] for a in held],ys(held))}
     independent = {a['id']: a for r in mode_records['independent'] for a in r['answers']}
     shared = {a['id']: a for r in mode_records['shared'] for a in r['answers']}
     result['parity'] = {'choice_agreement': sum(independent[k]['choice'] == shared[k]['choice'] for k in truth)/len(truth),
@@ -48,6 +96,19 @@ def analyze(predictions, labels):
     rng = random.Random(20260921)
     boot = [statistics.median(rng.choices(ratios, k=len(ratios))) for _ in range(2000)]
     result['paired_speedup'] = {'median': statistics.median(ratios), 'image_bootstrap_95_ci': [percentile(boot, .025), percentile(boot, .975)]}
+    result['paired_accuracy'] = {
+        reference: {split: paired_accuracy(mode_records[reference], mode_records['shared'], truth,
+                                           None if split == 'all' else split)
+                    for split in ('all', 'test')}
+        for reference in modes if reference != 'shared'}
+    if 'batched' in mode_records:
+        batched={a['id']:a for r in mode_records['batched'] for a in r['answers']}
+        ratios=[timings['batched'][k]/timings['shared'][k] for k in ids]
+        boot=[statistics.median(rng.choices(ratios,k=len(ratios))) for _ in range(2000)]
+        result['shared_vs_batched']={'median_speedup':statistics.median(ratios),
+            'image_bootstrap_95_ci':[percentile(boot,.025),percentile(boot,.975)],
+            'choice_agreement':sum(batched[k]['choice']==shared[k]['choice'] for k in truth)/len(truth),
+            'max_probability_delta':max(abs(batched[k]['noul']-shared[k]['noul']) for k in truth)}
     return result
 
 

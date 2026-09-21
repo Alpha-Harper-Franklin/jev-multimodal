@@ -1,0 +1,41 @@
+{
+  "context": {},
+  "evidence": [
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "audio",
+      "extractor": "faster-whisper:1.2.1:faster-whisper-tiny.en",
+      "content_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+      "data": {
+        "text": " And so my fellow Americans ask not what your country can do for you",
+        "language": "en",
+        "avg_logprob": -0.379985045503687
+      },
+      "locator": {
+        "segment": 0,
+        "start_s": 0.0,
+        "end_s": 7.54
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "audio",
+      "extractor": "faster-whisper:1.2.1:faster-whisper-tiny.en",
+      "content_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+      "data": {
+        "text": " ask what you can do for your country",
+        "language": "en",
+        "avg_logprob": -0.379985045503687
+      },
+      "locator": {
+        "segment": 1,
+        "start_s": 7.54,
+        "end_s": 10.58
+      },
+      "observed_at": null
+    }
+  ]
+}

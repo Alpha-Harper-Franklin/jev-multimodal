@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "jev-multimodal"
-version = "0.1.0"
+version = "0.2.0"
 description = "Typed multimodal decisions with shared visual computation and explicit evidence"
 requires-python = ">=3.10"
 readme = "README.md"

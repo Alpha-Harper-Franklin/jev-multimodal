@@ -1,0 +1,7 @@
+[
+  {"id":"refund","type":"choice","instructions":"According to the document evidence, what is the refund deadline?","criteria":{"seven":"7 days after purchase","thirty":"30 days after purchase","ninety":"90 days after purchase","unknown":"Not stated"}},
+  {"id":"service","type":"noul","instructions":"Does the document state that service is available at 12:00 UTC?"},
+  {"id":"weekend","type":"choice","instructions":"Does the document explicitly specify weekend service availability?","criteria":{"available":"Explicitly available on weekends","unavailable":"Explicitly unavailable on weekends","unknown":"Weekend availability is not specified"}},
+  {"id":"country","type":"noul","instructions":"Does the speech ask what the listener can do for their country?"},
+  {"id":"moon","type":"noul","instructions":"Does the supplied speech segment mention the Moon?"}
+]

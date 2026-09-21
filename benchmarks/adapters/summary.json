@@ -1,0 +1,28 @@
+{
+  "scope": "Integration fixture: one public speech clip and one authored PDF, not a dataset evaluation",
+  "audio_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+  "asr_model": "faster-whisper-tiny.en",
+  "model_sha256": "1a5afae06a4db91c975c9a9d78be5cc110ee4ea022ad57d55492e4550e936b2a",
+  "runtime": {
+    "python": "3.13.7",
+    "pypdf": "6.19.0",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2"
+  },
+  "pdf": {
+    "pages": 2,
+    "text_pages": 1,
+    "needs_ocr_pages": 1,
+    "elapsed_ms": 10.272199986502528
+  },
+  "audio": {
+    "segments": 2,
+    "text": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
+    "elapsed_ms_including_cpu_model_load": 3232.6733999943826,
+    "reference": "And so my fellow Americans ask not what your country can do for you ask what you can do for your country",
+    "reference_words": 22,
+    "edit_distance": 0,
+    "wer": 0.0
+  },
+  "combined_evidence_count": 4
+}

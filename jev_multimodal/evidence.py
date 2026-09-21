@@ -80,6 +80,18 @@ class Snapshot:
     def from_dict(cls, value):
         return cls(tuple(Evidence(**item) for item in value['evidence']), value.get('context', {}))
 
+    @classmethod
+    def combine(cls, snapshots):
+        """Join modalities without silently replacing context, revisions or locations."""
+        evidence, context = [], {}
+        for snapshot in snapshots:
+            evidence.extend(snapshot.evidence)
+            for key, value in snapshot.context.items():
+                if key in context and canonical_digest(context[key]) != canonical_digest(value):
+                    raise ValueError('Conflicting snapshot context: '+key)
+                context[key] = value
+        return cls(tuple(evidence), context)
+
 
 class RevisionGate:
     """Reject results superseded by a later acquisition, even if the bytes repeat."""
@@ -134,14 +146,22 @@ def visual_evidence(result, source_id, revision, observed_at=None, questions=Non
     Repeating hashes, prompts, and vocabulary diagnostics per question costs
     API tokens without adding visual evidence. Do not round probabilities.
     """
-    instructions = {q.id: q.instructions for q in questions or ()}
+    specs = {q.id: q for q in questions or ()}
     judgments = []
     for answer in result['answers']:
         item = {k: copy.deepcopy(answer[k]) for k in ('id', 'type', 'choice', 'probabilities')}
-        if answer['id'] in instructions:
-            item['question'] = instructions[answer['id']]
+        if answer['id'] in specs:
+            spec = specs[answer['id']]
+            item['question'] = spec.instructions
+            if spec.kind != 'noul':
+                item['criteria'] = dict(spec.criteria)
+        for key in ('score', 'legend'):
+            if key in answer:
+                item[key] = copy.deepcopy(answer[key])
         judgments.append(item)
+    image_hashes = result.get('image_sha256s', [result['image_sha256']])
     return (Evidence(source_id, revision, 'image', result['model']+':'+result['backend'],
                      result['image_sha256'],
-                     {'visual_judgments': judgments, 'uncertainty': 'uncalibrated model predictions, not observation labels'},
-                     {'frame': 0}, observed_at),)
+                     {'visual_judgments': judgments, 'uncertainty': 'uncalibrated model predictions, not observation labels',
+                      **({'ordered_image_sha256s': image_hashes} if len(image_hashes)>1 else {})},
+                     {'frame': 0} if len(image_hashes)==1 else {'ordered_frames': list(range(len(image_hashes)))}, observed_at),)

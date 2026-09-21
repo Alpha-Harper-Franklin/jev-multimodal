@@ -1,0 +1,71 @@
+{
+  "context": {},
+  "evidence": [
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "Service window: 09:00 to 17:00 UTC.\nRefund deadline: 30 days after purchase.",
+        "needs_ocr": false
+      },
+      "locator": {
+        "page": 1
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "document",
+      "revision": "1",
+      "modality": "pdf",
+      "extractor": "pypdf:6.19.0",
+      "content_sha256": "a1c9011d434bb0d36886a6be09565d9708f56aea9dfebbab69f312290891e1f3",
+      "data": {
+        "text": "",
+        "needs_ocr": true
+      },
+      "locator": {
+        "page": 2
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "audio",
+      "extractor": "faster-whisper:1.2.1:faster-whisper-tiny.en",
+      "content_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+      "data": {
+        "text": " And so my fellow Americans ask not what your country can do for you",
+        "language": "en",
+        "avg_logprob": -0.379985045503687
+      },
+      "locator": {
+        "segment": 0,
+        "start_s": 0.0,
+        "end_s": 7.54
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "audio",
+      "extractor": "faster-whisper:1.2.1:faster-whisper-tiny.en",
+      "content_sha256": "63a4b1e4c1dc655ac70961ffbf518acd249df237e5a0152faae9a4a836949715",
+      "data": {
+        "text": " ask what you can do for your country",
+        "language": "en",
+        "avg_logprob": -0.379985045503687
+      },
+      "locator": {
+        "segment": 1,
+        "start_s": 7.54,
+        "end_s": 10.58
+      },
+      "observed_at": null
+    }
+  ]
+}

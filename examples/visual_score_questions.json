@@ -1,0 +1,5 @@
+[
+  {"id":"person","type":"noul","instructions":"Is a person visible in image 1?"},
+  {"id":"setting","type":"choice","instructions":"What setting does image 2 show?","criteria":{"indoor":"Indoors","outdoor":"Outdoors","unknown":"Unclear"}},
+  {"id":"text","type":"score","instructions":"How much readable text is in image 2?","criteria":["None","A few words","Many words"]}
+]
