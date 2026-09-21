@@ -1,0 +1,17 @@
+{
+  "python": "3.10.12",
+  "torch": "2.13.0+cu130",
+  "transformers": "5.15.0",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "model": "Qwen2.5-VL-7B-Instruct",
+  "model_config_sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+  "source_sha256": {
+    "jev_multimodal/__init__.py": "8758074efb632a1b6e3f26428688ca3d50fa634da8909d9b0d0c4e54ec2c13bd",
+    "jev_multimodal/cuda_qwen.py": "a8bc3c659249aada8e463bcf9ecf4f6cdc660f7b0fdcccf5726b185a5cf15a45",
+    "jev_multimodal/schema.py": "a4ae67d01ba9064b9a94cb522fc7da4169e1892547995747866dbfa3732407e2"
+  },
+  "batch_size": 8,
+  "manifest_sha256": "e40b24c637bc2621d055b37e8a4d4cdf53af6b2f865a5757211b2390ea603391",
+  "warmup": "first image, both modes, excluded from latency",
+  "order": "independent/shared on even index; shared/independent on odd index"
+}

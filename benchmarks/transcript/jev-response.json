@@ -1,0 +1,35 @@
+{
+  "model": "jev-1.13.0",
+  "answers": [
+    {
+      "id": "command",
+      "type": "noul",
+      "noul": 0.93,
+      "choice": "yes",
+      "probabilities": {
+        "yes": 0.93,
+        "no": 0.06999999999999995
+      }
+    },
+    {
+      "id": "target",
+      "type": "choice",
+      "choice": "lamp",
+      "probabilities": {
+        "lamp": 1.0,
+        "fan": 0.0,
+        "unknown": 0.0
+      },
+      "confidence": 1.0
+    }
+  ],
+  "input_tokens": 711,
+  "probability_semantics": "Jev judgments over supplied evidence; does not calibrate perception errors",
+  "snapshot_sha256": "f52011ccd8d9878f792f4119bee42e4130fbcf0a6413876850350299c5d5d05c",
+  "backend": "typesafe_evidence",
+  "metrics": {
+    "elapsed_ms": 1122.8357999934815,
+    "api_requests": 1,
+    "questions": 2
+  }
+}

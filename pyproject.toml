@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev-multimodal"
+version = "0.1.0"
+description = "Typed multimodal decisions with shared visual computation and explicit evidence"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+vision = ["torch>=2.5", "transformers>=5.15,<6", "accelerate>=1", "Pillow>=10"]
+documents = ["pypdf>=5", "Pillow>=10", "pytesseract>=0.3"]
+audio = ["faster-whisper>=1"]
+
+[project.scripts]
+jev-multimodal = "jev_multimodal.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["jev_multimodal*"]

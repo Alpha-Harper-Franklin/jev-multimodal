@@ -1,0 +1,64 @@
+{
+  "scope": "POPE 64-image development subset",
+  "latency_semantics": "frontend measured remotely plus API measured on client; component sum, not one-process wall time",
+  "api_runs": "separate phases; 2 concurrent API workers per phase; no retries",
+  "paired_success_images": 64,
+  "pipelines": {
+    "caption_to_jev": {
+      "attempted_images": 64,
+      "successful_images": 64,
+      "errors": {},
+      "input_tokens_successful": 47801,
+      "api_p50_ms_successful": 827.7434000046924,
+      "component_sum_p50_ms_successful": 3133.510130966897,
+      "frontend_p50_ms": 2238.3815818466246,
+      "api_returned_models": [
+        "jev-1.13.0"
+      ],
+      "paired_all": {
+        "n": 384,
+        "correct": 328,
+        "accuracy": 0.8541666666666666,
+        "brier": 0.10756927083333334,
+        "nll": 0.3459674782414026,
+        "ece_10_top_label": 0.06843749999999998
+      },
+      "paired_test": {
+        "n": 192,
+        "correct": 163,
+        "accuracy": 0.8489583333333334,
+        "brier": 0.1059203125,
+        "nll": 0.33919981869931576,
+        "ece_10_top_label": 0.07161458333333333
+      }
+    },
+    "visual_evidence_to_jev": {
+      "attempted_images": 64,
+      "successful_images": 64,
+      "errors": {},
+      "input_tokens_successful": 82456,
+      "api_p50_ms_successful": 955.3913499985356,
+      "component_sum_p50_ms_successful": 1104.4935074460227,
+      "frontend_p50_ms": 159.50228460133076,
+      "api_returned_models": [
+        "jev-1.13.0"
+      ],
+      "paired_all": {
+        "n": 384,
+        "correct": 349,
+        "accuracy": 0.9088541666666666,
+        "brier": 0.07977578125,
+        "nll": 0.28627076565539217,
+        "ece_10_top_label": 0.02851562499999999
+      },
+      "paired_test": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.07562708333333333,
+        "nll": 0.2712611468720648,
+        "ece_10_top_label": 0.017291666666666653
+      }
+    }
+  }
+}

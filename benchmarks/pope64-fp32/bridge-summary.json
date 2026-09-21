@@ -1,0 +1,67 @@
+{
+  "scope": "POPE 64-image development subset",
+  "latency_semantics": "frontend measured remotely plus API measured on client; component sum, not one-process wall time",
+  "api_runs": "separate phases; 2 concurrent API workers per phase; no retries",
+  "paired_success_images": 62,
+  "pipelines": {
+    "caption_to_jev": {
+      "attempted_images": 64,
+      "successful_images": 64,
+      "errors": {},
+      "input_tokens_successful": 47801,
+      "api_p50_ms_successful": 827.7434000046924,
+      "component_sum_p50_ms_successful": 3133.510130966897,
+      "frontend_p50_ms": 2238.3815818466246,
+      "api_returned_models": [
+        "jev-1.13.0"
+      ],
+      "paired_all": {
+        "n": 372,
+        "correct": 316,
+        "accuracy": 0.8494623655913979,
+        "brier": 0.1109739247311828,
+        "nll": 0.3557765809092249,
+        "ece_10_top_label": 0.07196236559139785
+      },
+      "paired_test": {
+        "n": 192,
+        "correct": 163,
+        "accuracy": 0.8489583333333334,
+        "brier": 0.1059203125,
+        "nll": 0.33919981869931576,
+        "ece_10_top_label": 0.07161458333333333
+      }
+    },
+    "visual_evidence_to_jev": {
+      "attempted_images": 64,
+      "successful_images": 62,
+      "errors": {
+        "transport_or_json_error": 1,
+        "http_400": 1
+      },
+      "input_tokens_successful": 230984,
+      "api_p50_ms_successful": 850.6349499948556,
+      "component_sum_p50_ms_successful": 998.7287491821917,
+      "frontend_p50_ms": 159.50228460133076,
+      "api_returned_models": [
+        "jev-1.13.0"
+      ],
+      "paired_all": {
+        "n": 372,
+        "correct": 337,
+        "accuracy": 0.9059139784946236,
+        "brier": 0.08711559139784945,
+        "nll": 0.30838819677634766,
+        "ece_10_top_label": 0.040860215053763464
+      },
+      "paired_test": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.0804890625,
+        "nll": 0.28868283755894725,
+        "ece_10_top_label": 0.03661458333333335
+      }
+    }
+  }
+}

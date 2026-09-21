@@ -1,0 +1,81 @@
+{
+  "scope": "64-image development subset; no accuracy novelty claim",
+  "modes": {
+    "independent": {
+      "all": {
+        "n": 384,
+        "correct": 348,
+        "accuracy": 0.90625,
+        "brier": 0.07792821011531502,
+        "nll": 0.397759560819333,
+        "ece_10_top_label": 0.06269340909417166
+      },
+      "test_raw": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.07283720835934224,
+        "nll": 0.35166640449477077,
+        "ece_10_top_label": 0.06645267475213457
+      },
+      "test_temperature_scaled": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.06405272707767125,
+        "nll": 0.22202394150605528,
+        "ece_10_top_label": 0.03392700827767184
+      },
+      "fitted_temperature_calibration_only": 2.7870954605658516,
+      "images": 64,
+      "latency_p50_ms": 611.3052861765027,
+      "latency_p95_ms": 657.7382190153003,
+      "total_ms": 38878.252373076975,
+      "vision_forward_calls": 384
+    },
+    "shared": {
+      "all": {
+        "n": 384,
+        "correct": 349,
+        "accuracy": 0.9088541666666666,
+        "brier": 0.0776953824884055,
+        "nll": 0.39808843955866213,
+        "ece_10_top_label": 0.06290238835463298
+      },
+      "test_raw": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.07252205930224423,
+        "nll": 0.3523329366320043,
+        "ece_10_top_label": 0.06604996431773681
+      },
+      "test_temperature_scaled": {
+        "n": 192,
+        "correct": 175,
+        "accuracy": 0.9114583333333334,
+        "brier": 0.06400852631488856,
+        "nll": 0.22233674563607075,
+        "ece_10_top_label": 0.034421798475841106
+      },
+      "fitted_temperature_calibration_only": 2.7870954605658516,
+      "images": 64,
+      "latency_p50_ms": 159.50228460133076,
+      "latency_p95_ms": 174.73692260682583,
+      "total_ms": 10247.054065577686,
+      "vision_forward_calls": 64
+    }
+  },
+  "parity": {
+    "choice_agreement": 0.9973958333333334,
+    "max_probability_delta": 0.028389343973340725,
+    "mean_probability_delta": 0.0007977729740786765
+  },
+  "paired_speedup": {
+    "median": 3.811800767667741,
+    "image_bootstrap_95_ci": [
+      3.7962035639356033,
+      3.8242235702422676
+    ]
+  }
+}

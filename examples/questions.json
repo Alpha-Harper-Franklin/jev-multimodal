@@ -1,0 +1,4 @@
+[
+  {"id": "person", "type": "noul", "instructions": "Is there a person in the image?"},
+  {"id": "location", "type": "choice", "instructions": "Which setting is most consistent with the image?", "criteria": {"inside": "Indoors", "outside": "Outdoors", "uncertain": "Not enough visual evidence"}}
+]

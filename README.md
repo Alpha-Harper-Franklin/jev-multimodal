@@ -1,62 +1,114 @@
 # Jev + Multimodal
 
-**Connect images, video, and screen observations to Jev's structured decisions.**
+**Answer many questions about an image without generating a caption. Feed compact visual, document, and transcript evidence into Jev.**
 
-Define semantic conditions over camera, video, or screen observations and let software consume bounded judgments. The planned architecture uses an external perception component to produce reusable structured state, then Jev to evaluate multiple conditions over that state.
+[![Tests](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml/badge.svg)](https://github.com/Alpha-Harper-Franklin/jev-multimodal/actions/workflows/ci.yml)
+[Source review 中文](research/SOURCE_REVIEW.zh-CN.md) · [Measurements](benchmarks/README.md) · [Credits](THIRD_PARTY.md)
 
-**Status: design-stage project.** This repository currently contains the architecture, a sample event specification, and the evaluation plan. There is no working camera pipeline, event runtime, or Jev adapter yet. Example observations are authored fixtures.
+Working CUDA visual decisions, a hosted TypeSafe Jev adapter, provenance and freshness handling, a CLI, and recorded experiments on public images. **Hosted Jev remains text-only.** Local visual decisions use Qwen2.5-VL; the optional Jev stage receives extracted evidence.
 
-## Example applications
+## Measured on real images
 
-- A robot workflow notices that a grasp did not hold.
-- A screen workflow notices that an application is waiting for user action.
-- A camera workflow notices a package arrival.
-- A recorded presentation is indexed by semantic events.
+One RTX 4090, Qwen2.5-VL-7B, 64 COCO images from a deterministic POPE random subset, six questions per image. The last 32 images / 192 questions form the isolated test split. This is a development experiment, not the full POPE benchmark.
 
-These are proposed applications, not completed demos.
+| Pipeline | Test accuracy | Median time per image, six questions |
+|---|---:|---:|
+| Qwen independent visual forwards | 91.15% | 611 ms |
+| Qwen shared visual prefix + batched question branches | 91.15% | **160 ms** |
+| Qwen generic caption → Jev | 84.90% | 3,134 ms¹ |
+| Qwen compact visual evidence → Jev | **91.15%** | **1,104 ms¹** |
 
-## Proposed architecture
+Shared computation gave **3.81× paired median speedup** over independent visual forwards. A single-image scaling diagnostic with 64 repeated questions gave 6,780 → 594 ms; repeated questions are not extra accuracy samples. At one question, cache setup was slower than an independent forward.
 
-```text
-Camera / video / screen
-    -> OCR, detector, or vision model
-    -> structured observation with timestamp and provenance
-    -> Jev judgments over declared questions
-    -> temporal logic, deduplication, and event subscribers
+¹ Hosted pipeline timing sums separately measured frontend and API components, not single-process wall time. API phases ran separately with two workers. Both final hosted pipelines returned 64/64 validated responses; earlier failures are retained. See [the full report](benchmarks/README.md).
+
+Direct visual inference remains fastest and has the same test accuracy as the Jev bridge. Compact evidence uses **1.73× the input tokens of captions** here. Jev is useful when an application needs further semantic decisions over combined evidence; adding it is not automatically an improvement.
+
+## Quick start
+
+Python 3.10+. Measured vision runtime: Torch 2.13.0+cu130 / Transformers 5.15.0. Supply an existing local Qwen2.5-VL checkpoint; weights are not downloaded automatically.
+
+```bash
+git clone https://github.com/Alpha-Harper-Franklin/jev-multimodal.git
+cd jev-multimodal
+python -m pip install '.[vision]'
+python -m jev_multimodal vision --model /path/to/Qwen2.5-VL-7B-Instruct --image /path/to/image.jpg --questions examples/questions.json --output runs/visual.json
 ```
 
-Perception is intended to run once for several judgments where reuse is valid. Code handles timestamps, expiry, temporal conditions, and event deduplication. State changes invalidate cached judgments. Missing or stale evidence must remain distinguishable from a negative answer.
+```python
+from jev_multimodal import Question
+from jev_multimodal.cuda_qwen import QwenVision
+from jev_multimodal.evidence import Snapshot, visual_evidence
+from jev_multimodal.typesafe import JevClient
 
-Jev itself remains text-only. This project does not modify Jev's weights or provide native image input to its API.
+questions = [
+    Question.yes_no("person", "Is there a person in the image?"),
+    Question.yes_no("bicycle", "Is there a bicycle in the image?"),
+]
+vision = QwenVision("/path/to/Qwen2.5-VL-7B-Instruct")
+result = vision.judge("image.jpg", questions)
 
-`examples/event.json` is a proposed project-level event specification, not an executable configuration or a TypeSafe HTTP request.
+# Optional: set TYPESAFE_API_KEY in this process's environment.
+evidence = visual_evidence(result, source_id="frame-1", revision="1", questions=questions)
+decision = JevClient().judge(Snapshot(evidence), questions)
+```
 
-## First milestone
+Choice supports 2–26 candidates, Noul uses yes/no, and a request holds 1–64 questions. **Score is not implemented.** Local probabilities are conditional candidate scores, not calibrated correctness. Include an explicit `unknown` Choice candidate when the task permits it.
 
-- [ ] A recorded-observation runner and event subscription interface.
-- [ ] One perception adapter and a Jev decision adapter.
-- [ ] Multiple conditions over a shared observation.
-- [ ] Explicit observation freshness, missing evidence, and deduplication.
-- [ ] A small camera or screen demonstration with actual timing.
-- [ ] A direct-VLM structured-output baseline.
+## Documents and speech
 
-## Evaluation
+```bash
+python -m pip install '.[documents]'
+python -m jev_multimodal extract pdf document.pdf --source-id document --revision 1 --output runs/document.json
+# Tesseract must also be installed on the system.
+python -m jev_multimodal extract ocr screen.png --source-id screen --revision 1 --output runs/screen.json
+# This checked-in transcript is an authored API fixture, not recorded audio.
+python -m jev_multimodal extract transcript examples/transcript.json --source-id speech --revision 1 --output runs/speech.json
+python -m jev_multimodal judge --evidence runs/speech.json --questions examples/transcript_questions.json --output runs/speech-decisions.json
+```
 
-Compare direct VLM judgments against perception plus Jev, varying the number of questions and state reuse. Include perception latency/cost, API latency/cost, event false positives, missed events, and time to detection. Use labelled end-to-end examples and held-out thresholds.
+Optional local audio recognition uses `pip install '.[audio]'` and `extract audio recording.wav --asr-model /path/to/faster-whisper ...`. PDF extraction preserves page numbers and marks textless pages `needs_ocr`; OCR preserves word boxes and engine scores; transcript/audio adapters preserve segment times. Raw image/audio bytes are never sent to hosted Jev.
 
-Jev's confidence does not cover upstream perception failures. A second decision layer may add cost when only one question needs answering; any efficiency advantage must be measured.
+OCR/PDF/ASR adapters are implemented but **have not received end-to-end extraction validation in the release environment**. Validated paths are real-image Qwen inference, visual-evidence→Jev, caption→Jev, and the transcript import/API fixture. There is no live camera loop, native video backbone, robot controller, or trained model released here.
 
-## 中文说明
+## Evidence stays tied to its source
 
-Jev + 多模态：计划把摄像头、视频和屏幕中的语义条件转成程序事件。感知前端生成带时间与来源的结构化观察，Jev 负责有限问题判断，代码负责持续时间、去重与状态过期。
+```mermaid
+flowchart LR
+  Image[Image] --> Vision[One visual prefix]
+  Vision --> Branches[Independent question branches]
+  PDF[PDF / OCR] --> Evidence[Evidence with source, revision and locator]
+  Speech[Speech transcript] --> Evidence
+  Branches --> Evidence
+  Evidence --> Jev[One batched Jev request]
+  Jev --> Gate[Freshness and revision check]
+  Gate --> App[Application decision]
+```
 
-当前只有设计和示例，尚未接入相机或 Jev。主要验证问题是：同一观察服务多个判断时，是否比 VLM 直接输出结构化结果更实用、更经济。它不代表 Jev 本体获得了视觉能力。
+`Snapshot` rejects conflicting source revisions and duplicate locators. `RevisionGate` lets asynchronous callers drop superseded replies, even when a later capture contains identical bytes. Pass a real acquisition timestamp and `max_age_s` to check freshness before and after an API call; timestamps are not invented for prerecorded files. Callers must use the revision gate when applying asynchronous results.
 
-## Sources
+`ExtractionCache` keys reuse on content plus extractor version/options and returns isolated copies. No visual KV cache is reused between requests. The hosted client validates IDs, answer types and probability distributions, rejects oversized evidence instead of truncating it, and performs no hidden retry or fallback. Provenance identifies a source; it does not prove correctness.
 
-- [TypeSafe model capabilities](https://docs.typesafe.ai/models)
-- [TypeSafe primitives](https://docs.typesafe.ai/primitives)
-- [TypeSafe confidence](https://docs.typesafe.ai/confidence)
-- [Semantic Router](https://github.com/aurelio-labs/semantic-router): related decision-routing infrastructure.
+## Reproduce
 
-Independent community project; not affiliated with TypeSafe. MIT licensed; external models and components keep their own licenses.
+```bash
+python -m unittest discover -s tests -v
+python experiments/download_pope.py --output runs/pope64 --images 64
+python experiments/verify_shared.py --model /path/to/model --manifest runs/pope64/manifest.jsonl --output runs/parity.json
+python experiments/run_pope.py --model /path/to/model --manifest runs/pope64/manifest.jsonl --output runs/paired
+python experiments/analyze_pope.py --predictions runs/paired/predictions.jsonl --labels runs/pope64/labels.jsonl --output runs/summary.json
+```
+
+See [benchmark reproduction](benchmarks/README.md) for caption and hosted API experiments. Use new output paths. Ground truth never enters inference. Temperature fits use calibration image groups only; they do not change argmax accuracy or guarantee calibration elsewhere. BF16 transformer branching is numerically approximate: 383/384 choices agreed with independent forwards in this run.
+
+## What was borrowed
+
+The investigation returned **555 distinct repository search results** and pinned **57 source snapshots**, including projects with OCR, speech, DOM, gesture or robot observation paths. This is a bounded search, not an exhaustive internet census. [The audit](research/SOURCE_REVIEW.zh-CN.md) distinguishes pixel models, text evidence bridges, privileged simulator state, prototypes and unsupported README claims.
+
+Shared visual prefixes, batched branches, candidate readout and temperature scaling are existing community techniques. This release integrates and measures them; it does not claim to invent them or reproduce TypeSafe's undisclosed training algorithm. Third-party performance numbers are not presented as independently reproduced.
+
+## 中文
+
+可运行的 Jev 多模态接口与实验基线：图片先在本地共享视觉计算，再按需把紧凑证据交给 Jev。目前实测重点是多问题吞吐、证据形式、概率校准和输入新鲜度。不是新训练的多模态基础模型，也没有驾驶或机器人闭环成绩。后续需要补齐真实时序、多模态冲突、分布变化与训练决策头比较，不能由这批小样本结果推出顶会或通用性能结论。
+
+Independent community project, not affiliated with TypeSafe. MIT code; external models, libraries and datasets retain their own licenses. See [THIRD_PARTY.md](THIRD_PARTY.md).

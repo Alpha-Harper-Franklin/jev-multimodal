@@ -1,0 +1,8 @@
+{
+  "input": "examples/transcript.json",
+  "input_kind": "authored transcript fixture, not recorded audio",
+  "attempt": 1,
+  "status": "error",
+  "error": "transport_or_json_error",
+  "automatic_retries": 0
+}

@@ -1,0 +1,138 @@
+[
+  {
+    "count": 1,
+    "mode": "independent",
+    "metrics": {
+      "preparation_ms": 12.668712995946407,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 102.71265357732773,
+      "elapsed_ms": 115.42367562651634,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 1,
+      "questions": 1,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 1,
+    "mode": "shared",
+    "metrics": {
+      "preparation_ms": 12.531229294836521,
+      "prefill_ms": 102.13565267622471,
+      "cache_fork_ms": 3.7929704412817955,
+      "suffix_ms": 25.141443125903606,
+      "elapsed_ms": 143.80820747464895,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 2,
+      "questions": 1,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 4,
+    "mode": "independent",
+    "metrics": {
+      "preparation_ms": 13.160757720470428,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 407.7507648617029,
+      "elapsed_ms": 420.95114663243294,
+      "vision_forward_calls": 4,
+      "language_forward_calls": 4,
+      "questions": 4,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 4,
+    "mode": "shared",
+    "metrics": {
+      "preparation_ms": 17.618665471673012,
+      "prefill_ms": 102.39748377352953,
+      "cache_fork_ms": 3.840038552880287,
+      "suffix_ms": 27.259524911642075,
+      "elapsed_ms": 151.3342848047614,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 2,
+      "questions": 4,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 16,
+    "mode": "independent",
+    "metrics": {
+      "preparation_ms": 15.530519187450409,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 1629.0862411260605,
+      "elapsed_ms": 1644.6597147732973,
+      "vision_forward_calls": 16,
+      "language_forward_calls": 16,
+      "questions": 16,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 16,
+    "mode": "shared",
+    "metrics": {
+      "preparation_ms": 15.623725950717926,
+      "prefill_ms": 102.2952115163207,
+      "cache_fork_ms": 7.663970813155174,
+      "suffix_ms": 71.51373196393251,
+      "elapsed_ms": 197.45145551860332,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 3,
+      "questions": 16,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 64,
+    "mode": "independent",
+    "metrics": {
+      "preparation_ms": 25.051756761968136,
+      "prefill_ms": 0.0,
+      "cache_fork_ms": 0.0,
+      "suffix_ms": 6519.723499193788,
+      "elapsed_ms": 6544.89057790488,
+      "vision_forward_calls": 64,
+      "language_forward_calls": 64,
+      "questions": 64,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  },
+  {
+    "count": 64,
+    "mode": "shared",
+    "metrics": {
+      "preparation_ms": 26.03557426482439,
+      "prefill_ms": 102.16267313808203,
+      "cache_fork_ms": 30.06418328732252,
+      "suffix_ms": 282.7420188114047,
+      "elapsed_ms": 442.0465240254998,
+      "vision_forward_calls": 1,
+      "language_forward_calls": 9,
+      "questions": 64,
+      "prefix_tokens": 435,
+      "generated_tokens": 0,
+      "batch_size": 8
+    }
+  }
+]

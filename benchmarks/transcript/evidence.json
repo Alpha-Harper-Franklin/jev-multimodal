@@ -1,0 +1,37 @@
+{
+  "context": {},
+  "evidence": [
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "transcript",
+      "extractor": "transcript-json:v1",
+      "content_sha256": "07ffa19230d936bcdbdcc7cf2f8740db2de2a03c2b52e3d2d51f2f1623f96c15",
+      "data": {
+        "text": "Please turn on the desk lamp."
+      },
+      "locator": {
+        "segment": 0,
+        "start_s": 0.0,
+        "end_s": 1.8
+      },
+      "observed_at": null
+    },
+    {
+      "source_id": "speech",
+      "revision": "1",
+      "modality": "transcript",
+      "extractor": "transcript-json:v1",
+      "content_sha256": "07ffa19230d936bcdbdcc7cf2f8740db2de2a03c2b52e3d2d51f2f1623f96c15",
+      "data": {
+        "text": "Use warm white light."
+      },
+      "locator": {
+        "segment": 1,
+        "start_s": 2.0,
+        "end_s": 3.0
+      },
+      "observed_at": null
+    }
+  ]
+}

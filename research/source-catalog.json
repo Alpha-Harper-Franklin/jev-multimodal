@@ -1,0 +1,2580 @@
+{
+  "as_of": "2026-09-21",
+  "unique_search_results": 555,
+  "pinned_snapshots": 57,
+  "limitations": [
+    "First 100 results per query; broad queries are not exhaustive.",
+    "Google HTML search produced no usable results in this environment.",
+    "topqaz/vision-jev returned HTTP 409 (empty repository).",
+    "Fetching a file does not imply all its contents were reviewed.",
+    "achimala/jevinci and achimala/jev-paint resolve to the same commit."
+  ],
+  "searches": [
+    {
+      "query": "\"jev\" \"typesafe\" in:readme",
+      "status": 200,
+      "total_reported": 5664,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "virattt/ai-hedge-fund",
+        "tamaratran/fast-jev-compaction",
+        "browser-use/jev-ultrafast",
+        "TheoLeeCJ/SemIf",
+        "ComposioHQ/composio",
+        "Anil-matcha/awesome-jev-by-typesafe",
+        "yibie/awesome-jev",
+        "caliber-ai-org/ai-setup",
+        "AbdelStark/awesome-typesafe",
+        "NandhaKishorM/laya",
+        "cobanov/awesome-jev",
+        "superagents-lab/jev-search",
+        "jarrodwatts/jev-trader",
+        "fatwang2/awesome-jev",
+        "AnotiaWang/awesome-jev",
+        "hellogumbo/awesome-jev",
+        "Sac-Y/Jev-cu",
+        "OpenByteInc/QuantDinger",
+        "githubnext/localjev",
+        "notque/vexjoy-agent",
+        "droidrun/mobile-jev",
+        "fhshaik/typesafe-mario",
+        "logicrw/awesome-jev-projects",
+        "vinnylarouge/jevlike",
+        "valentynkit/awesome-jev-typesafe",
+        "wy-coliney/jev-browser-use",
+        "thruwire/foreman",
+        "dabit3/jev-experiments",
+        "jkudish/jev-mcp",
+        "realZachi/pg-jev",
+        "jkudish/jev-browser",
+        "devagrawal09/jev-review",
+        "OpenAgentsInc/openagents",
+        "standardagents/jevpilot",
+        "kyotofin/tax-doc-classifier",
+        "sutro-sh/jev-align",
+        "jaredpalmer/kev",
+        "moritzkremb/jev-voice-browser",
+        "gargpratyush/jev-router",
+        "bespokelabsai/nimble",
+        "brainstormity/Jev-X-Sentiment-Analysis",
+        "kerpopule/hermes-jev-skills",
+        "narumiruna/pi-extensions",
+        "shhivv/third-hand",
+        "aowang-ai/jev-trade",
+        "mrmps/classifier-dev",
+        "NiazMorshed2007/jev-review",
+        "kraayenjon/awesome-jev",
+        "v-modal/awesome-jev-tools",
+        "DecapodLabs/decapod",
+        "itsmostafa/typesafe-mcp",
+        "vercel-labs/ai-cli",
+        "razorback16/openjev",
+        "yonatangross/orchestkit",
+        "Devin-AXIS/jev-dsh-decision",
+        "featherless-ai/simple-jev",
+        "0xNatoshi/jev-codex-router",
+        "AppitStudio/awesome-jev",
+        "logan-markewich/jeff",
+        "delexw/claude-code-trace",
+        "rmalde/minecraft-agent",
+        "trungdq88/youtube-sponsor-detection",
+        "tamaratran/jev-pruner",
+        "WrongStack/WrongStack",
+        "kitze/unclutter",
+        "agentjido/req_llm",
+        "w3cj/jev-chat",
+        "Heman10x-NGU/openJev-verdict-2.0",
+        "robbyczgw-cla/hermes-web-search-plus",
+        "OmniJev/awesome-jev-gallery",
+        "kitze/skillbox",
+        "nicobailon/pi-interactive-shell",
+        "EthanAlgoX/AIStock",
+        "hr98w/jev-visual",
+        "yzfly/awesome-jev-zh",
+        "skeptrunedev/jev-recruiter",
+        "mrnugget/jev-shell-history",
+        "IAmUnbounded/save-token-jev-clean",
+        "donvito/ai-backends",
+        "coldteadotai/abide",
+        "Pluviobyte/rnskill",
+        "SREGym/SREGym",
+        "BillionsBobby/JevRouter",
+        "ekzhang/openjev-sglang",
+        "timrogers/formanator",
+        "juspay/neurolink",
+        "cequence-io/openai-scala-client",
+        "savka777/jev-use",
+        "timpratim/macbrow",
+        "kunchenguid/compact-adviser",
+        "shhivv/arc-cua",
+        "jerryjliu/docjev",
+        "y0usaf/pi-jev",
+        "sonnylazuardi/superterminal",
+        "wuyoscar/jev-skill",
+        "rohanarun/computer-use-cache",
+        "dbreunig/building-with-jev-skill",
+        "noperator/siftrank",
+        "0xPlaygrounds/rig",
+        "wfzyx/von"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"api.typesafe.ai\" in:readme",
+      "status": 200,
+      "total_reported": 1064,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "tamaratran/fast-jev-compaction",
+        "caliber-ai-org/ai-setup",
+        "savka777/jev-use",
+        "rokcso/bluenoise",
+        "realZachi/typesafe-adblock",
+        "NiazMorshed2007/jev-review",
+        "superagents-lab/jev-search",
+        "realZachi/pg-jev",
+        "MarcelMichau/fake-survey-generator",
+        "skeptrunedev/jev-recruiter",
+        "zhengxuyu/litjev",
+        "kitze/unclutter",
+        "kitze/skillbox",
+        "russellballestrini/opencompletion",
+        "kunchenguid/compact-adviser",
+        "RafalWilinski/vibecheck",
+        "y0usaf/pi-jev",
+        "Devin-AXIS/jev-dsh-decision",
+        "affirmitv/ghosthands",
+        "yusukebe/hono-jev-router",
+        "ranjan2829/AskJev",
+        "davila7/jev-explained",
+        "donvito/ai-backends",
+        "hellogumbo/awesome-jev",
+        "pithings/advocaat",
+        "obie/ruby_decision_model",
+        "ethanplusai/jev-chat-for-twitch",
+        "tacticocc/Jevbridge",
+        "goodrahstar/jev-column-race",
+        "khordoo/jev-reflex-autonomy-lab",
+        "danvega/jev-spring-boot-starter",
+        "kraayenjon/awesome-jev",
+        "Anil-matcha/awesome-jev-by-typesafe",
+        "DevMortimer/pi-typesafe",
+        "yonatangross/orchestkit",
+        "joshmn/typesafe-sdk",
+        "kbhuw/jev-sift",
+        "valentynkit/awesome-jev-typesafe",
+        "atharvamhaske/typesafe-sdk-go",
+        "QAInsights/jmeter-ai",
+        "geilt/typesafe-cli",
+        "Premo-Cloud/typesafe-sdk-java",
+        "liuyanghejerry/Clausura",
+        "uehaj/jev-semgrep",
+        "BattlesnakeOfficial/arena",
+        "HyunjunJeon/jev-judgment",
+        "kingdsa/AI-Relationship-Copilot",
+        "dannote/jev",
+        "opencx-labs/zevals",
+        "safzanpirani/pi-jev-skill-picker",
+        "captain-corgi/typesafe-sdk-go",
+        "oso95/x-scanner",
+        "dani1005/book-aurora",
+        "merefield/discourse-chatbot",
+        "lukaske/jev-doom-agent",
+        "lykycy123/RoboJEV",
+        "manifoldor/xtags",
+        "leepokai/jev-guard",
+        "bugkiwi/elons-job",
+        "kisshan13/typesafe-ai-go",
+        "AboveColin/HA-Jev",
+        "noetion/dsh-jev",
+        "stas4000/jev-linkmap",
+        "jomatsu/pi-jev-auto-mode",
+        "logicrw/awesome-jev-projects",
+        "soderlind/ai-provider-for-jev",
+        "alterhq/typesafe-sdk-swift",
+        "valentynkit/jev-skip",
+        "carldaws/hunch",
+        "nternet-company/hater",
+        "AkashPriyadarshii/jev-curate",
+        "joelhooks/pi-fast-jev-compaction",
+        "cejor6/kalshi-mcp-server",
+        "av/naiou",
+        "ainame/swift-typesafe",
+        "y0usaf/typesafe-cli",
+        "99darwin/nexus",
+        "alxcrt/is-odd-jev",
+        "tamaratran/jev-pruner",
+        "harness/mcp-server",
+        "nicobailon/pi-mcp-adapter",
+        "AkashPriyadarshii/jev-git",
+        "forvela/jev-agent-browser",
+        "tornikegomareli/FindSFSymbols",
+        "finetuningsingh/intelliprompter",
+        "hardkoded/typesafe-sdk-dotnet",
+        "fatelei/yueli",
+        "sontakey/awesome-jev",
+        "Kushwho/jev-codes",
+        "jjyr/any-auto",
+        "Peu77/JevFind",
+        "i-priyanshuverma/laravel-jev",
+        "cnrveysel/JevUnreal",
+        "walidboulanouar/awesome-jev-use-cases",
+        "HusDev/pisocheck",
+        "Coolhand-Labs/coolhand-ruby",
+        "alexj11324/open-jev-approvals",
+        "qs-lll/twitter-jev-guard",
+        "Kiln-AI/jev_jsonschema",
+        "sufianetaouil/every"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"jev\" \"screenshot\" in:readme",
+      "status": 200,
+      "total_reported": 789,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "browser-use/jev-ultrafast",
+        "milind-soni/tiptour-macos",
+        "droidrun/mobile-jev",
+        "dabit3/jev-experiments",
+        "wy-coliney/jev-browser-use",
+        "jkudish/jev-browser",
+        "fatwang2/awesome-jev",
+        "kerpopule/hermes-jev-skills",
+        "fhshaik/typesafe-mario",
+        "delexw/claude-code-trace",
+        "hr98w/jev-visual",
+        "logicrw/awesome-jev-projects",
+        "rmalde/minecraft-agent",
+        "vercel-labs/ai-cli",
+        "shhivv/third-hand",
+        "valentynkit/awesome-jev-typesafe",
+        "trungdq88/youtube-sponsor-detection",
+        "timpratim/macbrow",
+        "savka777/jev-use",
+        "sickn33/agentic-awesome-skills",
+        "hashgraph-online/awesome-ai-plugins",
+        "nicobailon/pi-mcp-adapter",
+        "skeptrunedev/jev-recruiter",
+        "nicobailon/surf-cli",
+        "affirmitv/ghosthands",
+        "shhivv/arc-cua",
+        "narumiruna/pi-extensions",
+        "sypsyp97/light-whisper",
+        "mukiwu/muki-ai-plugins",
+        "kitze/unclutter",
+        "kitze/skillbox",
+        "Ying-Kai-Liao/jev-browser",
+        "zhengxuyu/litjev",
+        "cline/plugins",
+        "kevinbadi/jev-voice",
+        "OneWave-AI/claude-skills",
+        "iammrduncan/typesafe-ai-benchmark",
+        "agent-labs-dev/fastbrowse",
+        "tacticocc/Jevbridge",
+        "nekuda-ai/WindTunnel",
+        "wundercorp/loki",
+        "hashgraph-online/awesome-codex-plugins",
+        "walidboulanouar/awesome-jev-use-cases",
+        "TypeSafeAI/typesafe-playground",
+        "socai-io/socai",
+        "mayank953/Jev",
+        "awlevin/typesafe-computer-use",
+        "choxos/jev-reviewer",
+        "Anil-matcha/awesome-gpt-6-astra",
+        "iamaamir/pi-bifrost",
+        "oso95/x-scanner",
+        "anandi1989/awesome-jev-usecases",
+        "kingdsa/AI-Relationship-Copilot",
+        "BattlesnakeOfficial/arena",
+        "yikangy873-gif/jev-desktop",
+        "RongleCat/awesome-grok-bot",
+        "joshuaeroman/plasmallm",
+        "MrJev/awesome-jev",
+        "Eniip/jev-game-tools",
+        "fidecastro/jevify",
+        "ThePatriczek/playwright-recast",
+        "jcpsimmons/jev-macos-loop",
+        "sahibzada-allahyar/gliner2-ultrafast",
+        "12britz/awesome-free-models",
+        "fabricioctelles/skills",
+        "professorpalmer/marionette",
+        "jpcaparas/skills",
+        "aliaihub/awesome-jev-usecases",
+        "romaluev/jev-ego",
+        "h1bomb/bluff",
+        "MarcelMichau/fake-survey-generator",
+        "jesset/pi-verdict",
+        "APUS-AI-Lab/fast-browser-use",
+        "grabbou/jevil",
+        "darkroomengineering/cc-settings",
+        "chy4pro/jev-for-chrome",
+        "harshwasan/jev-sentinel",
+        "tumf/jev-cli",
+        "GoldenLoaf24h/browserclaw",
+        "mlcyclops/lucidagentide",
+        "Skyvern-AI/jevscape",
+        "myc0576/SmartMoney-Cub",
+        "HalxDocs/dlq_inspector",
+        "jiawei686/jev-ultrafast-mcp",
+        "nateecho32-stack/mefi-studio",
+        "nanstey/agentic-tools",
+        "riteshverma/s18",
+        "phyous/tsai-sc",
+        "wh000wh000/awesome-jev-live",
+        "earlyaidopters/gumroad-resources",
+        "tanxarx/awesome-jev",
+        "paulsmith/computer-use-jev",
+        "sontakey/awesome-jev",
+        "haseeb-heaven/jev-system-one",
+        "backmeupplz/jev_antispam_bot",
+        "lbotinelly/jev-little-airways",
+        "filedcom/playjev",
+        "pumpkinredbean/bside",
+        "tontoko/jev-browser",
+        "atharvamhaske/typesafe-sdk-go"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"jev\" \"audio\" in:readme",
+      "status": 200,
+      "total_reported": 570,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "milind-soni/tiptour-macos",
+        "Anil-matcha/awesome-jev-by-typesafe",
+        "pollinations/pollinations",
+        "vercel-labs/ai-cli",
+        "cobanov/awesome-jev",
+        "AnotiaWang/awesome-jev",
+        "fatwang2/awesome-jev",
+        "Pluviobyte/rnskill",
+        "hellogumbo/awesome-jev",
+        "Shubhamsaboo/awesome-llm-apps",
+        "rmalde/minecraft-agent",
+        "valentynkit/awesome-jev-typesafe",
+        "trungdq88/youtube-sponsor-detection",
+        "featherless-ai/simple-jev",
+        "moritzkremb/jev-voice-browser",
+        "logicrw/awesome-jev-projects",
+        "ax-llm/ax",
+        "sickn33/agentic-awesome-skills",
+        "timpratim/macbrow",
+        "Anil-matcha/awesome-generative-ai-apps",
+        "kraayenjon/awesome-jev",
+        "BillionsBobby/JevRouter",
+        "0xPlaygrounds/rig",
+        "juspay/neurolink",
+        "wuyoscar/jev-skill",
+        "vercel-labs/json-render",
+        "sypsyp97/light-whisper",
+        "OmniJev/awesome-jev-gallery",
+        "ekzhang/openjev-sglang",
+        "AppitStudio/awesome-jev",
+        "ChetasLua/jevmeter",
+        "hashgraph-online/awesome-ai-plugins",
+        "MobileFirstLLC/social-media-hacker-list",
+        "yzfly/awesome-jev-zh",
+        "kevinbadi/jev-voice",
+        "nicobailon/pi-mcp-adapter",
+        "okinaaudio/live-jev",
+        "QAInsights/jmeter-ai",
+        "wundercorp/loki",
+        "tonhowtf/omniget",
+        "ZeroGold/call-coach-ai",
+        "cequence-io/openai-scala-client",
+        "heyjunpenn/awesome-jev",
+        "AlbionaHoti/refgarden",
+        "autonomous-ai/openharness",
+        "socai-io/socai",
+        "hashgraph-online/awesome-codex-plugins",
+        "webdevcody/jevs-fly",
+        "choxos/jev-reviewer",
+        "kunpengtalk/OmniStudio",
+        "12britz/awesome-free-models",
+        "kunchenguid/axi",
+        "marcusquinn/aidevops",
+        "anandi1989/awesome-jev-usecases",
+        "ksenxx/kiss_ai",
+        "ThePatriczek/playwright-recast",
+        "RenaGao/jev-dataops",
+        "joshuaeroman/plasmallm",
+        "brudarko/jev-mac-voice",
+        "RyanKung/rotom",
+        "chujianyun/skills",
+        "zhihz/openjev",
+        "alvinreal/awesome-opensource-ai",
+        "hanishrao/collective-ai-tools",
+        "cocktailpeanut/jevthoven",
+        "daftAI2026/awesome-jev",
+        "kmooney/jamsesh",
+        "MobinX/awesome-mcp-list",
+        "GetStream/awesome-ai-news",
+        "jooray/signal-summarizer",
+        "jcpsimmons/jev-macos-loop",
+        "RongleCat/awesome-grok-bot",
+        "tuxevil/tuxevil-rotator",
+        "genai-craft/openvons",
+        "nateecho32-stack/mefi-studio",
+        "jem-computer/bb-live",
+        "jevgpt/discord-live-voice-bot",
+        "ckaraca/awesome-jev",
+        "mlcyclops/lucidagentide",
+        "rust-unofficial/awesome-rust",
+        "zhaoolee/garss",
+        "Frank-ZY-Dou/awesome-jev",
+        "Mellow-Artificial-Intelligence/openextract",
+        "jagsan-cyber/reflex-gate",
+        "earlyaidopters/gumroad-resources",
+        "wh000wh000/awesome-jev-live",
+        "tanxarx/awesome-jev",
+        "opaielsheikh/ai-elo-ranker",
+        "Muvon/octohub",
+        "iomiras/sponsor-skipper",
+        "harshil1712/slidepilot",
+        "amitshekhariitbhu/ai-engineering-interview-questions",
+        "takeshy/obsidian-llm-hub",
+        "jtnkminimal/awesome-jev",
+        "thisyearnofear/VOISSS",
+        "ponyo877/jev-telop-live",
+        "whyashthakker/awesome-jev-use-cases",
+        "ilyamk/jev-gmail-ai-spam-filter-and-labeling",
+        "santos-sanz/jev-audio-beeper",
+        "lucasmartins-ai/lcc"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"jev\" \"video\" in:readme",
+      "status": 200,
+      "total_reported": 828,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "browser-use/jev-ultrafast",
+        "milind-soni/tiptour-macos",
+        "OpenByteInc/QuantDinger",
+        "Anil-matcha/awesome-jev-by-typesafe",
+        "yibie/awesome-jev",
+        "Pluviobyte/rnskill",
+        "AbdelStark/awesome-typesafe",
+        "pollinations/pollinations",
+        "cobanov/awesome-jev",
+        "AnotiaWang/awesome-jev",
+        "vercel-labs/ai-cli",
+        "fatwang2/awesome-jev",
+        "rmalde/minecraft-agent",
+        "hellogumbo/awesome-jev",
+        "hr98w/jev-visual",
+        "sickn33/agentic-awesome-skills",
+        "OpenGithubs/github-daily-rank",
+        "bespokelabsai/nimble",
+        "logicrw/awesome-jev-projects",
+        "valentynkit/awesome-jev-typesafe",
+        "jkudish/jev-browser",
+        "featherless-ai/simple-jev",
+        "vercel-labs/json-render",
+        "agentjido/req_llm",
+        "Shubhamsaboo/awesome-llm-apps",
+        "Anil-matcha/awesome-generative-ai-apps",
+        "trungdq88/youtube-sponsor-detection",
+        "v-modal/awesome-jev-tools",
+        "JevLOMCN/mir4",
+        "w3cj/jev-chat",
+        "jerryjliu/docjev",
+        "kraayenjon/awesome-jev",
+        "hashgraph-online/awesome-ai-plugins",
+        "razorback16/openjev",
+        "wuyoscar/jev-skill",
+        "BillionsBobby/JevRouter",
+        "savka777/jev-use",
+        "timpratim/macbrow",
+        "MobileFirstLLC/social-media-hacker-list",
+        "discoverhubgroup/product-daily-rank",
+        "shhivv/arc-cua",
+        "socai-io/jev-social",
+        "OmniJev/awesome-jev-gallery",
+        "OpenGithubs/github-weekly-rank",
+        "ChetasLua/jevmeter",
+        "AppitStudio/awesome-jev",
+        "RomanSlack/jev-drone",
+        "kitze/unclutter",
+        "kitze/skillbox",
+        "frutik/awesome-search",
+        "ekzhang/openjev-sglang",
+        "RafalWilinski/vibecheck",
+        "OneWave-AI/claude-skills",
+        "juspay/neurolink",
+        "socai-io/socai",
+        "autonomous-ai/openharness",
+        "nicobailon/surf-cli",
+        "ai-that-works/ai-that-works",
+        "AlbionaHoti/refgarden",
+        "mmastrac/djev-spark",
+        "mithalouni/system-one-open",
+        "AgentiLoop/Agent",
+        "hashgraph-online/awesome-codex-plugins",
+        "kunchenguid/axi",
+        "mizzlelover/jev-hub",
+        "walidboulanouar/awesome-jev-use-cases",
+        "SamurAIGPT/llm-wiki-agent",
+        "QAInsights/jmeter-ai",
+        "12britz/awesome-free-models",
+        "realZachi/typesafe-adblock",
+        "amitshekhariitbhu/ai-engineering-interview-questions",
+        "ZeroGold/call-coach-ai",
+        "goodrahstar/jev-column-race",
+        "mayank953/Jev",
+        "rokbenko/quackd",
+        "heyjunpenn/awesome-jev",
+        "tonhowtf/omniget",
+        "choxos/jev-reviewer",
+        "ThePatriczek/playwright-recast",
+        "hanishrao/collective-ai-tools",
+        "amponce/archive-movie-browser",
+        "anandi1989/awesome-jev-usecases",
+        "earlyaidopters/gumroad-resources",
+        "danvega/danvega",
+        "kunpengtalk/OmniStudio",
+        "discoverhubgroup/product-weekly-rank",
+        "sensahin/transcript-lens",
+        "shantanugoel/mario-jev",
+        "sgoedecke/system-one",
+        "CScorza/SOCMIntelligence",
+        "Zefan-Cai/Open-Jev",
+        "Dimweaker/jev-libero",
+        "MrJev/awesome-jev",
+        "linny006/awesome-agent-skills",
+        "RongleCat/awesome-grok-bot",
+        "lykycy123/RoboJEV",
+        "openroboto-ai/jev-robot-control",
+        "yoanbernabeu/yoanbernabeu",
+        "alvinreal/awesome-opensource-ai",
+        "YuanKJing/Jev-as-Policy"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "\"typesafe-ai\" in:readme",
+      "status": 200,
+      "total_reported": 2880,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "typesafe-ai/skills",
+        "Arize-ai/openinference",
+        "hellogumbo/awesome-jev",
+        "fatwang2/awesome-jev",
+        "typesafe-ai/typesafe-sdk-js",
+        "Arize-ai/phoenix",
+        "AnotiaWang/awesome-jev",
+        "AbdelStark/awesome-typesafe",
+        "typesafe-ai/typesafe-sdk-python",
+        "superagents-lab/jev-search",
+        "Anil-matcha/awesome-jev-by-typesafe",
+        "kraayenjon/awesome-jev",
+        "standardagents/jevpilot",
+        "brainstormity/Jev-X-Sentiment-Analysis",
+        "caliber-ai-org/ai-setup",
+        "jarrodwatts/jev-trader",
+        "kitze/unclutter",
+        "yibie/awesome-jev",
+        "vercel-labs/ai-cli",
+        "Devin-AXIS/jev-dsh-decision",
+        "moritzkremb/jev-voice-browser",
+        "sutro-sh/jev-align",
+        "valentynkit/awesome-jev-typesafe",
+        "narumiruna/pi-extensions",
+        "cobanov/awesome-jev",
+        "itsmostafa/typesafe-mcp",
+        "aowang-ai/jev-trade",
+        "delexw/claude-code-trace",
+        "typesafe-ai/daggerverse",
+        "tamaratran/fast-jev-compaction",
+        "Heman10x-NGU/openJev-verdict-2.0",
+        "yzfly/awesome-jev-zh",
+        "rokcso/bluenoise",
+        "kitze/skillbox",
+        "heyjunpenn/awesome-jev",
+        "walidboulanouar/awesome-jev-use-cases",
+        "savka777/jev-use",
+        "realZachi/typesafe-adblock",
+        "betalyra/effect-uai",
+        "v-modal/awesome-jev-tools",
+        "kieranklaassen/ruby_llm-skills",
+        "realZachi/pg-jev",
+        "vinilana/live-jev",
+        "unicodeveloper/jevocks",
+        "mizzlelover/jev-hub",
+        "reticlehq/reticle",
+        "sabeel111/OpenSourceJev",
+        "DevMortimer/pi-warden",
+        "imMamdouhaboammar/fable-jev",
+        "kyotofin/tax-doc-classifier",
+        "brainstormity/Jev-Moderation-Bot",
+        "hqman/JevScout",
+        "logicrw/awesome-jev-projects",
+        "yamanoku/awesome-japanese-a11y-companies",
+        "jkudish/jev-browser",
+        "zhengxuyu/litjev",
+        "iapp-technology/openthai-systemone",
+        "nassim-arifette/jevgrep",
+        "daftAI2026/awesome-jev",
+        "h1bomb/bluff",
+        "DevMortimer/pi-typesafe",
+        "PyModel/typesafe-mcp",
+        "OmniJev/awesome-jev-gallery",
+        "cequence-io/openai-scala-client",
+        "anandi1989/awesome-jev-usecases",
+        "TypeSafeAI/typesafe-playground",
+        "bohutang/sift",
+        "ranjan2829/AskJev",
+        "yonatangross/orchestkit",
+        "sharziki/semdecide",
+        "wdobry/laya-playground",
+        "Twister915/typesafe-ai",
+        "Heman10x-NGU/Verdict-open-jev",
+        "yusukebe/hono-jev-router",
+        "sorrycc/typesafe-snake",
+        "Promethe-us/awesome-jev",
+        "pithings/advocaat",
+        "giuliosmall/pg_typesafe",
+        "marc-ko/daily-trending-repo",
+        "jkudish/jev-mcp",
+        "krzyzanowskim/TypeSafe",
+        "RyanKung/rotom",
+        "swamp-club/swamp-extensions",
+        "fazlerocks/jevmail",
+        "sugarforever/tryjev",
+        "NiazMorshed2007/jev-review",
+        "EliaAlberti/jev-rules",
+        "donvito/ai-backends",
+        "Olti1947/jev-java",
+        "davila7/jev-explained",
+        "AppitStudio/awesome-jev",
+        "taeold/djev-run",
+        "hivellm/rulebook",
+        "MoeclubM/PlayJev",
+        "thruwire/foreman",
+        "hiper2d/werewolf-ai-party-game",
+        "coldteadotai/abide",
+        "calebl/ynab-mcp-server",
+        "chujianyun/skills",
+        "kevinbadi/jev-voice"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "jev in:name,description created:>=2026-09-01",
+      "status": null,
+      "total_reported": null,
+      "returned": 0,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [],
+      "error": "IncompleteRead",
+      "incomplete_results": null
+    },
+    {
+      "query": "jev multimodal in:name,description",
+      "status": 200,
+      "total_reported": 7,
+      "returned": 7,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "OmniJev/PlayJev",
+        "nabendu82/jev-reflex",
+        "Alpha-Harper-Franklin/jev-multimodal",
+        "alektebel/jev-multimodal",
+        "Alpha-Harper-Franklin/jev-drive",
+        "zhangjianbang-nb/qwenserve",
+        "nullsilver-labs/alpha-sys-1"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "jev vision in:name,description",
+      "status": 200,
+      "total_reported": 31,
+      "returned": 31,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "jevois/jevois",
+        "savka777/jev-use",
+        "IamBusy/OpenJev-Vision",
+        "team-2073-eagleforce/eagleforce-public-util-2017-jevois-vision-suite",
+        "jevois/jevoisextra",
+        "jcpsimmons/jev-macos-loop",
+        "VulcanRobotics/JeVoisPlusFacile",
+        "greenbreakfast/jevoisObjectTracker",
+        "Programalyst/realtime-vision-decision-agent",
+        "TeamSteamRobotics/JevoisVision",
+        "arnodjiang/Vision-JEV",
+        "FRC4079/DeepSpace_JevoisVisionCode",
+        "topqaz/vision-jev",
+        "frc5687/jevois-vision",
+        "raroepke/Jevarah-Vision",
+        "sseanliu/Jev-Vision",
+        "Prathik95/jevoisGist",
+        "SPORK-3196/JeVois-Vision",
+        "team294/JeVois2020",
+        "CDM-Robotics/jevois",
+        "TEAM4004/2018-Jevois-Vision-Processing-Code",
+        "pattoor/JEV-agent-opencv",
+        "Alpha-Harper-Franklin/jev-vla",
+        "yoann747/Integrating-machine-vision-with-JeVois-Camera",
+        "vishxrad/clashroyale-jev",
+        "samCarbone/jevois_controller",
+        "pepelepoisson/JeVois",
+        "Clawbuilders/web-qa-jev-agent",
+        "ElshinQ/jevaluate",
+        "SK-DEV-AI/browser-use",
+        "wescrockett/seefood"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "jev audio in:name,description",
+      "status": 200,
+      "total_reported": 7,
+      "returned": 7,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "trungdq88/youtube-sponsor-detection",
+        "leo6g/Jeverything",
+        "santos-sanz/jev-audio-beeper",
+        "wustep/jev-playground",
+        "winter-loo/jev-voice-browser",
+        "smcronin/jev-the-band",
+        "tmoody1973/public-radio-assignment-desk"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "jev camera in:readme language:Python",
+      "status": 200,
+      "total_reported": 93,
+      "returned": 93,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "yibie/awesome-jev",
+        "hr98w/jev-visual",
+        "RomanSlack/jev-drone",
+        "rokbenko/quackd",
+        "hashgraph-online/awesome-ai-plugins",
+        "ChetasLua/jevmeter",
+        "hashgraph-online/awesome-codex-plugins",
+        "Dimweaker/jev-libero",
+        "openroboto-ai/jev-robot-control",
+        "MrJev/awesome-jev",
+        "genai-craft/openvons",
+        "lykycy123/RoboJEV",
+        "YuanKJing/Jev-as-Policy",
+        "TarunTomar122/jev-askable-arm",
+        "RongleCat/awesome-grok-bot",
+        "phyous/tsai-sc",
+        "RobotKitAI/piper-astra-jev",
+        "ckaraca/awesome-jev",
+        "wh000wh000/awesome-jev-live",
+        "nabendu82/jev-reflex",
+        "YanjieZe/Paper-List",
+        "PixelML/av",
+        "jtnkminimal/awesome-jev",
+        "SeeAPI/awesome-jev-use-cases",
+        "RINNECODER/jev-behavior-study",
+        "eylexlive/jev-drive",
+        "miguelaeh/jev-microduck",
+        "viraatdas/league-of-jev",
+        "opaielsheikh/zero-shot-vision-robotics",
+        "AliUraish/Jev_SO101",
+        "amirbehbahanian/Simulator",
+        "gudyfut/secomp-hackathon-antillm-club",
+        "golergka/jev-plays-starcraft-2",
+        "Alpha-Harper-Franklin/jev-drive",
+        "alee792/robojev",
+        "ConWan30/Qoresence",
+        "rezastd/trash-can",
+        "kairunwen/Awesome-Robot-Use-Agent",
+        "corenel/today-i-learned",
+        "guoriyue/RoboJev",
+        "JoeSun-421/robotic_agent_use_jev",
+        "imom39a/jev-playground",
+        "dog-last/awesome-jev",
+        "zell12/voice-agent-live-device-fix",
+        "alvinreal/awesome-opensource-ai",
+        "quick123-666/conveyor_vision_sim2real",
+        "0mis/astra-jev-new-vegas",
+        "mattwfog/montehall",
+        "LamaSu/voice-ai-hackathon",
+        "binbin2002/RoboJev",
+        "SuperMohit/voice-tool-call",
+        "alikendir0/jev-pilot",
+        "mabodx/awesome-jev",
+        "harperreed/houseagent",
+        "fireviewer/fireviewer-geolocation",
+        "kxzk/typesafe-jev-drone-demo",
+        "jadouse5/jev-sim",
+        "endi-design/Projektna-nalogo",
+        "ornab74/naza-jev-research",
+        "Tewoto1/Computer-use-and-control-with-Jev",
+        "lukatsc33-a11y/9hpt-rv",
+        "AboveColin/AboveColin",
+        "theneao/ai-finance-daily",
+        "dannyhogan/jervis",
+        "harperreed/harperreed",
+        "Yeyito777/signloop",
+        "being1943/my_rss_reader",
+        "Diabolacal/eo-map-carbon",
+        "fabriciocarraro/smallville-247",
+        "Nanako0129/NyanCogs",
+        "Quriosity-agent/articles",
+        "kydlikebtc/awesome-grokbot",
+        "shamazharikh/qwen-rlcd",
+        "mkeco/Cerebellum-2B",
+        "pearlfranz20/lowlightlowresocr",
+        "roshni2020/Autecia-ai",
+        "Hallflower20/salt-rss-pipeline",
+        "Medialordofficial/Arqivon",
+        "Andersonlimahw/lemon-ai-hub",
+        "octopusengine/local_ai_flow",
+        "RadRebelSam/ai4all-20c-darkpatterns",
+        "imtisaalm/twitter-bookmark-resources",
+        "SoumilBhandari/SecuriVax",
+        "drewsmash/RoboScoutAI",
+        "Omakase-Robotics-Org/manipulation-kit",
+        "yangqiong/gpt6-astra-3d",
+        "mukunddmadhavv/youtube",
+        "cs68614-hash/awesome-grokbot-templates",
+        "tamnd/hn-daily-index",
+        "byst4nder/starList",
+        "blamouche/Engineering-Forward",
+        "Amrithasuresh/awesome-index",
+        "lukedj78/dev-flow"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "jev video in:name,description",
+      "status": 200,
+      "total_reported": 21,
+      "returned": 21,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "jevajs/Jeva",
+        "j-east/JevonsCameraViewer",
+        "ChetasLua/jevmeter",
+        "socai-io/jev-social",
+        "leo6g/Jeverything",
+        "jaibhasin/jev-yt-time-saver",
+        "vmendes90/jev-shield",
+        "hmazomba/jevois",
+        "AiPersonacademy/Jev-Video-Hook-Studio",
+        "piperendervt-glitch/jev-video-context-field",
+        "Alpha-Harper-Franklin/jev-multimodal",
+        "ZeroX-01/jev-atlas",
+        "denikuchero/jev-chess-lab",
+        "bcivitcioglu/jev-chess",
+        "tfhifrc/2018-Jevois-RPI-configuration",
+        "PedroProcopio/yt-worth-it",
+        "BriyanPatel/script-judge",
+        "ManzarAli25/they-live-youtube-glasses",
+        "pi-dal/chrome-extension-for-good",
+        "psychodissection-ship-it/aithyrion-director",
+        "ThinkyMiner/Winnow"
+      ],
+      "error": null,
+      "incomplete_results": false
+    },
+    {
+      "query": "typesafe OCR in:readme",
+      "status": 200,
+      "total_reported": 1026,
+      "returned": 100,
+      "page": 1,
+      "per_page": 100,
+      "repositories": [
+        "awlevin/typesafe-computer-use",
+        "cobanov/awesome-jev",
+        "kyotofin/tax-doc-classifier",
+        "fatwang2/awesome-jev",
+        "AnotiaWang/awesome-jev",
+        "agentjido/req_llm",
+        "donvito/ai-backends",
+        "hellogumbo/awesome-jev",
+        "yibie/awesome-jev",
+        "shhivv/arc-cua",
+        "jerryjliu/docjev",
+        "valentynkit/awesome-jev-typesafe",
+        "kunpengtalk/OmniStudio",
+        "logicrw/awesome-jev-projects",
+        "misbahsy/doc-router",
+        "buildfastwithai/gen-ai-experiments",
+        "kraayenjon/awesome-jev",
+        "AppitStudio/awesome-jev",
+        "marc-ko/daily-trending-repo",
+        "OmniJev/awesome-jev-gallery",
+        "yzfly/awesome-jev-zh",
+        "TypeSafeAI/typesafe-playground",
+        "hashgraph-online/awesome-ai-plugins",
+        "mishrasanjeev/agentic-org",
+        "walidboulanouar/awesome-jev-use-cases",
+        "heyjunpenn/awesome-jev",
+        "wuyoscar/jev-skill",
+        "fauu/Kamite",
+        "maruel/genai",
+        "aymericdamien/TopDeepLearning",
+        "anandi1989/awesome-jev-usecases",
+        "kyu1204/jgrep",
+        "akullpp/awesome-java",
+        "ThePatriczek/playwright-recast",
+        "jcpsimmons/jev-macos-loop",
+        "daftAI2026/awesome-jev",
+        "12britz/awesome-free-models",
+        "MrJev/awesome-jev",
+        "choxos/jev-reviewer",
+        "walkinglabs/awesome-deepseek-harness-plugins",
+        "ckaraca/awesome-jev",
+        "Michaelliv/runline",
+        "aliaihub/awesome-jev-usecases",
+        "croit/aiplane",
+        "NobleSpartan6/otto",
+        "sontakey/awesome-jev",
+        "nedmah/TextLector",
+        "a36069/theBestOfJava",
+        "wh000wh000/awesome-jev-live",
+        "cheeaun/cheeaun",
+        "hashgraph-online/awesome-codex-plugins",
+        "stas4000/jev-clerk",
+        "matthewdonsemail-lab/open-typesafe-camoufox",
+        "tanxarx/awesome-jev",
+        "wtsxDev/Amazing-Java-List",
+        "arturict/tagvico-ai",
+        "mohamadkhoshnava/ZeroNSFWBot",
+        "jtnkminimal/awesome-jev",
+        "hamidfarmani/jev-resume-match",
+        "blankyash/ajna",
+        "quozd/awesome-dotnet",
+        "abubakarsiddik31/wild-jev-builds",
+        "newbie1668/jev-hs-assistant",
+        "cnsunyour/tg-guard-bot",
+        "quoctuancqt/cc-harness",
+        "jexp/watfile",
+        "alvinreal/awesome-opensource-ai",
+        "chrismoseley/jev-extraction-marker-recovery",
+        "kofanlabs/typesafe-computer-use-windows",
+        "Enucatl/docker-paperless-ai",
+        "bogusweb/cv-by-jev",
+        "mheers/rethymno-emergency-pharmacy",
+        "YunaiV/awesome-java",
+        "cartermccann/typesafe-computer-use-hyprland",
+        "ajmeese7/hdd-analyzer",
+        "Wionerlol/wechat-jev-hud",
+        "araray/llmcore",
+        "khadkechetan/typesafe-AI",
+        "rosestolatoti/g1-de-ideias",
+        "GWQLike/Jev-Multiple-choice-tool",
+        "LeddoEngano/jev-eyes",
+        "myc0576/SmartMoney-Cub",
+        "binaryisok/jevrun-linux",
+        "kevin9327/jev-master",
+        "ConWan30/Qoresence",
+        "mttrbrts/jev-folio-recursive-classifier",
+        "oxwen11/awesome-jev",
+        "SqaaSSL/aeat-doc-classifier",
+        "AiPersonacademy/Awesome-jev-use",
+        "1c7/chinese-independent-developer",
+        "glamboyosa/docket",
+        "rust-unofficial/awesome-rust",
+        "complydoc/complydoc",
+        "Vatsa10/typesafe-computer-use-win",
+        "chenmingtang830/jevgraph",
+        "phyous/tsai-civ2",
+        "stoleas/typesafe-computer-use",
+        "jeff-hykin/jev_experiment",
+        "victortran0904/Jev-Browser-Use",
+        "abhishekbhatt95-byte/Med-Decode-Ai-"
+      ],
+      "error": null,
+      "incomplete_results": false
+    }
+  ],
+  "sources": [
+    {
+      "repository": "achimala/jev-paint",
+      "commit": "ecf9c48d290e086bde790d6e24b93324667155e9",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:22.560128+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "1607e9149a254c619d0ceb4119ed9346e13048c28c1d437d80ff2837e40159da",
+          "url": "https://github.com/achimala/jev-paint/blob/ecf9c48d290e086bde790d6e24b93324667155e9/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "6c4485aa67eed121b6f28a5335fb088294663dec0e71b46cd768a11f19804def",
+          "url": "https://github.com/achimala/jev-paint/blob/ecf9c48d290e086bde790d6e24b93324667155e9/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "achimala/jevinci",
+      "commit": "ecf9c48d290e086bde790d6e24b93324667155e9",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:24.585181+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "1607e9149a254c619d0ceb4119ed9346e13048c28c1d437d80ff2837e40159da",
+          "url": "https://github.com/achimala/jevinci/blob/ecf9c48d290e086bde790d6e24b93324667155e9/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "6c4485aa67eed121b6f28a5335fb088294663dec0e71b46cd768a11f19804def",
+          "url": "https://github.com/achimala/jevinci/blob/ecf9c48d290e086bde790d6e24b93324667155e9/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "alektebel/jev-multimodal",
+      "commit": "6b9a4e3bf9fd633eed74f894347aec92eb6e033a",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:48.307079+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "07592995482143ae918c14c8297b521d5d236e9f0e08f68c0f49de6391ea82bd",
+          "url": "https://github.com/alektebel/jev-multimodal/blob/6b9a4e3bf9fd633eed74f894347aec92eb6e033a/README.md"
+        },
+        {
+          "path": "jev_mm/model.py",
+          "sha256": "d85e9990394a81d9d246cbe3d3da94cb38f6f48f5666a7ff5fe847ec3b9826c1",
+          "url": "https://github.com/alektebel/jev-multimodal/blob/6b9a4e3bf9fd633eed74f894347aec92eb6e033a/jev_mm/model.py"
+        },
+        {
+          "path": "jev_mm/calibrate.py",
+          "sha256": "ea227f218765f161af01c4eb6e5e2326b60394f69fc5dfef44528f35a54427e3",
+          "url": "https://github.com/alektebel/jev-multimodal/blob/6b9a4e3bf9fd633eed74f894347aec92eb6e033a/jev_mm/calibrate.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "Anil-matcha/awesome-jev-by-typesafe",
+      "commit": "057b898aae7b7fadf67263ff44f423326184dc77",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:42.451914+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "638c5b6b5199b0de27cf3c7060725419ffc96fa9b57d3867624ebe83a297b683",
+          "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe/blob/057b898aae7b7fadf67263ff44f423326184dc77/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "9646d80ddd555f3a4434c75ea6e80c90970b66c318302cbc41facf10b583eaff",
+          "url": "https://github.com/Anil-matcha/awesome-jev-by-typesafe/blob/057b898aae7b7fadf67263ff44f423326184dc77/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "arnodjiang/Vision-JEV",
+      "commit": "916368d3b0e41ce43c4bff407c21dea2e4e28926",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:48.425903+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "ab25c01b3c2197008230e334f737a8072b3716dbdce2b593f324681c5dde4e74",
+          "url": "https://github.com/arnodjiang/Vision-JEV/blob/916368d3b0e41ce43c4bff407c21dea2e4e28926/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "bd1767ee59aa30c869466eb5917a425176ddde1527ea7f0fab1d1d3d24279f33",
+          "url": "https://github.com/arnodjiang/Vision-JEV/blob/916368d3b0e41ce43c4bff407c21dea2e4e28926/README.md"
+        },
+        {
+          "path": "src/vision_jev/model.py",
+          "sha256": "6ee065d6d8adb73f964ddb1d47ead4b56c7eb65f3ebee76293e8a5a086b4f01b",
+          "url": "https://github.com/arnodjiang/Vision-JEV/blob/916368d3b0e41ce43c4bff407c21dea2e4e28926/src/vision_jev/model.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "awlevin/typesafe-computer-use",
+      "commit": "cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:28.153124+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "fb99135e22841bb564b275b5c0755ce1e5418faff2c806f25d4a11696214c87c",
+          "url": "https://github.com/awlevin/typesafe-computer-use/blob/cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "e0efc8b8c6a7aaa9bdaae9cb516a901eca9a81e82b3d14881158d665f1fa5ab5",
+          "url": "https://github.com/awlevin/typesafe-computer-use/blob/cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1/README.md"
+        },
+        {
+          "path": "typesafe_computer_use/perception.py",
+          "sha256": "6a0ff828494b727d333abdd6fe90600975c5a28fe41b51364a47e290e17b06cd",
+          "url": "https://github.com/awlevin/typesafe-computer-use/blob/cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1/typesafe_computer_use/perception.py"
+        },
+        {
+          "path": "typesafe_computer_use/decide.py",
+          "sha256": "b9afbd37c9a2a5ae20bf2a1f7bff0c3644bb1b3d7551b9bf83bc5f12b7a9ae6f",
+          "url": "https://github.com/awlevin/typesafe-computer-use/blob/cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1/typesafe_computer_use/decide.py"
+        },
+        {
+          "path": "typesafe_computer_use/macos.py",
+          "sha256": "7c148b3d2ade76091052e11d9e15601acdaa2e1869d5bd4dbc64c2d0bb6d5fc0",
+          "url": "https://github.com/awlevin/typesafe-computer-use/blob/cc7b5066ae1a07b5e3182e8f87a9b5b6dfdcffc1/typesafe_computer_use/macos.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "browser-use/jev-ultrafast",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:29.183487+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "5afa3d97bf1e6f998d587fa101e3fe0d0c416840b7fe77bcd6ae97690a334631",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "29f5276b3e6295cabe322cda598e354a9e053dbfd9d831d20f09d0cca279a379",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/README.md"
+        },
+        {
+          "path": "jev_ultrafast/agent.py",
+          "sha256": "aaf8b271cb0ee6643fe7beb525328ab80de8568c7ac044d02b9c6721161e7c8b",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/agent.py"
+        },
+        {
+          "path": "jev_ultrafast/browser.py",
+          "sha256": "ee08dafa93d731bd292aa0263a578a29c8001cf22eef3c59fe44a159649155ee",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/browser.py"
+        },
+        {
+          "path": "jev_ultrafast/questions.py",
+          "sha256": "66a7054b85040b949e1757311257ea0c5a843c635f9a40c99f6d15ad660fb422",
+          "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/questions.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "brudarko/jev-mac-voice",
+      "commit": "631afba3b22d4432c86aa9616ce374fdf358fc5e",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:31.927937+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "4d0c05dc4561b2fad8d0bfe2e685f7e8d16312516af14beb36432c069b449204",
+          "url": "https://github.com/brudarko/jev-mac-voice/blob/631afba3b22d4432c86aa9616ce374fdf358fc5e/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "dc8c59cbec4d44f7478e19345cb644bf7cb864e6e7b6499b18e73d847b815c37",
+          "url": "https://github.com/brudarko/jev-mac-voice/blob/631afba3b22d4432c86aa9616ce374fdf358fc5e/README.md"
+        },
+        {
+          "path": "src/desktop/runtime.js",
+          "sha256": "8d9494e66b9e414a4deb3d061e7917e4f8064812da1719c6b8e76de5ec9b9132",
+          "url": "https://github.com/brudarko/jev-mac-voice/blob/631afba3b22d4432c86aa9616ce374fdf358fc5e/src/desktop/runtime.js"
+        },
+        {
+          "path": "src/desktop/jev-browser.js",
+          "sha256": "9a78fb68088644840e504859996426b785ee1ad8506fc8d2cadb6c5804d8e88e",
+          "url": "https://github.com/brudarko/jev-mac-voice/blob/631afba3b22d4432c86aa9616ce374fdf358fc5e/src/desktop/jev-browser.js"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "ChetasLua/jevmeter",
+      "commit": "cbf8e117b5b8835e3294c3a8ee652c7dfa737a9a",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:33.180093+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "36b4950e16cde9e21141777fbe542a222595a77f70548298f879783b88ccc284",
+          "url": "https://github.com/ChetasLua/jevmeter/blob/cbf8e117b5b8835e3294c3a8ee652c7dfa737a9a/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "cf3ce7abb8ba9d8c50791eba6c2b82f16b9fdfeed9e54a2ebbcffa7bebe00389",
+          "url": "https://github.com/ChetasLua/jevmeter/blob/cbf8e117b5b8835e3294c3a8ee652c7dfa737a9a/README.md"
+        },
+        {
+          "path": "jevmeter/transcribe.py",
+          "sha256": "2c882cdfdbd788dbd45166e29c4335129bae35c0b2982a51cc847a9c622b40ce",
+          "url": "https://github.com/ChetasLua/jevmeter/blob/cbf8e117b5b8835e3294c3a8ee652c7dfa737a9a/jevmeter/transcribe.py"
+        },
+        {
+          "path": "jevmeter/score.py",
+          "sha256": "6e7574daccae52213048ec13dab8bff26b4d6586e5851383c4ba1e794b7e11c9",
+          "url": "https://github.com/ChetasLua/jevmeter/blob/cbf8e117b5b8835e3294c3a8ee652c7dfa737a9a/jevmeter/score.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "cobanov/awesome-jev",
+      "commit": "034576da9cb2f5e78cd6a20e3b8204a0e640d709",
+      "license_github_metadata": "CC0-1.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:45.962243+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+          "url": "https://github.com/cobanov/awesome-jev/blob/034576da9cb2f5e78cd6a20e3b8204a0e640d709/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "dde9be20a60c2bf1a1af27dc5a7b7f5611a9e291b36f62797553393a7436f21e",
+          "url": "https://github.com/cobanov/awesome-jev/blob/034576da9cb2f5e78cd6a20e3b8204a0e640d709/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "dabit3/jev-experiments",
+      "commit": "c469e5bfdc73eb3e1999bba2569e66b579a970fd",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:26.921022+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "b0c8968c68bdd95274df29344810fe0b23a1fb9308bdfe1f201a9e4cea8f13eb",
+          "url": "https://github.com/dabit3/jev-experiments/blob/c469e5bfdc73eb3e1999bba2569e66b579a970fd/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "Dimweaker/jev-libero",
+      "commit": "9b8098a2faccfb561c95ffb3d117ad1688f1c30f",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:35.982576+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "bb3f69b0851771fb7cf34d83618186aa5c1a7fdf5be9c6bc89f766457b52e7ee",
+          "url": "https://github.com/Dimweaker/jev-libero/blob/9b8098a2faccfb561c95ffb3d117ad1688f1c30f/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "d930c01b1a3ab1656bbbdd4b3da445e40b2d6b1298084427f1f0f585b54d1127",
+          "url": "https://github.com/Dimweaker/jev-libero/blob/9b8098a2faccfb561c95ffb3d117ad1688f1c30f/README.md"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "sha256": "408840055174341a883a67592316c34ed97c89ac9df1a21297650f3ef0f72414",
+          "url": "https://github.com/Dimweaker/jev-libero/blob/9b8098a2faccfb561c95ffb3d117ad1688f1c30f/README.zh-CN.md"
+        },
+        {
+          "path": "src/jev_libero/scene.py",
+          "sha256": "58aa8148f9c6310f17671959dc0b764b72f3e897084e22b07598471b37efa919",
+          "url": "https://github.com/Dimweaker/jev-libero/blob/9b8098a2faccfb561c95ffb3d117ad1688f1c30f/src/jev_libero/scene.py"
+        },
+        {
+          "path": "src/jev_libero/policy.py",
+          "sha256": "afbae9812b6df92086d9a9e508d7b79e0de46cfe753da66f847234c76dea5eb9",
+          "url": "https://github.com/Dimweaker/jev-libero/blob/9b8098a2faccfb561c95ffb3d117ad1688f1c30f/src/jev_libero/policy.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "droidrun/mobile-jev",
+      "commit": "395fc222beac4f059f9a0beb337d114a2b066e99",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:28.253556+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "f16d9ff9e172fdb15bed06bbe47cc68b59309fcfc392ef945a68c66e5f150d36",
+          "url": "https://github.com/droidrun/mobile-jev/blob/395fc222beac4f059f9a0beb337d114a2b066e99/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "d257fed2c5f7b6579c68a4474a385c14635ffb08349896fede3c3e64affae3fb",
+          "url": "https://github.com/droidrun/mobile-jev/blob/395fc222beac4f059f9a0beb337d114a2b066e99/README.md"
+        },
+        {
+          "path": "scripts/mobile-agent/device.mjs",
+          "sha256": "53dfb0de45f3c003b37b7f421587c584fbf1dd69bd56f3901240f481d72229a6",
+          "url": "https://github.com/droidrun/mobile-jev/blob/395fc222beac4f059f9a0beb337d114a2b066e99/scripts/mobile-agent/device.mjs"
+        },
+        {
+          "path": "scripts/mobile-agent/policy.mjs",
+          "sha256": "dd65ae96e0e5c25d1fb3185619cb232899e5e68f75d5413f3af59ece96aa3d69",
+          "url": "https://github.com/droidrun/mobile-jev/blob/395fc222beac4f059f9a0beb337d114a2b066e99/scripts/mobile-agent/policy.mjs"
+        },
+        {
+          "path": "scripts/mobile-agent/http.mjs",
+          "sha256": "bff69791f7f78f1518a8faa06aa9c890ef41839c3d075f985eddc51ad9937ea9",
+          "url": "https://github.com/droidrun/mobile-jev/blob/395fc222beac4f059f9a0beb337d114a2b066e99/scripts/mobile-agent/http.mjs"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "fhshaik/typesafe-mario",
+      "commit": "ca22449ed187118d19326d1f54b01b6636578aa4",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:37.740454+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "c489f93504144937f7c8088f681d0d6370d46114ca6d09987f405b120a357504",
+          "url": "https://github.com/fhshaik/typesafe-mario/blob/ca22449ed187118d19326d1f54b01b6636578aa4/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "gaborishka/jev-canvas",
+      "commit": "cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:16.534520+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "fd5e7ad1748ea41f1c86a7469a64fb4de126a5c38d7ef0e97e7ee57592027c6c",
+          "url": "https://github.com/gaborishka/jev-canvas/blob/cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "59a877a572297802b3619c36aff8c465280239e63c2554b14c246706c38fcf6e",
+          "url": "https://github.com/gaborishka/jev-canvas/blob/cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd/README.md"
+        },
+        {
+          "path": "src/controller.js",
+          "sha256": "a418d782d2f8e0a9bb0d1a72c3bae256d6bfaf93109fcdca4eeb1659be00c5fb",
+          "url": "https://github.com/gaborishka/jev-canvas/blob/cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd/src/controller.js"
+        },
+        {
+          "path": "shared/policy.js",
+          "sha256": "fd4dab5ec31c7a1f5839b21381a75bb1766105900b7c649fc91d50ece04a855a",
+          "url": "https://github.com/gaborishka/jev-canvas/blob/cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd/shared/policy.js"
+        },
+        {
+          "path": "shared/spans.js",
+          "sha256": "cad3532ef7ed8a93a6eb3f200738455dc59348ec17af7db4e317cf275fb32af8",
+          "url": "https://github.com/gaborishka/jev-canvas/blob/cec7b27a9f9a3cf12e6692ca07dfeb6125f3cccd/shared/spans.js"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "genai-craft/openvons",
+      "commit": "92f09020d8f5e00b66817b37000d477d9ba65825",
+      "license_github_metadata": "NOASSERTION",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:14.721418+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "5ea9311660a79d1339acefdcb69faa3f53b40a741d1848ea8dc16faf03a47014",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "4e978cdbafee172a5cfee466be56d2ac99da7793c4ffec5c0e0de52f327f3d22",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/README.md"
+        },
+        {
+          "path": "README_ja.md",
+          "sha256": "0c1dcc55234c0f447987ccd923be9b06e6c7f3a14de5e5437a1ccc09c0581e25",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/README_ja.md"
+        },
+        {
+          "path": "openvons/vision/vision_model.py",
+          "sha256": "fbb53a14b38f2fc9dee827fabf0cd612d63c596c8af1f18265b36c57abd9dd00",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/openvons/vision/vision_model.py"
+        },
+        {
+          "path": "openvons/vision/vlm_decision_model.py",
+          "sha256": "e2a03be48256c8644173e6e8c81399bbe6ee64d9b3132773cc944b91a2e3a56b",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/openvons/vision/vlm_decision_model.py"
+        },
+        {
+          "path": "openvons/voice/engine.py",
+          "sha256": "89c2577b5fb4c83dda9a57ee10135c05f2b18c42e554ff0d0b630cfc99c5d858",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/openvons/voice/engine.py"
+        },
+        {
+          "path": "openvons/core/temperature.py",
+          "sha256": "8e15e6fb35c4ac255b70f6ab828789279a51cbce5e6b7e143e2a66cc6e123ddf",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/openvons/core/temperature.py"
+        },
+        {
+          "path": "openvons/core/none_calibration.py",
+          "sha256": "5f323d6ef51d9fd77413865fec5d4ec4a29331524711bdb1e7cae53e13869d0a",
+          "url": "https://github.com/genai-craft/openvons/blob/92f09020d8f5e00b66817b37000d477d9ba65825/openvons/core/none_calibration.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "githubnext/localjev",
+      "commit": "3f23e36e1a3bff46c7e83e8e3781d3512bc82021",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:39.216315+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "3ad9ef7c07e396242f438a66b061a777bf2ab0d82e32f0f1863cb298744850ce",
+          "url": "https://github.com/githubnext/localjev/blob/3f23e36e1a3bff46c7e83e8e3781d3512bc82021/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "564c82e559058baad9973953f50945865eae152cce19b9e711662780303fbb91",
+          "url": "https://github.com/githubnext/localjev/blob/3f23e36e1a3bff46c7e83e8e3781d3512bc82021/README.md"
+        },
+        {
+          "path": "src/engine.ts",
+          "sha256": "74b2c583cf5776d7b8f2fece99e02f98bd7c71eb12be548f2fe0b6f944bb0c4f",
+          "url": "https://github.com/githubnext/localjev/blob/3f23e36e1a3bff46c7e83e8e3781d3512bc82021/src/engine.ts"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "grmkris/robo-harness",
+      "commit": "143699975b09df94b4d986329cdae5fdf9541d31",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:17.979423+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "e3a0c71d11f19569e01a81f3c1153097765cecd3e162c905a10235426546869e",
+          "url": "https://github.com/grmkris/robo-harness/blob/143699975b09df94b4d986329cdae5fdf9541d31/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "harshil1712/slidepilot",
+      "commit": "8ba4e89b56e4f9a08be2f1f69346240cab95a7b6",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:22.991888+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "51d97f36b5db23db6e6f7935e441641a09ccb6a883eeeba475c2aa62bb5f03f0",
+          "url": "https://github.com/harshil1712/slidepilot/blob/8ba4e89b56e4f9a08be2f1f69346240cab95a7b6/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "65468e5b6031ad969d760fd9cc5203072199b014504868a7531474f1df84b825",
+          "url": "https://github.com/harshil1712/slidepilot/blob/8ba4e89b56e4f9a08be2f1f69346240cab95a7b6/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "hr98w/jev-visual",
+      "commit": "19af545f096e8db4c4dd5d47aed42d92ec252111",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:31.137571+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "c0099638765c0a13158b7e4b3e98c5f837ab64885c4632ae8a5f4bf48d690146",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "8790dc04822e16c5e83dcf47a5df5331d3efeeddc468f7b3e9f663e13cb76578",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/README.md"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "sha256": "bbb3453486d47b9e138ff361494b2dc8bc25d3e897db3527c27aafbe94a7472c",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/README.zh-CN.md"
+        },
+        {
+          "path": "jev_visual/adapters.py",
+          "sha256": "250f730b2171d17efd24903fb97d55d9a9d6c6a43beac1ef48938a5792606527",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/jev_visual/adapters.py"
+        },
+        {
+          "path": "jev_visual/preprocessing.py",
+          "sha256": "c80089ede44f2d5c6eb0e8be0cea5420f213715a56dd1f8a7322faac208bc71c",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/jev_visual/preprocessing.py"
+        },
+        {
+          "path": "jev_visual/engine.py",
+          "sha256": "d60edbfbe97de2f068b918db2eefcbb07741f1c66bd5be804f475ebf56c2ba2a",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/jev_visual/engine.py"
+        },
+        {
+          "path": "jev_visual/scoring.py",
+          "sha256": "78168e2c1b771e0e2107d7562d54c34114289f0cad74969131806c1eb95abf47",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/jev_visual/scoring.py"
+        },
+        {
+          "path": "benchmarks/run.py",
+          "sha256": "88161682d7109acfaa5ebd92b217a772a8b6131d32cbfa301aac4774a9260701",
+          "url": "https://github.com/hr98w/jev-visual/blob/19af545f096e8db4c4dd5d47aed42d92ec252111/benchmarks/run.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "IamBusy/OpenJev-Vision",
+      "commit": "4fa973e5212881d704def6818b0def190b094f12",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:52.103486+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "b0ad62748103073dd97e891f3cc163582766e8b3bc963574ae08a35e53592536",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/README.md"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "sha256": "fbdbce7e9d605def1d3ed200837193805ac9703cab1ff2fb7954dd7b200c6351",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/README.zh-CN.md"
+        },
+        {
+          "path": "src/openjev/vision/public_model.py",
+          "sha256": "b9d0b882d3de171290d42ac64f6e5bb92a6ccb076de53b70cc23221af933a529",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/src/openjev/vision/public_model.py"
+        },
+        {
+          "path": "src/openjev/vision/query.py",
+          "sha256": "6ab21eb1a93acd510a0ccb0efc4d311c48978ac14049d33f4bd5a1c46f59fc4d",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/src/openjev/vision/query.py"
+        },
+        {
+          "path": "reports/vision-v01/RESULTS.md",
+          "sha256": "8543f37b4d1578c36c7f507d7311c383c7a07681fc7c5e8970fb063e5a18179e",
+          "url": "https://github.com/IamBusy/OpenJev-Vision/blob/4fa973e5212881d704def6818b0def190b094f12/reports/vision-v01/RESULTS.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "jaredpalmer/kev",
+      "commit": "e0bcf50153f1bda4ca6a8be5e12cbd5f9ebbce1c",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:42.769453+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "6b08bb37982c233aa12bcbdf19106da12f3f4fcf800773ea42e28ebeddd34fb8",
+          "url": "https://github.com/jaredpalmer/kev/blob/e0bcf50153f1bda4ca6a8be5e12cbd5f9ebbce1c/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "b14bc4af65fdcfab2a7eeadc5d898a8d59ea69a3ae76fb25f6405ff7c92f2062",
+          "url": "https://github.com/jaredpalmer/kev/blob/e0bcf50153f1bda4ca6a8be5e12cbd5f9ebbce1c/README.md"
+        },
+        {
+          "path": "kev/model.py",
+          "sha256": "a17d57a52da3fe6ebef7146ce548bd3cedc09e21cc2b7738d9077771f5f16989",
+          "url": "https://github.com/jaredpalmer/kev/blob/e0bcf50153f1bda4ca6a8be5e12cbd5f9ebbce1c/kev/model.py"
+        },
+        {
+          "path": "kev/composition.py",
+          "sha256": "f335ed17e18e0a544893db5e22b9a059e6ce1b2e14dbb863ac7d7bbf8f3e0536",
+          "url": "https://github.com/jaredpalmer/kev/blob/e0bcf50153f1bda4ca6a8be5e12cbd5f9ebbce1c/kev/composition.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "jcpsimmons/jev-macos-loop",
+      "commit": "1aadc01ef262c3b01460909c5dd102f0d9616ba5",
+      "license_github_metadata": "AGPL-3.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:33.882186+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+          "url": "https://github.com/jcpsimmons/jev-macos-loop/blob/1aadc01ef262c3b01460909c5dd102f0d9616ba5/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "8837388728a03279d52bd38452b0d5193fed2ac38ec8d8038992cb985ca4ea39",
+          "url": "https://github.com/jcpsimmons/jev-macos-loop/blob/1aadc01ef262c3b01460909c5dd102f0d9616ba5/README.md"
+        },
+        {
+          "path": "native/Perception.swift",
+          "sha256": "f43d374c51a3239fcd4814a746488da1ba029f67412680b019944724494e19c1",
+          "url": "https://github.com/jcpsimmons/jev-macos-loop/blob/1aadc01ef262c3b01460909c5dd102f0d9616ba5/native/Perception.swift"
+        },
+        {
+          "path": "src/finder-batch.mjs",
+          "sha256": "beb51aa358fab9c403ba1a9110b46edccdc15206e408ee8bd360a04a1bb48ba6",
+          "url": "https://github.com/jcpsimmons/jev-macos-loop/blob/1aadc01ef262c3b01460909c5dd102f0d9616ba5/src/finder-batch.mjs"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "jerryjliu/docjev",
+      "commit": "9ed0fe05984ce1906af9272b8b400c8d46520f98",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:13.502464+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/jerryjliu/docjev/blob/9ed0fe05984ce1906af9272b8b400c8d46520f98/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "469083d553aa72135255493c8ea3a03d443e80d171f464b7d9fd43fe41895528",
+          "url": "https://github.com/jerryjliu/docjev/blob/9ed0fe05984ce1906af9272b8b400c8d46520f98/README.md"
+        },
+        {
+          "path": "src/jev_docs/windows.py",
+          "sha256": "3a3c7c1a5e16d58f747d73f2d9a69bb9da1d7b18b60a5fe957fa55282a5e207f",
+          "url": "https://github.com/jerryjliu/docjev/blob/9ed0fe05984ce1906af9272b8b400c8d46520f98/src/jev_docs/windows.py"
+        },
+        {
+          "path": "src/jev_docs/cache.py",
+          "sha256": "2c5d4ed0df4b846574409a7b19ee0ac91a1c691024e3356aaa190836a29b6c05",
+          "url": "https://github.com/jerryjliu/docjev/blob/9ed0fe05984ce1906af9272b8b400c8d46520f98/src/jev_docs/cache.py"
+        },
+        {
+          "path": "src/jev_docs/engines/jev.py",
+          "sha256": "9974bd8a3da33bc519c43f97ba6d56a32718f3dd17dca5f66bc7fc8283453e3e",
+          "url": "https://github.com/jerryjliu/docjev/blob/9ed0fe05984ce1906af9272b8b400c8d46520f98/src/jev_docs/engines/jev.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "jkudish/jev-browser",
+      "commit": "800e80b42f1a8dd5461add01d2c95d223be90ee6",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:35.995668+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "61ada187d8ec32d7ee7a31fe6d9ec1623cf02e43b9333300fdf8b3508a383717",
+          "url": "https://github.com/jkudish/jev-browser/blob/800e80b42f1a8dd5461add01d2c95d223be90ee6/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "7a9a0a14a11b979d18a60d63b2d982d215368458af1a29007f5f66ffb8a7d1aa",
+          "url": "https://github.com/jkudish/jev-browser/blob/800e80b42f1a8dd5461add01d2c95d223be90ee6/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "kyotofin/tax-doc-classifier",
+      "commit": "3e95a77f763c6becb78472f8b2ce2f54237f9214",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:33.139282+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/kyotofin/tax-doc-classifier/blob/3e95a77f763c6becb78472f8b2ce2f54237f9214/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "72c4f74b542eab83b58b8df088f82b8363746924e92e0a68e7635095fc09401f",
+          "url": "https://github.com/kyotofin/tax-doc-classifier/blob/3e95a77f763c6becb78472f8b2ce2f54237f9214/README.md"
+        },
+        {
+          "path": "src/state.ts",
+          "sha256": "2a1a3e5e484464284ee79f1676a2a91699325b5491fca760bd4d43a1365e2029",
+          "url": "https://github.com/kyotofin/tax-doc-classifier/blob/3e95a77f763c6becb78472f8b2ce2f54237f9214/src/state.ts"
+        },
+        {
+          "path": "src/classify.ts",
+          "sha256": "16cb69ed6e152f68f17f3adc72230806e401be4bd64244adb21963935afc6996",
+          "url": "https://github.com/kyotofin/tax-doc-classifier/blob/3e95a77f763c6becb78472f8b2ce2f54237f9214/src/classify.ts"
+        },
+        {
+          "path": "src/score.ts",
+          "sha256": "505eb2f82b7402ec598bce318d27e1931446f0dc0e9030ad1a5e147560fd55ce",
+          "url": "https://github.com/kyotofin/tax-doc-classifier/blob/3e95a77f763c6becb78472f8b2ce2f54237f9214/src/score.ts"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "lykycy123/RoboJEV",
+      "commit": "aa82be09603032b0e196f2e4aaa7277d54eb7b42",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:53.885916+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "url": "https://github.com/lykycy123/RoboJEV/blob/aa82be09603032b0e196f2e4aaa7277d54eb7b42/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "a755d9f990c25743ee52d8724d71fb55b044bcc89dd8021e618ff4406a5bca7a",
+          "url": "https://github.com/lykycy123/RoboJEV/blob/aa82be09603032b0e196f2e4aaa7277d54eb7b42/README.md"
+        },
+        {
+          "path": "README.zh-CN.md",
+          "sha256": "19fd133aa8bb2445afca520e057b9678cf32e9db11dc137971fa8f8549026eda",
+          "url": "https://github.com/lykycy123/RoboJEV/blob/aa82be09603032b0e196f2e4aaa7277d54eb7b42/README.zh-CN.md"
+        },
+        {
+          "path": "src/jev_vla_sim/state.py",
+          "sha256": "2b580b6c4ab0829110a33253cebdef85a46bb38e61443f5c97c49a74765006b9",
+          "url": "https://github.com/lykycy123/RoboJEV/blob/aa82be09603032b0e196f2e4aaa7277d54eb7b42/src/jev_vla_sim/state.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "Mellow-Artificial-Intelligence/openextract",
+      "commit": "24a1535a5c03ff06a299cbc61643163321abf82f",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:26.210364+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "14b997ddf11dcf01ac9e8ce533d444c490115d6736914a48585e047e0d4c7d76",
+          "url": "https://github.com/Mellow-Artificial-Intelligence/openextract/blob/24a1535a5c03ff06a299cbc61643163321abf82f/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "0227a3d64d4ac23b333f4d69ded778dadd7ddd7773dc1f2cc8d9874fc1e29c1f",
+          "url": "https://github.com/Mellow-Artificial-Intelligence/openextract/blob/24a1535a5c03ff06a299cbc61643163321abf82f/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "moritzkremb/jev-voice-browser",
+      "commit": "054db0f3dbf537af63a8117632d3f941ccd520e1",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:30.430811+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "4d0c05dc4561b2fad8d0bfe2e685f7e8d16312516af14beb36432c069b449204",
+          "url": "https://github.com/moritzkremb/jev-voice-browser/blob/054db0f3dbf537af63a8117632d3f941ccd520e1/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "2934ead60b2911e4fd978550f8a4e2f406ba3108423d8e6a96384882a2fcfaa5",
+          "url": "https://github.com/moritzkremb/jev-voice-browser/blob/054db0f3dbf537af63a8117632d3f941ccd520e1/README.md"
+        },
+        {
+          "path": "src/jev.js",
+          "sha256": "abafcfad8e1b80f66cae3ac047ffc2076eeaa3d9516bebb0bef32818c075a3b2",
+          "url": "https://github.com/moritzkremb/jev-voice-browser/blob/054db0f3dbf537af63a8117632d3f941ccd520e1/src/jev.js"
+        },
+        {
+          "path": "src/controller.js",
+          "sha256": "381d98915de356df6cf3f977cebf8711ed67ced2fa3e5356b5c19b9700969715",
+          "url": "https://github.com/moritzkremb/jev-voice-browser/blob/054db0f3dbf537af63a8117632d3f941ccd520e1/src/controller.js"
+        },
+        {
+          "path": "src/policy.js",
+          "sha256": "a771b8a6a4f5b43fb2b2e0a2a75e559a21175e7caa7b881d0f865dc8e5f531d1",
+          "url": "https://github.com/moritzkremb/jev-voice-browser/blob/054db0f3dbf537af63a8117632d3f941ccd520e1/src/policy.js"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "nabendu82/jev-reflex",
+      "commit": "66bb25d9f7baf00b1a7a0bd49f090df4c4f95087",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:54.922943+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "4ee95b6643765aa11fbdc836392f270176780d8af0c3c3f966a29ebbd6e724ea",
+          "url": "https://github.com/nabendu82/jev-reflex/blob/66bb25d9f7baf00b1a7a0bd49f090df4c4f95087/README.md"
+        },
+        {
+          "path": "backend/fusion/context.py",
+          "sha256": "cc1a336601b2f8edbf2273a326af12a9e91faa1d9ac27be552651710a8825f1a",
+          "url": "https://github.com/nabendu82/jev-reflex/blob/66bb25d9f7baf00b1a7a0bd49f090df4c4f95087/backend/fusion/context.py"
+        },
+        {
+          "path": "backend/fusion/intent_engine.py",
+          "sha256": "de4346fa2f18c14ab62e5295ac4cdf86ed2ce2031dc90a177a81c8385dea14e8",
+          "url": "https://github.com/nabendu82/jev-reflex/blob/66bb25d9f7baf00b1a7a0bd49f090df4c4f95087/backend/fusion/intent_engine.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "NandhaKishorM/laya",
+      "commit": "42626c348753fbb17572a813127df2278a1ec527",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:40.664725+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "url": "https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "78d36127fbeb5e43aeb1441aea061d5a129fb77ec9cdad8c994b2e14deba54f9",
+          "url": "https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/README.md"
+        },
+        {
+          "path": "laya/common.py",
+          "sha256": "f948ee606abe2ed2463f830c051f1a60dccc1b9f5ca1fdc15635cfcbe0cff7b2",
+          "url": "https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/laya/common.py"
+        },
+        {
+          "path": "laya/router.py",
+          "sha256": "c49c3daa338838bef895f92cdd58b9277b378221eb1c9016e9d35e3a7c6122c4",
+          "url": "https://github.com/NandhaKishorM/laya/blob/42626c348753fbb17572a813127df2278a1ec527/laya/router.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "nullsilver-labs/alpha-sys-1",
+      "commit": "d7fe8575cc70a00daa68f6ad9cbe1e5c14eb33e1",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:47.243880+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "4092a0b46a05b8a58b9509757d1c96314a25d9e66675cf499730a627ce903c4b",
+          "url": "https://github.com/nullsilver-labs/alpha-sys-1/blob/d7fe8575cc70a00daa68f6ad9cbe1e5c14eb33e1/README.md"
+        },
+        {
+          "path": "sys1/readout.py",
+          "sha256": "fef5bd6dedd7112146a9b99f6c61c5afe9df740a0a9376b52b6a2c114a72a48c",
+          "url": "https://github.com/nullsilver-labs/alpha-sys-1/blob/d7fe8575cc70a00daa68f6ad9cbe1e5c14eb33e1/sys1/readout.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "OmniJev/PlayJev",
+      "commit": "2d7a0280841e3244a299c9c640efc8cefc46d476",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:22.146806+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/OmniJev/PlayJev/blob/2d7a0280841e3244a299c9c640efc8cefc46d476/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "6ddf880f848923cd988edf13dc17f331db6e2c1791f7580d9d9e8a58a64a927f",
+          "url": "https://github.com/OmniJev/PlayJev/blob/2d7a0280841e3244a299c9c640efc8cefc46d476/README.md"
+        },
+        {
+          "path": "playjev/model.py",
+          "sha256": "d31ea70805b9bc26e8958c88aec7157ff196fac614f6f56e86c6eded5ecd3017",
+          "url": "https://github.com/OmniJev/PlayJev/blob/2d7a0280841e3244a299c9c640efc8cefc46d476/playjev/model.py"
+        },
+        {
+          "path": "playjev/motion.py",
+          "sha256": "d0414d2afcf8b2f8e532823be1a29258f8a647372dfc4d4d17ef99ccf421a3b4",
+          "url": "https://github.com/OmniJev/PlayJev/blob/2d7a0280841e3244a299c9c640efc8cefc46d476/playjev/motion.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "openroboto-ai/jev-robot-control",
+      "commit": "7a4ed8b72c3c17d7aa790678ed9660df67c10dd3",
+      "license_github_metadata": "NOASSERTION",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:53.921085+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "3bdcc1fe7e2fdb4c787ac259c0532300f2e6657a6f1906b712cae3cccbf7b0ce",
+          "url": "https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "f98574f12c9bbe29e445c4f693fc922c4cc1d3e52a5268038b137261e226a802",
+          "url": "https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/README.md"
+        },
+        {
+          "path": "incremental_policy.py",
+          "sha256": "b6c98e81e8186dfa1ddd68382a3c5427428566a9d3659d1c9ec086dedfdc7498",
+          "url": "https://github.com/openroboto-ai/jev-robot-control/blob/7a4ed8b72c3c17d7aa790678ed9660df67c10dd3/incremental_policy.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "Programalyst/realtime-vision-decision-agent",
+      "commit": "392dcf1071ff517062d56d3909af7a51ef2f690f",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:50.503579+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "0a1d2210069cb0710b7cc8f4b24bf812c082769a4f63f56016eb1f267f552aa2",
+          "url": "https://github.com/Programalyst/realtime-vision-decision-agent/blob/392dcf1071ff517062d56d3909af7a51ef2f690f/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "30f61e3edace5eeddded29298fa98973e34bcb2fb968d82ebd939be5702cf554",
+          "url": "https://github.com/Programalyst/realtime-vision-decision-agent/blob/392dcf1071ff517062d56d3909af7a51ef2f690f/README.md"
+        },
+        {
+          "path": "choice_preprocessor.py",
+          "sha256": "4851be23a967aa8bfac4ecd7db92ad5ff4832ea7251323e56ee47fe380d62d65",
+          "url": "https://github.com/Programalyst/realtime-vision-decision-agent/blob/392dcf1071ff517062d56d3909af7a51ef2f690f/choice_preprocessor.py"
+        },
+        {
+          "path": "jev_agent.py",
+          "sha256": "ffd1b9bf62d3e5b29609cb4fdc0068234e19bc49486624162272b5a0904e1bc6",
+          "url": "https://github.com/Programalyst/realtime-vision-decision-agent/blob/392dcf1071ff517062d56d3909af7a51ef2f690f/jev_agent.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "r33drichards/laya-vision",
+      "commit": "86ccec115ef3d72d1851168fc9b7194e8dbed35a",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:14.563955+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "url": "https://github.com/r33drichards/laya-vision/blob/86ccec115ef3d72d1851168fc9b7194e8dbed35a/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "f39505ceee9283ef1e4ccd46264e8cca7b2243bf18b0e40f67635dfcd72bed16",
+          "url": "https://github.com/r33drichards/laya-vision/blob/86ccec115ef3d72d1851168fc9b7194e8dbed35a/README.md"
+        },
+        {
+          "path": "laya/vlm.py",
+          "sha256": "94ab350bafe3756d5800acc516d9947d8da4d69f2e3d7fad4d0bffe46e72058b",
+          "url": "https://github.com/r33drichards/laya-vision/blob/86ccec115ef3d72d1851168fc9b7194e8dbed35a/laya/vlm.py"
+        },
+        {
+          "path": "laya/vlm_train.py",
+          "sha256": "7e5469187490a08674c7fdcf5920b5e6003c2d3f153fda8f8fe19ad90457b304",
+          "url": "https://github.com/r33drichards/laya-vision/blob/86ccec115ef3d72d1851168fc9b7194e8dbed35a/laya/vlm_train.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "RafalWilinski/vibecheck",
+      "commit": "d834d501e3deced12cf2a2551206e03482d6d238",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:19.642878+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "b70fd1d9d8dd04b1f2cf5ef69f3c4faed0bf80d63aa1253fd0a9437fca8ca710",
+          "url": "https://github.com/RafalWilinski/vibecheck/blob/d834d501e3deced12cf2a2551206e03482d6d238/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "RobotKitAI/piper-astra-jev",
+      "commit": "10d671e01d467475084033e7af9f6595886ab7b3",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:51.960408+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://github.com/RobotKitAI/piper-astra-jev/blob/10d671e01d467475084033e7af9f6595886ab7b3/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "592993ebc75b331a4a2c58acaad690b87998ae818c2f360e1344af34cc841a77",
+          "url": "https://github.com/RobotKitAI/piper-astra-jev/blob/10d671e01d467475084033e7af9f6595886ab7b3/README.md"
+        },
+        {
+          "path": "piper_llm/perception.py",
+          "sha256": "99eac2c39f2ed1803eee6ef2af62cf2e686e17310827a63580f98e6d18809203",
+          "url": "https://github.com/RobotKitAI/piper-astra-jev/blob/10d671e01d467475084033e7af9f6595886ab7b3/piper_llm/perception.py"
+        },
+        {
+          "path": "piper_llm/deciders.py",
+          "sha256": "abb3a9868ba45def99d0cbfa1c512a1611e6e22f7c31968d7aee1e5149f3bc25",
+          "url": "https://github.com/RobotKitAI/piper-astra-jev/blob/10d671e01d467475084033e7af9f6595886ab7b3/piper_llm/deciders.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "rokbenko/quackd",
+      "commit": "6073829048b4c8152b7260d3c1d2af62709bfd02",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:37.941941+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "b3b90324d5f5616fb7a9bfd7dc266000fab18dfbfa2fc7af3851301165c91a8f",
+          "url": "https://github.com/rokbenko/quackd/blob/6073829048b4c8152b7260d3c1d2af62709bfd02/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "54f0e0d97ca47fadac7da67a5873a8e810b14e25fc73e5404401629b6c80de6c",
+          "url": "https://github.com/rokbenko/quackd/blob/6073829048b4c8152b7260d3c1d2af62709bfd02/README.md"
+        },
+        {
+          "path": "quackd/agent/jev.py",
+          "sha256": "8a7a18ab5bf4c4037dbd6d7fa37cbdbad75f4fc2cd8864fe391157c3b8141364",
+          "url": "https://github.com/rokbenko/quackd/blob/6073829048b4c8152b7260d3c1d2af62709bfd02/quackd/agent/jev.py"
+        },
+        {
+          "path": "quackd/agent/images.py",
+          "sha256": "7212db9fc7603d1196e29457529277f46a8b9b63f479e4313f08c589ce94a87e",
+          "url": "https://github.com/rokbenko/quackd/blob/6073829048b4c8152b7260d3c1d2af62709bfd02/quackd/agent/images.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "RomanSlack/jev-drone",
+      "commit": "cbeb53ce4f17a06ea490ae43effcdad231143610",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:15.717215+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "fd0b6c64ca4c5c3e1c93f126a8a58eb72a835b5d2efff59e8eaa9ea233368524",
+          "url": "https://github.com/RomanSlack/jev-drone/blob/cbeb53ce4f17a06ea490ae43effcdad231143610/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "74571cdbc72381595ec06f836f62483694f8e292ab91598d1743f25d0e7decce",
+          "url": "https://github.com/RomanSlack/jev-drone/blob/cbeb53ce4f17a06ea490ae43effcdad231143610/README.md"
+        },
+        {
+          "path": "flight.py",
+          "sha256": "8a49cd1338e348f66d582d5a8321a0a17381d3a059b5cb3eb6e0484b6cbb53db",
+          "url": "https://github.com/RomanSlack/jev-drone/blob/cbeb53ce4f17a06ea490ae43effcdad231143610/flight.py"
+        },
+        {
+          "path": "tactics.py",
+          "sha256": "736981f86a851e253041a764a7059c5d9eeb94d921e3c67655a1bea170a5cf1e",
+          "url": "https://github.com/RomanSlack/jev-drone/blob/cbeb53ce4f17a06ea490ae43effcdad231143610/tactics.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "RUCAIBox/POPE",
+      "commit": "08d957b917e5a378a2f99d35b6293c536a66298b",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:27.314202+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "e78a0718885c94799b5ad154dcba3ef10c4c388a67568b322a0525ebadbcc6b3",
+          "url": "https://github.com/RUCAIBox/POPE/blob/08d957b917e5a378a2f99d35b6293c536a66298b/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "5a7fbe701c12e8e6eacbbf596a81b53460a53017e6cee4a39499467a39dfba9c",
+          "url": "https://github.com/RUCAIBox/POPE/blob/08d957b917e5a378a2f99d35b6293c536a66298b/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "Sac-Y/Jev-cu",
+      "commit": "12d8e6d1e2bacaa864974cac85443c8176ebcdcb",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:27.600667+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "3deeafbc870fdc9641fc40585c71623844bcafdaa66a94a9ec3177d43528b4fb",
+          "url": "https://github.com/Sac-Y/Jev-cu/blob/12d8e6d1e2bacaa864974cac85443c8176ebcdcb/README.md"
+        },
+        {
+          "path": "scripts/loop.mjs",
+          "sha256": "c1b0575cad45fb1bf11058f50139f15e4c4c5231164ca0c63c4c5176059fef99",
+          "url": "https://github.com/Sac-Y/Jev-cu/blob/12d8e6d1e2bacaa864974cac85443c8176ebcdcb/scripts/loop.mjs"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "savka777/jev-use",
+      "commit": "8907f85354addfa3d2b78f6a462087e4c73310b8",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:28.384890+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "d07df820340b2caa015b0135264e779facb2e2098874fa12bc99dd7069480be3",
+          "url": "https://github.com/savka777/jev-use/blob/8907f85354addfa3d2b78f6a462087e4c73310b8/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "96d1214f23dd8803f59a26f2e0ca9563651b08a51fa6770f579110d30a1f2f93",
+          "url": "https://github.com/savka777/jev-use/blob/8907f85354addfa3d2b78f6a462087e4c73310b8/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "shhivv/arc-cua",
+      "commit": "60e85f35fd1b5a136209ca7fd6e8aa01b54ec2cb",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:31.357937+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "1126322e2cc8d165adc4c792eeb195717de2bcc7b39be1ce77959d78e87ef685",
+          "url": "https://github.com/shhivv/arc-cua/blob/60e85f35fd1b5a136209ca7fd6e8aa01b54ec2cb/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "ff2aef5d4f91323456ceadd0b88c68c264bb87efdb97388d70e228b390f2d5d7",
+          "url": "https://github.com/shhivv/arc-cua/blob/60e85f35fd1b5a136209ca7fd6e8aa01b54ec2cb/README.md"
+        },
+        {
+          "path": "src/arc_cua/backends/macos_hybrid.py",
+          "sha256": "72d11be0828116a30da400892eb27da85751bc5eb2ce84018426f349dd756ce2",
+          "url": "https://github.com/shhivv/arc-cua/blob/60e85f35fd1b5a136209ca7fd6e8aa01b54ec2cb/src/arc_cua/backends/macos_hybrid.py"
+        },
+        {
+          "path": "src/arc_cua/policies/typesafe.py",
+          "sha256": "24b7c64f8df1f19fa81984de87c037c5f791d62c151ca65ac314474d4f9bb2fe",
+          "url": "https://github.com/shhivv/arc-cua/blob/60e85f35fd1b5a136209ca7fd6e8aa01b54ec2cb/src/arc_cua/policies/typesafe.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "shhivv/third-hand",
+      "commit": "430394b35dbb44ff8b303bf19da29b0828d92bd2",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:28.204222+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "5ac0cfef5f95823e0874d6cd64dfd1e62406fa2b9108ea89c4661a39b433564e",
+          "url": "https://github.com/shhivv/third-hand/blob/430394b35dbb44ff8b303bf19da29b0828d92bd2/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "5ea1939b079a13f0aa980b63bdf181c5f083ea06781a6d5fbef035e5a1c6fa1f",
+          "url": "https://github.com/shhivv/third-hand/blob/430394b35dbb44ff8b303bf19da29b0828d92bd2/README.md"
+        },
+        {
+          "path": "Sources/ThirdHand/VisionObserver.swift",
+          "sha256": "e3c05da0b7e3c0d624247c4e5ade969e6cd878cbeef102cfd75ec955b2c993a5",
+          "url": "https://github.com/shhivv/third-hand/blob/430394b35dbb44ff8b303bf19da29b0828d92bd2/Sources/ThirdHand/VisionObserver.swift"
+        },
+        {
+          "path": "Sources/ThirdHand/TaskRunner.swift",
+          "sha256": "98d3b173498f2b0263e2bef3e0addc49a9da432d76674d365f3163e46438cc69",
+          "url": "https://github.com/shhivv/third-hand/blob/430394b35dbb44ff8b303bf19da29b0828d92bd2/Sources/ThirdHand/TaskRunner.swift"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "silverstein/minutes",
+      "commit": "a9117170d55850af854f6c11f62e87462f2f530c",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:25.125254+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "7230ba608f19da5e516761fbe03c249fe613afbd98f914f75ce074e900bfecbb",
+          "url": "https://github.com/silverstein/minutes/blob/a9117170d55850af854f6c11f62e87462f2f530c/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "68260034bcc7ff71212e96fd98ed1529be8a22e2e20478319ea6358617443a50",
+          "url": "https://github.com/silverstein/minutes/blob/a9117170d55850af854f6c11f62e87462f2f530c/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "sseanliu/Jev-Vision",
+      "commit": "c33f4a0046ce5db8b05273a3c3c673dc39a211ce",
+      "license_github_metadata": "NOASSERTION",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:49.407315+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "e94869a322afcee6b5f9108ad71fc59824f07fd53a2a380be3ef867912542069",
+          "url": "https://github.com/sseanliu/Jev-Vision/blob/c33f4a0046ce5db8b05273a3c3c673dc39a211ce/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "0a5238b641e5c8c3789ebb3c6a924cdf73acc7d7dad06178ce36e6d561ce1853",
+          "url": "https://github.com/sseanliu/Jev-Vision/blob/c33f4a0046ce5db8b05273a3c3c673dc39a211ce/README.md"
+        },
+        {
+          "path": "model/s1/mask.py",
+          "sha256": "796c7a6f59d8959b94b16b556584e19f9adf2dd45af61be8338ecbcb7f5baa19",
+          "url": "https://github.com/sseanliu/Jev-Vision/blob/c33f4a0046ce5db8b05273a3c3c673dc39a211ce/model/s1/mask.py"
+        },
+        {
+          "path": "model/s1/packing.py",
+          "sha256": "f6cb5668a20450e0430abb3422d01f5c60383c491af4040faab3a125faf38d09",
+          "url": "https://github.com/sseanliu/Jev-Vision/blob/c33f4a0046ce5db8b05273a3c3c673dc39a211ce/model/s1/packing.py"
+        },
+        {
+          "path": "model/s1/vl.py",
+          "sha256": "9bfc2f722d7ab1491011c4261ca585ca35bc8e6d7f44025577e25a09bfc3814b",
+          "url": "https://github.com/sseanliu/Jev-Vision/blob/c33f4a0046ce5db8b05273a3c3c673dc39a211ce/model/s1/vl.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "standardagents/jevpilot",
+      "commit": "e1beeb13b9a928fb76f167f86af584f4ce9cf180",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:40.354966+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "ec386a81e12c1a4a93420980851cdcaf592ee2fdf764dd84988ac0f2cd7f6fcd",
+          "url": "https://github.com/standardagents/jevpilot/blob/e1beeb13b9a928fb76f167f86af584f4ce9cf180/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "sutro-sh/jev-align",
+      "commit": "3d997fc76593036655c28d4964de43b55f81fe2c",
+      "license_github_metadata": "Apache-2.0",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:41.178254+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "url": "https://github.com/sutro-sh/jev-align/blob/3d997fc76593036655c28d4964de43b55f81fe2c/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "009cbf42d65371e81f9fbdc669b91ea117b02484a417a5c6f020ce2adb24941e",
+          "url": "https://github.com/sutro-sh/jev-align/blob/3d997fc76593036655c28d4964de43b55f81fe2c/README.md"
+        },
+        {
+          "path": "src/jev_align/metrics.py",
+          "sha256": "e9d3369a6c8de0c214fad09e3df018fc7ea010b17934cf5f14e60e7a15342a9d",
+          "url": "https://github.com/sutro-sh/jev-align/blob/3d997fc76593036655c28d4964de43b55f81fe2c/src/jev_align/metrics.py"
+        },
+        {
+          "path": "src/jev_align/runtime.py",
+          "sha256": "08d0b6f8b7add5c51272e158c2158341e06644f8ac592a0d74692aaa5548eeab",
+          "url": "https://github.com/sutro-sh/jev-align/blob/3d997fc76593036655c28d4964de43b55f81fe2c/src/jev_align/runtime.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "TheoLeeCJ/SemIf",
+      "commit": "ca3ba65f142967030ecb453346e94d6f476a69df",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:40.456634+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "f765f2140f8507a8f0d81ec0fd2c4bd72fe6a066841ef27883ff876a76bf61be",
+          "url": "https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "9b16c39c60b9374a0d67f9fda3208ef0eb08f17da1e19fd136f48f3e56d1f5c9",
+          "url": "https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/README.md"
+        },
+        {
+          "path": "src/semif_phase1/shared.py",
+          "sha256": "0e37e5afa50be8d54ca5c477d9f48d16d1b512e7bc03963fa5a3965620be420e",
+          "url": "https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/shared.py"
+        },
+        {
+          "path": "src/semif_phase1/core.py",
+          "sha256": "c33dc41a789c39c095c85c1d23d09690dee3726d737bc3dbd051a4f97115e486",
+          "url": "https://github.com/TheoLeeCJ/SemIf/blob/ca3ba65f142967030ecb453346e94d6f476a69df/src/semif_phase1/core.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "trungdq88/youtube-sponsor-detection",
+      "commit": "de01f0568d043035889a296a61ce21e0accc8b16",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:31.983454+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "095eed873cf27de241b683ea9dc83ffbff064545917c18e18fa5367231a70080",
+          "url": "https://github.com/trungdq88/youtube-sponsor-detection/blob/de01f0568d043035889a296a61ce21e0accc8b16/README.md"
+        },
+        {
+          "path": "src/jev.js",
+          "sha256": "966518248785cd3347e07668c9e321e8ae635534d90b8724ae10215db2c6d1dc",
+          "url": "https://github.com/trungdq88/youtube-sponsor-detection/blob/de01f0568d043035889a296a61ce21e0accc8b16/src/jev.js"
+        },
+        {
+          "path": "src/live.js",
+          "sha256": "e1d61ef7ea91324c04015c9ee7d76157644f67fe0e4e285cdc1c4c09027d7f84",
+          "url": "https://github.com/trungdq88/youtube-sponsor-detection/blob/de01f0568d043035889a296a61ce21e0accc8b16/src/live.js"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "typesafe-ai/system-one-adapter-python",
+      "commit": "adffc2eab300a4fa3c0e92252d4ffd6ceaa53700",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:41.804618+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "835f233f1d6ed84a9b9a351aba0689b47644a4137d6316911fc7957bde523b02",
+          "url": "https://github.com/typesafe-ai/system-one-adapter-python/blob/adffc2eab300a4fa3c0e92252d4ffd6ceaa53700/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "131f22241ff30f4b31523cfdf8813188c672fbac6e0a7b9497b94b93bb95dc93",
+          "url": "https://github.com/typesafe-ai/system-one-adapter-python/blob/adffc2eab300a4fa3c0e92252d4ffd6ceaa53700/README.md"
+        },
+        {
+          "path": "src/system_one_adapter/_client.py",
+          "sha256": "6c3efe03f6c2d61948597afe2b5304fa8bc4617fa507413a5fff3373fbbe09fa",
+          "url": "https://github.com/typesafe-ai/system-one-adapter-python/blob/adffc2eab300a4fa3c0e92252d4ffd6ceaa53700/src/system_one_adapter/_client.py"
+        },
+        {
+          "path": "src/system_one_adapter/providers/openai.py",
+          "sha256": "8c3fda17e3be0bfa8b5acae63e56df4b26f6c2bdde48d592616839a3bfb9a3b8",
+          "url": "https://github.com/typesafe-ai/system-one-adapter-python/blob/adffc2eab300a4fa3c0e92252d4ffd6ceaa53700/src/system_one_adapter/providers/openai.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "valentynkit/jev-skip",
+      "commit": "6837e3e0f1a48cbfc48c85415d99bcfe3eaf0628",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:30:22.804484+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "c2686bf7578adaf9e8011544a578a308a70fa12cfa4720a008f9240d44f0b53f",
+          "url": "https://github.com/valentynkit/jev-skip/blob/6837e3e0f1a48cbfc48c85415d99bcfe3eaf0628/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "7bc2d8ce7df56036cedcde60d770bd07a5882d8c0165694e2b810fb86795945b",
+          "url": "https://github.com/valentynkit/jev-skip/blob/6837e3e0f1a48cbfc48c85415d99bcfe3eaf0628/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "wy-coliney/jev-browser-use",
+      "commit": "f14b60e0ae1ee90cd73eb6650e30a666a84c021a",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:35.455603+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "a3c2a19d721942806b173c15dabcfb63be41891858fc8999e0fd4fe0b36c7aa1",
+          "url": "https://github.com/wy-coliney/jev-browser-use/blob/f14b60e0ae1ee90cd73eb6650e30a666a84c021a/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "3f5961b9d8ef6c1351326b9a339584877410db03b22c979ea52fbd4010b3e12a",
+          "url": "https://github.com/wy-coliney/jev-browser-use/blob/f14b60e0ae1ee90cd73eb6650e30a666a84c021a/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "yibie/awesome-jev",
+      "commit": "a42aea88b30aeb62b3f165395f15336853e01863",
+      "license_github_metadata": null,
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:43.053729+00:00",
+      "files_retrieved": [
+        {
+          "path": "README.md",
+          "sha256": "e949c37741c90f2db06398ad9b4fbc11946c171c97084fa568691b5a16b7fb37",
+          "url": "https://github.com/yibie/awesome-jev/blob/a42aea88b30aeb62b3f165395f15336853e01863/README.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "YuanKJing/Jev-as-Policy",
+      "commit": "cac97e79845bf56a5b2ef0e6d4928238bf5caee7",
+      "license_github_metadata": "MIT",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:24:37.027782+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "e3dcbc9ed0922c97e3db264cc9f5ce34e0f350c4a0d5fe6bd284b24e44b623d9",
+          "url": "https://github.com/YuanKJing/Jev-as-Policy/blob/cac97e79845bf56a5b2ef0e6d4928238bf5caee7/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "11f0107436ad5042f9cf47151ef2c4f7d0df47249bdacb9953122bc40e8f1b1a",
+          "url": "https://github.com/YuanKJing/Jev-as-Policy/blob/cac97e79845bf56a5b2ef0e6d4928238bf5caee7/README.md"
+        },
+        {
+          "path": "jev_policy.py",
+          "sha256": "afc69e5b2f23933bef63207cdf5cabb172b9ecb5a5a15fb761af08e7dbc6f422",
+          "url": "https://github.com/YuanKJing/Jev-as-Policy/blob/cac97e79845bf56a5b2ef0e6d4928238bf5caee7/jev_policy.py"
+        },
+        {
+          "path": "docs/provenance.md",
+          "sha256": "41ef0ca49c50237102696816190c70815d6d71d4819d98d0e77645938ab1f774",
+          "url": "https://github.com/YuanKJing/Jev-as-Policy/blob/cac97e79845bf56a5b2ef0e6d4928238bf5caee7/docs/provenance.md"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    },
+    {
+      "repository": "zhangjianbang-nb/qwenserve",
+      "commit": "2bcbbef522d23a0ff55f977b27bfd32b06ba70d8",
+      "license_github_metadata": "NOASSERTION",
+      "tree_truncated": false,
+      "retrieved_utc": "2026-09-21T07:54:46.541204+00:00",
+      "files_retrieved": [
+        {
+          "path": "LICENSE",
+          "sha256": "7ecd8ce1d30b8aa26232f5c7c878cca53bc273547ce52f1678f955154746e64f",
+          "url": "https://github.com/zhangjianbang-nb/qwenserve/blob/2bcbbef522d23a0ff55f977b27bfd32b06ba70d8/LICENSE"
+        },
+        {
+          "path": "README.md",
+          "sha256": "813bf28e1e6fc3e9d6abd38386eabf89402e37b9305dd057f615d82193c7ecb1",
+          "url": "https://github.com/zhangjianbang-nb/qwenserve/blob/2bcbbef522d23a0ff55f977b27bfd32b06ba70d8/README.md"
+        },
+        {
+          "path": "src/qwenserve/engine/model_runner.py",
+          "sha256": "f1a034653c15c178bc5aaff54b528c911f8f80a9f05d82a9e71c108dd83051b9",
+          "url": "https://github.com/zhangjianbang-nb/qwenserve/blob/2bcbbef522d23a0ff55f977b27bfd32b06ba70d8/src/qwenserve/engine/model_runner.py"
+        },
+        {
+          "path": "src/qwenserve/mm/pipeline.py",
+          "sha256": "ac1b5e6fc926163d94f19e86f752013303d8c33c28a2df6bf55ef2b1ff38df07",
+          "url": "https://github.com/zhangjianbang-nb/qwenserve/blob/2bcbbef522d23a0ff55f977b27bfd32b06ba70d8/src/qwenserve/mm/pipeline.py"
+        },
+        {
+          "path": "src/qwenserve/jev/judge.py",
+          "sha256": "245d2e34d5f67a0ef383c817dad804d8de5e3a603130817299e412ff02320c95",
+          "url": "https://github.com/zhangjianbang-nb/qwenserve/blob/2bcbbef522d23a0ff55f977b27bfd32b06ba70d8/src/qwenserve/jev/judge.py"
+        }
+      ],
+      "scope": "Retrieval inventory; detailed source review is limited to the audit document"
+    }
+  ]
+}

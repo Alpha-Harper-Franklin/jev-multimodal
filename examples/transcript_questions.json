@@ -1,0 +1,4 @@
+[
+  {"id": "command", "type": "noul", "instructions": "Does the transcript contain a request to change a light?"},
+  {"id": "target", "type": "choice", "instructions": "Which device is requested?", "criteria": {"lamp": "Desk lamp", "fan": "Fan", "unknown": "No named device or unclear request"}}
+]
