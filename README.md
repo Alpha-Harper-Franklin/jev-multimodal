@@ -1,6 +1,6 @@
-# VisualIf
+# Jev + Multimodal
 
-**Turn visual observations into typed events for software.**
+**Connect images, video, and screen observations to Jev's structured decisions.**
 
 Define semantic conditions over camera, video, or screen observations and let software consume bounded judgments. The planned architecture uses an external perception component to produce reusable structured state, then Jev to evaluate multiple conditions over that state.
 
@@ -48,7 +48,7 @@ Jev's confidence does not cover upstream perception failures. A second decision 
 
 ## 中文说明
 
-VisualIf 计划把摄像头、视频和屏幕中的语义条件转成程序事件。感知前端生成带时间与来源的结构化观察，Jev 负责有限问题判断，代码负责持续时间、去重与状态过期。
+Jev + 多模态：计划把摄像头、视频和屏幕中的语义条件转成程序事件。感知前端生成带时间与来源的结构化观察，Jev 负责有限问题判断，代码负责持续时间、去重与状态过期。
 
 当前只有设计和示例，尚未接入相机或 Jev。主要验证问题是：同一观察服务多个判断时，是否比 VLM 直接输出结构化结果更实用、更经济。它不代表 Jev 本体获得了视觉能力。
 
